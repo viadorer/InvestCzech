@@ -427,5 +427,57 @@
             </div>
         </div>
     </section>
+
+    <!-- Kontaktní formulář -->
+    <section id="kontakt" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6">Kontaktujte nás</h2>
+                <p class="text-xl text-invest-gray">Zanechte nám zprávu a my se vám ozveme do 24 hodin</p>
+            </div>
+
+            <form name="contact" method="POST" data-netlify="true" class="space-y-6 bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
+                <input type="hidden" name="form-name" value="contact" />
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="jmeno" class="block text-sm font-medium text-invest-gray mb-2">Jméno</label>
+                        <input type="text" name="jmeno" id="jmeno" required 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="prijmeni" class="block text-sm font-medium text-invest-gray mb-2">Příjmení</label>
+                        <input type="text" name="prijmeni" id="prijmeni" required 
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-invest-gray mb-2">Email</label>
+                    <input type="email" name="email" id="email" required 
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent">
+                </div>
+
+                <div>
+                    <label for="telefon" class="block text-sm font-medium text-invest-gray mb-2">Telefon</label>
+                    <input type="tel" name="telefon" id="telefon" required 
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent">
+                </div>
+
+                <div>
+                    <label for="zprava" class="block text-sm font-medium text-invest-gray mb-2">Vaše zpráva</label>
+                    <textarea name="zprava" id="zprava" rows="4" required 
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent"></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" 
+                        class="w-full bg-invest-red text-white py-4 px-8 rounded-xl font-semibold hover:bg-red-700 transition-colors duration-200 shadow-lg hover:shadow-xl">
+                        Odeslat zprávu
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
