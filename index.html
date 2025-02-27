@@ -435,47 +435,38 @@
                 <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6">Kontaktujte nás</h2>
                 <p class="text-xl text-invest-gray">Zanechte nám zprávu a my se vám ozveme do 24 hodin</p>
             </div>
-
-            <form action="https://formspree.io/f/xayrpnvg" method="POST" class="space-y-6 bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                        <label for="jmeno" class="block text-sm font-medium text-invest-gray mb-2">Jméno</label>
-                        <input type="text" name="jmeno" id="jmeno" required 
-                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent">
-                    </div>
-                    <div>
-                        <label for="prijmeni" class="block text-sm font-medium text-invest-gray mb-2">Příjmení</label>
-                        <input type="text" name="prijmeni" id="prijmeni" required 
-                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent">
-                    </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
+            <script>
+                (function (w,d,s,o,f,js,fjs) {
+                    w['ecm-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+                    js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+                    js.id = '19-4abfdf42e682f87cd40907d9a0cd4e16'; js.dataset.a = 'ptf'; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+                }(window, document, 'script', 'ecmwidget', 'https://d70shl7vidtft.cloudfront.net/widget.js'));
+ 
+                     // Přizpůsobení formuláře po načtení
+                     window.addEventListener('load', function() {
+                        setTimeout(function() {
+                            // Pokus o přizpůsobení stylů formuláře
+                            var formContainer = document.getElementById('f-18-eeb96ecd8eefc15f2198246e728510f1');
+                            if (formContainer) {
+                                formContainer.style.maxWidth = '100%';
+                                
+                                // Pokus o přizpůsobení tlačítka, pokud existuje
+                                var buttons = formContainer.querySelectorAll('button');
+                                buttons.forEach(function(button) {
+                                    button.classList.add('bg-invest-red');
+                                    button.classList.add('hover:bg-red-700');
+                                    button.classList.add('rounded-xl');
+                                    button.classList.add('shadow-lg');
+                                    button.classList.add('hover:shadow-xl');
+                                });
+                            }
+                        }, 1000); // Počkáme 1 sekundu na načtení formuláře
+                    });
+ </script>
+                    <div id="f-19-4abfdf42e682f87cd40907d9a0cd4e16"></div>
                 </div>
-
-                <div>
-                    <label for="email" class="block text-sm font-medium text-invest-gray mb-2">Email</label>
-                    <input type="email" name="email" id="email" required 
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent">
-                </div>
-
-                <div>
-                    <label for="telefon" class="block text-sm font-medium text-invest-gray mb-2">Telefon</label>
-                    <input type="tel" name="telefon" id="telefon" required 
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent">
-                </div>
-
-                <div>
-                    <label for="zprava" class="block text-sm font-medium text-invest-gray mb-2">Vaše zpráva</label>
-                    <textarea name="zprava" id="zprava" rows="4" required 
-                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-invest-blue focus:border-transparent"></textarea>
-                </div>
-
-                <div>
-                    <button type="submit" 
-                        class="w-full bg-invest-red text-white py-4 px-8 rounded-xl font-semibold hover:bg-red-700 transition-colors duration-200 shadow-lg hover:shadow-xl">
-                        Odeslat zprávu
-                    </button>
-                </div>
-            </form>
+            </div>            
         </div>
     </section>
 </body>
