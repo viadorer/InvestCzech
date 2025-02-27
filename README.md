@@ -2,19 +2,23 @@
 
 ## Deployment
 
-Tento projekt je nastaven pro automatický deployment na Netlify.
+Tento projekt je nastaven pro automatický deployment na GitHub Pages.
 
 ### Postup pro deployment:
 
-1. Připojte tento repozitář k Netlify:
-   - Přihlaste se na [Netlify](https://www.netlify.com/)
-   - Klikněte na "New site from Git"
-   - Vyberte tento GitHub repozitář
-   - Netlify automaticky detekuje konfiguraci z `netlify.toml`
+1. Nastavení GitHub Pages:
+   - Přejděte do nastavení repozitáře na GitHubu
+   - V sekci "Pages" vyberte větev `main` jako zdroj
+   - Klikněte na "Save"
+   - GitHub automaticky nasadí stránky na adresu `https://[username].github.io/InvestCzech`
 
 2. Nastavení domény (volitelné):
-   - V Netlify dashboardu můžete nastavit vlastní doménu
-   - Netlify poskytuje SSL certifikát zdarma
+   - V nastavení GitHub Pages můžete nastavit vlastní doménu
+   - Přidejte CNAME záznam u svého poskytovatele domény
+
+### Zpracování formuláře
+
+Kontaktní formulář využívá službu [Formspree](https://formspree.io/) pro zpracování odeslaných dat.
 
 ### Lokální vývoj
 
@@ -25,4 +29,4 @@ Tento projekt je nastaven pro automatický deployment na Netlify.
 
 - `index.html` - Hlavní stránka
 - `images/` - Složka s obrázky
-- `netlify.toml` - Konfigurace pro Netlify deployment
+- `.nojekyll` - Soubor, který zajišťuje, že GitHub Pages nebude používat Jekyll

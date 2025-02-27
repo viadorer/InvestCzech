@@ -1,8 +1,5 @@
 {
   "name": "investczech",
   "version": "1.0.0",
-  "description": "InvestCzech website with Netlify Forms and Functions",
-  "dependencies": {
-    "node-fetch": "^2.6.1"
-  }
+  "description": "InvestCzech website hosted on GitHub Pages"
 }
