@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" id="html-document">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP4KNZWHT8"></script>
@@ -60,12 +60,29 @@
                             <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
                         </span>
                     </div>
+                    <!-- Navigation Links (left side) -->
+                    <div class="hidden md:flex md:ml-6">
+                        <a href="#" class="px-3 py-2 text-invest-blue font-semibold border-b-2 border-invest-blue" data-i18n="nav_home">Domů</a>
+                    </div>
                 </div>
                 
-                <!-- Navigation Links -->
-                <div class="hidden md:flex md:items-center md:space-x-8">
-
-                    <a href="#kontakt" class="bg-invest-red text-white hover:bg-red-700 px-6 py-3 rounded-lg text-sm font-semibold transition-colors duration-200">Nezávazná konzultace</a>
+                <!-- Right side navigation (consultation button and language switcher) -->
+                <div class="hidden md:flex md:items-center">
+                    <!-- Navigation Button -->
+                    <div class="md:flex md:items-center md:mr-8">
+                        <a href="#kontakt" class="bg-invest-red text-white hover:bg-red-700 px-6 py-3 rounded-lg text-sm font-semibold transition-colors duration-200" data-i18n="nav_consultation">Nezávazná konzultace</a>
+                    </div>
+                
+                    <!-- Language Switcher -->
+                    <div class="md:flex md:items-center md:space-x-4">
+                        <button class="language-btn text-invest-blue font-medium" data-lang="cs" onclick="setLanguage('cs')">CZ</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-500 hover:text-invest-blue" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-500 hover:text-invest-blue" data-lang="de" onclick="setLanguage('de')">DE</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-500 hover:text-invest-blue" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+                    </div>
                 </div>
 
                 <!-- Mobile menu button -->
@@ -94,20 +111,20 @@
                     <!-- Hlavní obsah -->
                     <div class="lg:col-span-6 space-y-8 relative z-10 order-1 lg:order-2">
                         <div class="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-blue-50">
-                            <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-invest-blue leading-tight tracking-tight animate-fade-in max-w-3xl">
+                            <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-invest-blue leading-tight tracking-tight animate-fade-in max-w-3xl" data-i18n="hero_title">
                                 Vybudujte si stabilní příjem <br class="hidden lg:block">z nemovitostí — <span class="text-invest-red">ještě letos</span>
                             </h1>
-                            <p class="text-xl text-invest-gray font-medium leading-relaxed animate-[fadeIn_0.8s_ease-in-out_0.2s_both] max-w-2xl mt-6">
+                            <p class="text-xl text-invest-gray font-medium leading-relaxed animate-[fadeIn_0.8s_ease-in-out_0.2s_both] max-w-2xl mt-6" data-i18n="hero_subtitle">
                                 Zajistěte si finanční jistotu, zatímco ostatní nechávají peníze ztrácet hodnotu. <span class="text-invest-red font-semibold">Získejte ověřený postup</span>, jak investovat v Česku i bez obrovského kapitálu.
                             </p>
                             <div class="space-y-4 animate-[fadeIn_0.8s_ease-in-out_0.4s_both] mt-8">
                                 <div class="inline-flex items-center space-x-3 px-4 py-2 bg-red-50 rounded-lg border border-red-100 mb-2">
                                     <div class="w-2.5 h-2.5 rounded-full bg-invest-red animate-pulse"></div>
-                                    <p class="text-invest-red font-semibold text-sm">Tento měsíc zbývá pouze 9 volných míst</p>
+                                    <p class="text-invest-red font-semibold text-sm" data-i18n="spots_left">Tento měsíc zbývá pouze 9 volných míst</p>
                                 </div>
                                 
                                 <a href="#kontakt" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl text-white bg-invest-red hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-                                    <span>Chci bezplatnou konzultaci</span>
+                                    <span data-i18n="cta_button">Chci bezplatnou konzultaci</span>
                                     <svg class="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                                     </svg>
@@ -135,8 +152,8 @@
     <section id="kontakt" class="py-24 bg-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6">Kontaktujte nás</h2>
-                <p class="text-xl text-invest-gray">Zanechte nám zprávu a my se vám ozveme do 24 hodin</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6" data-i18n="contact_title">Kontaktujte nás</h2>
+                <p class="text-xl text-invest-gray" data-i18n="contact_subtitle">Zanechte nám zprávu a my se vám ozveme do 24 hodin</p>
             </div>
             <div class="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
             <script>
@@ -172,5 +189,7 @@
             </div>            
         </div>
     </section>
+    <!-- Načtení jazykových skriptů -->
+    <script src="js/translations.js"></script>
 </body>
 </html>
