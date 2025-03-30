@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INVESTCZECH - Investice do nemovitostí</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .hero-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%230052CC' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'invest-blue': '#0052CC',
+                        'invest-red': '#E4002B',
+                        'invest-gray': '#1A1A1A'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            'from': { opacity: '0', transform: 'translateY(10px)' },
+                            'to': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <!-- Logo -->
+                    <div class="flex-shrink-0 flex items-center">
+                        <span class="text-2xl font-bold">
+                            <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <!-- Navigation Links -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#jak-to-funguje" class="text-invest-gray hover:text-invest-blue px-3 py-2 text-sm font-medium">Jak to funguje</a>
+                    <a href="#reference" class="text-invest-gray hover:text-invest-blue px-3 py-2 text-sm font-medium">Reference</a>
+                    <a href="#faq" class="text-invest-gray hover:text-invest-blue px-3 py-2 text-sm font-medium">Časté dotazy</a>
+                    <a href="#kontakt" class="bg-invest-red text-white hover:bg-red-700 px-6 py-3 rounded-lg text-sm font-semibold transition-colors duration-200">Nezávazná konzultace</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-invest-gray hover:text-invest-blue hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-invest-blue">
+                        <span class="sr-only">Otevřít menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] overflow-hidden">
+        <!-- Background image -->
+        <div class="absolute inset-0 w-full h-full">
+            <img src="images/hero.png" alt="" class="w-full h-full object-cover">
+        </div>
+
+        <div class="relative min-h-[90vh] flex items-center">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- Hlavní obsah -->
+                    <div class="lg:col-span-6 space-y-8 relative z-10 order-1 lg:order-2">
+                        <div class="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-blue-50">
+                            <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-invest-blue leading-tight tracking-tight animate-fade-in max-w-3xl">
+                                Vybudujte si stabilní příjem <br class="hidden lg:block">z nemovitostí — <span class="text-invest-red">ještě letos</span>
+                            </h1>
+                            <p class="text-xl text-invest-gray font-medium leading-relaxed animate-[fadeIn_0.8s_ease-in-out_0.2s_both] max-w-2xl mt-6">
+                                Zajistěte si finanční jistotu, zatímco ostatní nechávají peníze ztrácet hodnotu. <span class="text-invest-red font-semibold">Objevte ověřený postup</span>, jak investovat v Česku i bez obrovského kapitálu.
+                            </p>
+                            <div class="space-y-4 animate-[fadeIn_0.8s_ease-in-out_0.4s_both] mt-8">
+                                <div class="inline-flex items-center space-x-3 px-4 py-2 bg-red-50 rounded-lg border border-red-100 mb-2">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-invest-red animate-pulse"></div>
+                                    <p class="text-invest-red font-semibold text-sm">Tento měsíc zbývá pouze 9 volných míst</p>
+                                </div>
+                                
+                                <a href="#konzultace" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl text-white bg-invest-red hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                                    <span>Chci bezplatnou konzultaci</span>
+                                    <svg class="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll šipka -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+            <a href="#socialni-dukaz" class="group flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce">
+                <svg class="w-6 h-6 text-invest-red transform group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sociální důkaz sekce -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 animate-[fadeIn_0.8s_ease-in-out]">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6">Důvěřuje nám přes 2 000 klientů, desítky investičních příležitostí ročně</h2>
+                <p class="text-xl text-invest-gray">InvestCzech pomáhá běžným lidem i zkušeným investorům vytvářet spolehlivý zdroj příjmů. Více než 90 % našich klientů rozšiřuje své portfolio do 18 měsíců.</p>
+            </div>
+
+            <!-- Loga médií -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center mb-16 opacity-60">
+                <img src="images/seznam-zpravy.png" alt="Seznam Zprávy" class="h-8 object-contain mx-auto">
+                <img src="images/forbes.png" alt="Forbes" class="h-8 object-contain mx-auto">
+                <img src="images/hn.png" alt="Hospodářské noviny" class="h-8 object-contain mx-auto">
+                <img src="images/e15.png" alt="E15" class="h-8 object-contain mx-auto">
+            </div>
+
+            <!-- Reference -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Reference 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 relative">
+                    <div class="absolute -top-3 -left-3">
+                        <svg class="w-8 h-8 text-invest-red" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.83 1.652 1.242 2.748 1.242.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.346zm9.144 0c0-.88-.23-1.618-.69-2.217-.326-.42-.77-.692-1.327-.812-.57-.144-1.09-.144-1.54-.028-.16-.95.09-1.956.75-3.022s1.52-1.867 2.557-2.403L17.49 5c-.8.396-1.555.898-2.26 1.505-.7.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.83 1.65 1.242 2.744 1.242.967 0 1.768-.29 2.402-.878.627-.576.942-1.365.942-2.346z"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <img src="images/client1.jpg" alt="Klient" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-invest-blue">Tomáš Novák</h3>
+                            <p class="text-sm text-invest-gray">Podnikatel</p>
+                        </div>
+                    </div>
+                    <p class="text-invest-gray">"Díky InvestCzech jsem začal s první nemovitostí. Po roce mám <span class="text-invest-red font-semibold">pasivní příjem 15 000 Kč měsíčně</span> a plánuji další investici."</p>
+                </div>
+
+                <!-- Reference 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 relative">
+                    <div class="absolute -top-3 -left-3">
+                        <svg class="w-8 h-8 text-invest-red" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.83 1.652 1.242 2.748 1.242.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.346zm9.144 0c0-.88-.23-1.618-.69-2.217-.326-.42-.77-.692-1.327-.812-.57-.144-1.09-.144-1.54-.028-.16-.95.09-1.956.75-3.022s1.52-1.867 2.557-2.403L17.49 5c-.8.396-1.555.898-2.26 1.505-.7.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.83 1.65 1.242 2.744 1.242.967 0 1.768-.29 2.402-.878.627-.576.942-1.365.942-2.346z"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <img src="images/client2.jpg" alt="Klient" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-invest-blue">Jana Svobodová</h3>
+                            <p class="text-sm text-invest-gray">Lékařka</p>
+                        </div>
+                    </div>
+                    <p class="text-invest-gray">"Nikdy bych nevěřila, že <span class="text-invest-red font-semibold">nájemník mi zaplatí celou hypotéku</span>. Teď mám jistotu na důchod a nechci přestat."</p>
+                </div>
+
+                <!-- Reference 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 relative">
+                    <div class="absolute -top-3 -left-3">
+                        <svg class="w-8 h-8 text-invest-red" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.83 1.652 1.242 2.748 1.242.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.346zm9.144 0c0-.88-.23-1.618-.69-2.217-.326-.42-.77-.692-1.327-.812-.57-.144-1.09-.144-1.54-.028-.16-.95.09-1.956.75-3.022s1.52-1.867 2.557-2.403L17.49 5c-.8.396-1.555.898-2.26 1.505-.7.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.165 1.4.615 2.52 1.35 3.35.732.83 1.65 1.242 2.744 1.242.967 0 1.768-.29 2.402-.878.627-.576.942-1.365.942-2.346z"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center mb-6">
+                        <img src="images/client3.jpg" alt="Klient" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-invest-blue">Petr Dvořák</h3>
+                            <p class="text-sm text-invest-gray">IT Specialista</p>
+                        </div>
+                    </div>
+                    <p class="text-invest-gray">"Začínal jsem s úsporami <span class="text-invest-red font-semibold">1,2 milionu</span>. Po dvou letech mám tři nemovitosti a <span class="text-invest-red font-semibold">výnos přes 8 % ročně</span>."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problém & kontext sekce -->
+    <section class="py-24 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue">Stoupající inflace a nejisté důchody: Vy se můžete rozhodnout jinak</h2>
+                    <p class="text-xl text-invest-gray">Zatímco na běžných účtech peníze ztrácí hodnotu, nemovitosti historicky rostou. Navíc při chytrém financování náklady splácí nájemník. Přesto 80 % lidí otálí, protože neví, jak začít. My vám to ukážeme.</p>
+                    
+                    <!-- Graf -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
+                        <h3 class="text-lg font-bold text-invest-blue mb-6">Vývoj hodnoty investice za 10 let</h3>
+                        <div class="relative h-64">
+                            <!-- Modrá křivka (nemovitosti) -->
+                            <div class="absolute bottom-0 left-0 w-full h-full flex items-end">
+                                <div class="w-full h-3/4 bg-gradient-to-t from-blue-50 to-transparent rounded-lg relative overflow-hidden">
+                                    <div class="absolute bottom-0 left-0 w-full h-1 bg-invest-blue"></div>
+                                    <div class="absolute bottom-0 left-0 w-full h-full" style="background: linear-gradient(90deg, transparent, transparent 20%, #0052CC 100%); clip-path: polygon(0 100%, 100% 20%, 100% 100%, 0 100%);"></div>
+                                </div>
+                            </div>
+                            <!-- Červená křivka (inflace) -->
+                            <div class="absolute bottom-0 left-0 w-full border-2 border-invest-red transform -rotate-12 origin-left"></div>
+                            
+                            <!-- Popisky -->
+                            <div class="absolute bottom-4 left-4 flex items-center space-x-6">
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-invest-blue rounded-full mr-2"></div>
+                                    <span class="text-sm font-medium">Nemovitosti</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-4 h-4 bg-invest-red rounded-full mr-2"></div>
+                                    <span class="text-sm font-medium">Inflace</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#konzultace" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl text-white bg-invest-red hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                        <span>Zjistit, zda je to i pro mě</span>
+                        <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Obrázek -->
+                <div class="relative hidden lg:block">
+                    <img src="images/problem-context.jpg" alt="Moderní nemovitost" class="rounded-3xl shadow-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-gray-900/10 to-transparent rounded-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jak to funguje sekce -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6">Jak s námi proměníte úspory v pravidelný příjem?</h2>
+                <p class="text-xl text-invest-gray">Jednoduchý proces, který vás dovede k finanční nezávislosti.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Krok 1: Strategie -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 relative group animate-[fadeIn_0.8s_ease-in-out]">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6 text-invest-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-invest-blue mb-4">Strategie</h3>
+                    <p class="text-invest-gray">Určíme váš cíl: vyšší cashflow, dlouhodobé držení či kombinace.</p>
+                </div>
+
+                <!-- Krok 2: Financování -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 relative group animate-[fadeIn_0.8s_ease-in-out_0.2s_both]">
+                    <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6 text-invest-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-invest-blue mb-4">Financování</h3>
+                    <p class="text-invest-gray">Pomůžeme s hypotékou tak, aby nájemník reálně splácel většinu nákladů.</p>
+                </div>
+
+                <!-- Krok 3: Nákup -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 relative group animate-[fadeIn_0.8s_ease-in-out_0.4s_both]">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6 text-invest-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-invest-blue mb-4">Nákup</h3>
+                    <p class="text-invest-gray">Zajistíme právní servis, prohlídky a vyjednání ceny. Všechno hladce a bez stresu.</p>
+                </div>
+
+                <!-- Krok 4: Pronájem & správa -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 relative group animate-[fadeIn_0.8s_ease-in-out_0.6s_both]">
+                    <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6 text-invest-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-invest-blue mb-4">Pronájem & správa</h3>
+                    <p class="text-invest-gray">Nalezneme spolehlivé nájemníky, připravíme smlouvy, vyřešíme detaily.</p>
+                </div>
+
+                <!-- Krok 5: Škálování -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 relative group animate-[fadeIn_0.8s_ease-in-out_0.8s_both]">
+                    <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-6 h-6 text-invest-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-invest-blue mb-4">Škálování</h3>
+                    <p class="text-invest-gray">Většina našich klientů do 18 měsíců rozšiřuje portfolio. Pomůžeme i vám!</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#konzultace" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl text-white bg-invest-red hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 animate-[fadeIn_0.8s_ease-in-out_1s_both]">
+                    <span>Rezervovat konzultaci zdarma</span>
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proč neotálet sekce -->
+    <section class="py-24 bg-blue-50 relative overflow-hidden">
+        <!-- Dekorativní prvky -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute -right-64 -top-64 w-96 h-96 bg-invest-red rounded-full"></div>
+            <div class="absolute -left-32 -bottom-32 w-64 h-64 bg-invest-blue rounded-full"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-red mb-6">Proč neotálet s investicí do nemovitostí?</h2>
+                <p class="text-xl text-invest-gray">Každý měsíc čekání vás stále více vzdaluje od finanční nezávislosti.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Důvod 1: Inflace -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-red-100 group animate-[fadeIn_0.8s_ease-in-out]">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6 text-invest-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6 6"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-invest-red">Inflace nespí</h3>
+                    </div>
+                    <p class="text-invest-gray">Každý měsíc na běžném účtu ztrácíte 1 % hodnoty svých úspor. Za rok je to přes 12 %!</p>
+                </div>
+
+                <!-- Důvod 2: Ceny nemovitostí -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-red-100 group animate-[fadeIn_0.8s_ease-in-out_0.2s_both]">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6 text-invest-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                        </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-invest-red">Ceny rostou</h3>
+                    </div>
+                    <p class="text-invest-gray">Průměrná cena nemovitostí roste o 8-12 % ročně. Co jste mohli koupit loni za 5 milionů, stojí dnes 5,5 milionu.</p>
+                </div>
+
+                <!-- Důvod 3: Příležitosti -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-red-100 group animate-[fadeIn_0.8s_ease-in-out_0.4s_both]">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6 text-invest-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-invest-red">Nejlepší příležitosti mizí</h3>
+                    </div>
+                    <p class="text-invest-gray">Denně nacházíme výhodné nemovitosti pro naše klienty. Ty nejlepší jsou pryč do 48 hodin.</p>
+                </div>
+            </div>
+
+            <!-- CTA Box -->
+            <div class="bg-invest-red rounded-2xl p-8 md:p-12 shadow-xl max-w-3xl mx-auto relative overflow-hidden group animate-[fadeIn_0.8s_ease-in-out_0.6s_both]">
+                <div class="absolute inset-0 bg-gradient-to-r from-red-600 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                
+                <div class="relative z-10">
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white">Zbývá 9 volných míst na konzultaci</h3>
+                    </div>
+
+                    <p class="text-xl text-white/90 text-center mb-8">Rezervujte si svůj termín ještě dnes a získejte:</p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-white mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-white/90">Individuální plán investování do nemovitostí</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-white mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-white/90">Přednostní přístup k nejlepším příležitostem</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-6 h-6 text-white mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-white/90">Speciální ceny od našich partnerů</span>
+                        </li>
+                    </ul>
+
+                    <div class="text-center">
+                        <a href="#konzultace" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl text-invest-red bg-white hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                            <span>Chci bezplatnou konzultaci</span>
+                            <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontaktní formulář -->
+    <section id="kontakt" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6">Kontaktujte nás</h2>
+                <p class="text-xl text-invest-gray">Zanechte nám zprávu a my se vám ozveme do 24 hodin</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
+            <script>
+                (function (w,d,s,o,f,js,fjs) {
+                    w['ecm-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+                    js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+                    js.id = '19-4abfdf42e682f87cd40907d9a0cd4e16'; js.dataset.a = 'ptf'; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+                }(window, document, 'script', 'ecmwidget', 'https://d70shl7vidtft.cloudfront.net/widget.js'));
+ 
+                     // Přizpůsobení formuláře po načtení
+                     window.addEventListener('load', function() {
+                        setTimeout(function() {
+                            // Pokus o přizpůsobení stylů formuláře
+                            var formContainer = document.getElementById('f-18-eeb96ecd8eefc15f2198246e728510f1');
+                            if (formContainer) {
+                                formContainer.style.maxWidth = '100%';
+                                
+                                // Pokus o přizpůsobení tlačítka, pokud existuje
+                                var buttons = formContainer.querySelectorAll('button');
+                                buttons.forEach(function(button) {
+                                    button.classList.add('bg-invest-red');
+                                    button.classList.add('hover:bg-red-700');
+                                    button.classList.add('rounded-xl');
+                                    button.classList.add('shadow-lg');
+                                    button.classList.add('hover:shadow-xl');
+                                });
+                            }
+                        }, 1000); // Počkáme 1 sekundu na načtení formuláře
+                    });
+ </script>
+                    <div id="f-19-4abfdf42e682f87cd40907d9a0cd4e16"></div>
+                </div>
+            </div>            
+        </div>
+    </section>
+</body>
+</html>
