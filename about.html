@@ -12,7 +12,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INVESTCZECH - Investice do nemovitostí</title>
+    <title>O nás - INVESTCZECH</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,7 +62,8 @@
                     </div>
                     <!-- Navigation Links (left side) -->
                     <div class="hidden md:flex md:ml-6">
-                        <a href="#" class="px-3 py-2 text-invest-blue font-semibold border-b-2 border-invest-blue" data-i18n="nav_home">Domů</a>
+                        <a href="index.html" class="px-3 py-2 text-gray-600 hover:text-invest-blue font-medium" data-i18n="nav_home">Domů</a>
+                        <a href="about.html" class="px-3 py-2 text-invest-blue font-semibold border-b-2 border-invest-blue" data-i18n="nav_about">O nás</a>
                     </div>
                 </div>
                 
@@ -70,7 +71,7 @@
                 <div class="hidden md:flex md:items-center">
                     <!-- Navigation Button -->
                     <div class="md:flex md:items-center md:mr-8">
-                        <a href="#kontakt" class="bg-invest-red text-white hover:bg-red-700 px-6 py-3 rounded-lg text-sm font-semibold transition-colors duration-200" data-i18n="nav_consultation">Nezávazná konzultace</a>
+                        <a href="index.html#kontakt" class="bg-invest-red text-white hover:bg-red-700 px-6 py-3 rounded-lg text-sm font-semibold transition-colors duration-200" data-i18n="nav_consultation">Nezávazná konzultace</a>
                     </div>
                 
                     <!-- Language Switcher -->
@@ -98,97 +99,63 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-[90vh] overflow-hidden">
-        <!-- Background image -->
-        <div class="absolute inset-0 w-full h-full">
-            <img src="images/hero.png" alt="" class="w-full h-full object-cover">
-        </div>
-
-        <div class="relative min-h-[90vh] flex items-center">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <!-- Hlavní obsah -->
-                    <div class="lg:col-span-6 space-y-8 relative z-10 order-1 lg:order-2">
-                        <div class="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-blue-50">
-                            <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-invest-blue leading-tight tracking-tight animate-fade-in max-w-3xl" data-i18n="hero_title">
-                                Vybudujte si stabilní příjem <br class="hidden lg:block">z nemovitostí — <span class="text-invest-red">ještě letos</span>
-                            </h1>
-                            <p class="text-xl text-invest-gray font-medium leading-relaxed animate-[fadeIn_0.8s_ease-in-out_0.2s_both] max-w-2xl mt-6" data-i18n="hero_subtitle">
-                                Zajistěte si finanční jistotu, zatímco ostatní nechávají peníze ztrácet hodnotu. <span class="text-invest-red font-semibold">Získejte ověřený postup</span>, jak investovat v Česku i bez obrovského kapitálu.
-                            </p>
-                            <div class="space-y-4 animate-[fadeIn_0.8s_ease-in-out_0.4s_both] mt-8">
-                                <div class="inline-flex items-center space-x-3 px-4 py-2 bg-red-50 rounded-lg border border-red-100 mb-2">
-                                    <div class="w-2.5 h-2.5 rounded-full bg-invest-red animate-pulse"></div>
-                                    <p class="text-invest-red font-semibold text-sm" data-i18n="spots_left">Tento měsíc zbývá pouze 9 volných míst</p>
-                                </div>
-                                
-                                <a href="#kontakt" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl text-white bg-invest-red hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-                                    <span data-i18n="cta_button">Chci bezplatnou konzultaci</span>
-                                    <svg class="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+    <!-- Article Header -->
+    <section class="pt-32 pb-16 bg-gray-50 hero-pattern">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold text-invest-blue mb-4" data-i18n="about_title">INVESTCZECH</h1>
+                <div class="flex justify-center items-center space-x-4 mb-6">
+                    <img src="images/author.jpg" alt="David Choc" class="w-12 h-12 rounded-full object-cover" data-i18n-alt="about_author_alt">
+                    <div class="text-left">
+                        <p class="font-medium text-invest-gray" data-i18n="about_author">David Choc</p>
+                        <p class="text-sm text-gray-500" data-i18n="about_date">16. 6. 2024</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Scroll šipka -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-            <a href="#socialni-dukaz" class="group flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce">
-                <svg class="w-6 h-6 text-invest-red transform group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-            </a>
-        </div>
-    </section>
-
-
-
-    <!-- Kontaktní formulář -->
-    <section id="kontakt" class="py-24 bg-white">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6" data-i18n="contact_title">Kontaktujte nás</h2>
-                <p class="text-xl text-invest-gray" data-i18n="contact_subtitle">Zanechte nám zprávu a my se vám ozveme do 24 hodin</p>
-            </div>
-            <div class="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
-            <script>
-                (function (w,d,s,o,f,js,fjs) {
-                    w['ecm-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
-                    js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-                    js.id = '19-4abfdf42e682f87cd40907d9a0cd4e16'; js.dataset.a = 'ptf'; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-                }(window, document, 'script', 'ecmwidget', 'https://d70shl7vidtft.cloudfront.net/widget.js'));
- 
-                     // Přizpůsobení formuláře po načtení
-                     window.addEventListener('load', function() {
-                        setTimeout(function() {
-                            // Pokus o přizpůsobení stylů formuláře
-                            var formContainer = document.getElementById('f-18-eeb96ecd8eefc15f2198246e728510f1');
-                            if (formContainer) {
-                                formContainer.style.maxWidth = '100%';
-                                
-                                // Pokus o přizpůsobení tlačítka, pokud existuje
-                                var buttons = formContainer.querySelectorAll('button');
-                                buttons.forEach(function(button) {
-                                    button.classList.add('bg-invest-red');
-                                    button.classList.add('hover:bg-red-700');
-                                    button.classList.add('rounded-xl');
-                                    button.classList.add('shadow-lg');
-                                    button.classList.add('hover:shadow-xl');
-                                });
-                            }
-                        }, 1000); // Počkáme 1 sekundu na načtení formuláře
-                    });
- </script>
-                    <div id="f-19-4abfdf42e682f87cd40907d9a0cd4e16"></div>
+                <div class="inline-flex items-center space-x-2 text-sm text-gray-500">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span data-i18n="about_read_time">Minut čtení: 2</span>
                 </div>
-            </div>            
+            </div>
         </div>
     </section>
+
+    <!-- Article Content -->
+    <section class="py-16">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <article class="prose lg:prose-lg mx-auto">
+                <p class="text-lg text-invest-gray mb-8" data-i18n="about_intro">
+                    InvestCzech je investiční platforma specializující se na investice do nemovitostí, která nabízí jedinečný prostor pro setkání investorů a atraktivních nemovitostních příležitostí. Hlavním cílem platformy je efektivní spojování kapitálu s perspektivními projekty v oblasti nemovitostí.
+                </p>
+
+                <h2 class="text-2xl font-bold text-invest-blue mt-12 mb-6" data-i18n="about_services_title">Hlavní služby InvestCzech</h2>
+
+                <ol class="list-decimal pl-6 space-y-6">
+                    <li data-i18n="about_service_1">
+                        <strong>Spojování investorů a projektů:</strong> InvestCzech aktivně propojuje investory s nemovitostními projekty. Díky široké síti kontaktů a databázi projektů může platforma nabídnout různé investiční možnosti, které jsou pečlivě vybírány a hodnoceny, aby splňovaly vysoké standardy kvality a výnosnosti.
+                    </li>
+                    <li data-i18n="about_service_2">
+                        <strong>Podpora pro podnikatele:</strong> Platforma poskytuje komplexní podporu developerům a majitelům nemovitostí, včetně konzultací, mentorování a pomoc s přípravou prezentací pro investory. Součástí služeb je i právní a finanční poradenství, které pomáhá firmám optimalizovat jejich investiční nabídky a zvyšovat šance na úspěšné získání kapitálu.
+                    </li>
+                    <li data-i18n="about_service_3">
+                        <strong>Investiční analýzy a due diligence:</strong> Investoři mohou využít detailní analýzy a hodnocení nemovitostních projektů, které zahrnují technickou, finanční a tržní due diligence. Tento proces zajišťuje, že investoři získávají důvěryhodné a ověřené informace o investičních příležitostech, což minimalizuje rizika spojená s investováním.
+                    </li>
+                    <li data-i18n="about_service_4">
+                        <strong>Networking a eventy:</strong> InvestCzech pořádá pravidelné networkingové akce, workshopy a konference, kde se investoři mohou osobně setkat s developery a dalšími klíčovými hráči na trhu nemovitostí. Tyto události podporují výměnu zkušeností, nápadů a vytváření nových obchodních kontaktů.
+                    </li>
+                    <li data-i18n="about_service_5">
+                        <strong>Online platforma:</strong> Uživatelé mohou využívat moderní online platformu, která umožňuje snadné procházení nemovitostních investičních příležitostí, sledování aktuálních projektů a přímou komunikaci s developery a majiteli nemovitostí. Tato platforma je navržena tak, aby byla uživatelsky přívětivá a poskytovala všechny potřebné informace na jednom místě.
+                    </li>
+                </ol>
+
+                <p class="text-lg text-invest-gray mt-8" data-i18n="about_conclusion">
+                    InvestCzech tak představuje klíčový nástroj pro každého, kdo hledá kvalitní investiční příležitosti v oblasti nemovitostí nebo potřebuje získat kapitál pro svůj developerský projekt. S profesionálním přístupem a širokou nabídkou služeb se InvestCzech stal důvěryhodným partnerem na českém nemovitostním trhu.
+                </p>
+            </article>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-gray-100 mt-12 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -229,7 +196,7 @@
                     <h3 class="font-medium text-invest-gray mb-3" data-i18n="footer_legal_title">Právní informace a disclaimer</h3>
                     <ul class="text-sm space-y-2">
                         <li>
-                            <a href="about.html" class="text-gray-600 hover:text-invest-blue transition-colors" data-i18n="nav_about">O nás</a>
+                            <a href="index.html" class="text-gray-600 hover:text-invest-blue transition-colors" data-i18n="nav_home">Domů</a>
                         </li>
 
                     </ul>
@@ -246,5 +213,6 @@
 
     <!-- Načtení jazykových skriptů -->
     <script src="js/translations.js"></script>
+    <script src="js/about-translations.js"></script>
 </body>
 </html>
