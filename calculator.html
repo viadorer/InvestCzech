@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="cs" id="html-document">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP4KNZWHT8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QP4KNZWHT8');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka ROE | InvestCzech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'invest-blue': '#0A2540',
+                        'invest-blue-light': '#1A3A5C',
+                        'invest-red': '#D7141A',
+                        'invest-red-dark': '#B01016',
+                        'invest-gray': '#1A1A1A',
+                        'invest-gray-light': '#6B7280',
+                        'invest-bg': '#FAFBFC',
+                    },
+                    fontFamily: {
+                        'sans': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold tracking-tight">
+                            <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
+                        </span>
+                    </a>
+                    <div class="hidden lg:flex lg:ml-10 lg:space-x-1">
+                        <a href="index.html#proces" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="index.html#off-market" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Off-market trh</a>
+                        <a href="index.html#sprava" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Správa a garance</a>
+                        <!-- TODO: Akademie (ceskosobe.cz, chcibytmilionarem.cz)
+                        <a href="index.html#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Akademie</a>
+                        -->
+                        <a href="dashboard.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Nástěnka</a>
+                        <a href="calculator.html" class="px-3 py-2 text-sm font-semibold text-invest-blue border-b-2 border-invest-blue transition-colors">Kalkulačka</a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex lg:items-center lg:space-x-4">
+                    <a href="index.html#kontakt" class="bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors duration-200">Chci investiční plán</a>
+                    <div class="flex items-center space-x-2 text-xs">
+                        <button class="language-btn text-invest-blue font-semibold" data-lang="cs" onclick="setLanguage('cs')">CZ</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="de" onclick="setLanguage('de')">DE</button>
+                    </div>
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded text-invest-gray hover:text-invest-blue hover:bg-gray-50 focus:outline-none">
+                        <span class="sr-only">Menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-4 space-y-1">
+                <a href="index.html#proces" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Vaše cesta</a>
+                <a href="index.html#off-market" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Off-market trh</a>
+                <a href="index.html#sprava" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Správa a garance</a>
+                <!-- TODO: Akademie (ceskosobe.cz, chcibytmilionarem.cz)
+                <a href="index.html#akademie" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Akademie</a>
+                -->
+                <a href="dashboard.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Nástěnka</a>
+                <a href="calculator.html" class="block px-3 py-2 text-sm font-semibold text-invest-blue">Kalkulačka</a>
+                <div class="pt-3 border-t border-gray-100">
+                    <a href="index.html#kontakt" class="block w-full text-center bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Calculator Header -->
+    <section class="pt-28 pb-12 bg-invest-blue">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-4">Finanční matematika</p>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-white leading-tight tracking-tight">Kalkulačka ROE a cash-flow</h1>
+                <p class="text-lg text-white/70 leading-relaxed mt-4 max-w-2xl">Vložte cenu, nájem, úrok a LTV. Ihned vidíte cash-flow i ROE (návratnost vlastního kapitálu).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Content -->
+    <section class="py-16 bg-invest-bg">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Calculator Form -->
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <h2 class="text-lg font-bold text-invest-blue mb-6">Parametry investice</h2>
+                    <form id="calculator-form" class="space-y-5">
+                        <div>
+                            <label for="property-price" class="block text-sm font-medium text-invest-gray mb-2">Cena nemovitosti (Kč)</label>
+                            <input type="number" id="property-price" name="property-price" class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent" value="3000000" min="100000" step="100000" required>
+                        </div>
+                        <div>
+                            <label for="monthly-rent" class="block text-sm font-medium text-invest-gray mb-2">Měsíční nájem (Kč)</label>
+                            <input type="number" id="monthly-rent" name="monthly-rent" class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent" value="15000" min="1000" step="1000" required>
+                        </div>
+                        <div>
+                            <label for="interest-rate" class="block text-sm font-medium text-invest-gray mb-2">Úroková sazba (%)</label>
+                            <input type="number" id="interest-rate" name="interest-rate" class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent" value="5.5" min="0" max="20" step="0.1" required>
+                        </div>
+                        <div>
+                            <label for="ltv" class="block text-sm font-medium text-invest-gray mb-2">LTV – Loan to Value (%)</label>
+                            <input type="range" id="ltv" name="ltv" class="w-full h-2 bg-gray-200 rounded appearance-none cursor-pointer" min="0" max="100" value="80" step="5">
+                            <div class="flex justify-between text-xs text-invest-gray-light mt-1">
+                                <span>0 %</span>
+                                <span>25 %</span>
+                                <span>50 %</span>
+                                <span>75 %</span>
+                                <span>100 %</span>
+                            </div>
+                            <div class="text-center text-lg font-bold text-invest-blue mt-2">
+                                <span id="ltv-value">80</span> %
+                            </div>
+                        </div>
+                        <div>
+                            <label for="property-expenses" class="block text-sm font-medium text-invest-gray mb-2">Roční provozní náklady (%)</label>
+                            <input type="number" id="property-expenses" name="property-expenses" class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent" value="20" min="0" max="100" step="1" required>
+                            <p class="text-xs text-invest-gray-light mt-1">Procento z nájmu (daně, údržba, pojištění, správa)</p>
+                        </div>
+                        <div>
+                            <label for="loan-years" class="block text-sm font-medium text-invest-gray mb-2">Doba splácení (let)</label>
+                            <input type="number" id="loan-years" name="loan-years" class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent" value="30" min="1" max="50" step="1" required>
+                        </div>
+                        <div class="pt-4">
+                            <button type="button" id="calculate-btn" class="w-full py-3 px-6 bg-invest-red text-white font-semibold rounded hover:bg-invest-red-dark transition-colors">Vypočítat</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Calculator Results -->
+                <div class="space-y-6">
+                    <div class="bg-white border border-gray-100 rounded p-6">
+                        <h3 class="text-sm font-bold text-invest-blue uppercase tracking-wider mb-4">Investice</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Cena nemovitosti</p>
+                                <p class="text-lg font-bold text-invest-blue" id="result-price">3 000 000 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Výše hypotéky</p>
+                                <p class="text-lg font-bold text-invest-blue" id="result-loan">2 400 000 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Vlastní prostředky</p>
+                                <p class="text-lg font-bold text-invest-blue" id="result-equity">600 000 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Měsíční splátka</p>
+                                <p class="text-lg font-bold text-invest-blue" id="result-monthly-payment">13 621 Kč</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-100 rounded p-6">
+                        <h3 class="text-sm font-bold text-invest-blue uppercase tracking-wider mb-4">Cash-flow</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Měsíční příjem</p>
+                                <p class="text-lg font-bold text-invest-blue" id="result-monthly-income">15 000 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Měsíční náklady</p>
+                                <p class="text-lg font-bold text-invest-blue" id="result-monthly-expenses">3 000 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Měsíční splátka</p>
+                                <p class="text-lg font-bold text-invest-blue" id="result-payment-copy">13 621 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Měsíční cash-flow</p>
+                                <p class="text-lg font-bold" id="result-cash-flow">-1 621 Kč</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border border-gray-100 rounded p-6">
+                        <h3 class="text-sm font-bold text-invest-red uppercase tracking-wider mb-4">ROI a ROE</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Roční výnos (ROI)</p>
+                                <p class="text-2xl font-bold text-invest-blue" id="result-roi">4,80 %</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light mb-1">Výnos vlastního kapitálu (ROE)</p>
+                                <p class="text-2xl font-bold text-invest-blue" id="result-roe">24,00 %</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center pt-2">
+                        <a href="https://bit.ly/kalkulacka-investicni-byt" target="_blank" class="inline-flex items-center text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">
+                            Podrobnější kalkulačka investičního bytu
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-invest-blue py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <span class="text-lg font-bold tracking-tight mr-6">
+                        <span class="text-white">INVEST</span><span class="text-invest-red">CZECH</span>
+                    </span>
+                    <p>&copy; 2026 InvestCzech. Všechna práva vyhrazena.</p>
+                </div>
+                <p>Provozovatel: PTF reality, s.r.o. | IČO: 06684394</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Skripty -->
+    <script src="js/translations.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('mobile-menu-btn');
+            var menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', function() {
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+    
+    <!-- Kalkulator JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update LTV value display when slider changes
+            const ltvSlider = document.getElementById('ltv');
+            const ltvValue = document.getElementById('ltv-value');
+            
+            ltvSlider.addEventListener('input', function() {
+                ltvValue.textContent = ltvSlider.value;
+            });
+            
+            // Calculate button functionality
+            const calculateBtn = document.getElementById('calculate-btn');
+            calculateBtn.addEventListener('click', calculateResults);
+            
+            // Initial calculation
+            calculateResults();
+            
+            function calculateResults() {
+                // Get input values
+                const propertyPrice = parseFloat(document.getElementById('property-price').value);
+                const monthlyRent = parseFloat(document.getElementById('monthly-rent').value);
+                const interestRate = parseFloat(document.getElementById('interest-rate').value) / 100;
+                const ltv = parseFloat(document.getElementById('ltv').value) / 100;
+                const propertyExpenses = parseFloat(document.getElementById('property-expenses').value) / 100;
+                const loanYears = parseInt(document.getElementById('loan-years').value);
+                
+                // Calculate loan details
+                const loanAmount = propertyPrice * ltv;
+                const equity = propertyPrice - loanAmount;
+                const monthlyInterestRate = interestRate / 12;
+                const totalPayments = loanYears * 12;
+                
+                // Monthly payment calculation (PMT formula)
+                let monthlyPayment = 0;
+                if (ltv > 0 && interestRate > 0) {
+                    monthlyPayment = (loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalPayments)) / 
+                                    (Math.pow(1 + monthlyInterestRate, totalPayments) - 1);
+                }
+                
+                // Cash flow calculation
+                const monthlyExpenses = monthlyRent * propertyExpenses / 12;
+                const monthlyCashFlow = monthlyRent - monthlyExpenses - monthlyPayment;
+                
+                // ROI and ROE calculation
+                const annualRent = monthlyRent * 12;
+                const annualExpenses = monthlyExpenses * 12;
+                const annualPayment = monthlyPayment * 12;
+                
+                const netIncome = annualRent - annualExpenses;
+                const roi = netIncome / propertyPrice;
+                const roe = (netIncome - annualPayment) / equity;
+                
+                // Format and display results
+                document.getElementById('result-price').textContent = formatCurrency(propertyPrice) + ' Kč';
+                document.getElementById('result-loan').textContent = formatCurrency(loanAmount) + ' Kč';
+                document.getElementById('result-equity').textContent = formatCurrency(equity) + ' Kč';
+                document.getElementById('result-monthly-payment').textContent = formatCurrency(monthlyPayment) + ' Kč';
+                
+                document.getElementById('result-monthly-income').textContent = formatCurrency(monthlyRent) + ' Kč';
+                document.getElementById('result-monthly-expenses').textContent = formatCurrency(monthlyExpenses) + ' Kč';
+                document.getElementById('result-payment-copy').textContent = formatCurrency(monthlyPayment) + ' Kč';
+                document.getElementById('result-cash-flow').textContent = formatCurrency(monthlyCashFlow) + ' Kč';
+                
+                document.getElementById('result-roi').textContent = formatPercent(roi);
+                document.getElementById('result-roe').textContent = formatPercent(roe);
+                
+                // Apply color to cash flow based on whether it's positive or negative
+                const cashFlowElement = document.getElementById('result-cash-flow');
+                if (monthlyCashFlow >= 0) {
+                    cashFlowElement.classList.remove('text-red-600');
+                    cashFlowElement.classList.add('text-green-600');
+                } else {
+                    cashFlowElement.classList.remove('text-green-600');
+                    cashFlowElement.classList.add('text-red-600');
+                }
+            }
+            
+            // Helper function to format currency
+            function formatCurrency(amount) {
+                return Math.round(amount).toLocaleString('cs-CZ');
+            }
+            
+            // Helper function to format percentage
+            function formatPercent(value) {
+                return (value * 100).toFixed(2) + '%';
+            }
+        });
+    </script>
+</body>
+</html>

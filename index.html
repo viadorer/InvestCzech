@@ -7,39 +7,55 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-QP4KNZWHT8');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INVESTCZECH - Investice do nemovitostí</title>
+    <meta name="description" content="InvestCzech. Investuje cele Cesko. Vybudujte si portfolio najemnich bytu, ktere se splaceji samy.">
+    <title>InvestCzech | Vas soukromy duchod v cihlach</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        .hero-pattern {
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%230052CC' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        .countdown-unit { min-width: 64px; }
+        .step-connector { position: relative; }
+        .step-connector::after {
+            content: '';
+            position: absolute;
+            top: 24px;
+            left: 48px;
+            right: -100%;
+            height: 2px;
+            background: #0A2540;
+            opacity: 0.15;
         }
+        .step-connector:last-child::after { display: none; }
     </style>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'invest-blue': '#0052CC',
-                        'invest-red': '#E4002B',
-                        'invest-gray': '#1A1A1A'
+                        'invest-blue': '#0A2540',
+                        'invest-blue-light': '#1A3A5C',
+                        'invest-red': '#D7141A',
+                        'invest-red-dark': '#B01016',
+                        'invest-gray': '#1A1A1A',
+                        'invest-gray-light': '#6B7280',
+                        'invest-bg': '#FAFBFC',
                     },
                     fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
+                        'sans': ['Montserrat', 'sans-serif'],
                     },
                     animation: {
-                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'fade-in-delay': 'fadeIn 0.6s ease-out 0.2s both',
+                        'fade-in-delay-2': 'fadeIn 0.6s ease-out 0.4s both',
                     },
                     keyframes: {
                         fadeIn: {
-                            'from': { opacity: '0', transform: 'translateY(10px)' },
+                            'from': { opacity: '0', transform: 'translateY(12px)' },
                             'to': { opacity: '1', transform: 'translateY(0)' },
                         }
                     }
@@ -50,201 +66,574 @@
 </head>
 <body class="bg-white font-sans">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-sm z-50">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20">
+            <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <!-- Logo -->
-                    <div class="flex-shrink-0 flex items-center">
-                        <span class="text-2xl font-bold">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold tracking-tight">
                             <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
                         </span>
-                    </div>
-                    <!-- Navigation Links (left side) -->
-                    <div class="hidden md:flex md:ml-6">
-                        <a href="#" class="px-3 py-2 text-invest-blue font-semibold border-b-2 border-invest-blue" data-i18n="nav_home">Domů</a>
+                    </a>
+                    <div class="hidden lg:flex lg:ml-10 lg:space-x-1">
+                        <a href="#proces" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="#off-market" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Off-market trh</a>
+                        <a href="#sprava" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Správa a garance</a>
+                        <!-- TODO: Vrátit až budou satelity připravené (ceskosobe.cz, chcibytmilionarem.cz)
+                        <a href="#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Akademie</a>
+                        -->
+                        <a href="dashboard.html" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Nástěnka</a>
+                        <a href="#kontakt" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Kontakt</a>
                     </div>
                 </div>
                 
-                <!-- Right side navigation (consultation button and language switcher) -->
-                <div class="hidden md:flex md:items-center">
-                    <!-- Navigation Button -->
-                    <div class="md:flex md:items-center md:mr-8">
-                        <a href="#kontakt" class="bg-invest-red text-white hover:bg-red-700 px-6 py-3 rounded-lg text-sm font-semibold transition-colors duration-200" data-i18n="nav_consultation">Nezávazná konzultace</a>
-                    </div>
-                
-                    <!-- Language Switcher -->
-                    <div class="md:flex md:items-center md:space-x-4">
-                        <button class="language-btn text-invest-blue font-medium" data-lang="cs" onclick="setLanguage('cs')">CZ</button>
+                <div class="hidden lg:flex lg:items-center lg:space-x-4">
+                    <a href="#kontakt" class="bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors duration-200">Chci investiční plán</a>
+                    <div class="flex items-center space-x-2 text-xs">
+                        <button class="language-btn text-invest-blue font-semibold" data-lang="cs" onclick="setLanguage('cs')">CZ</button>
                         <span class="text-gray-300">|</span>
-                        <button class="language-btn text-gray-500 hover:text-invest-blue" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="en" onclick="setLanguage('en')">EN</button>
                         <span class="text-gray-300">|</span>
-                        <button class="language-btn text-gray-500 hover:text-invest-blue" data-lang="de" onclick="setLanguage('de')">DE</button>
-                        <span class="text-gray-300">|</span>
-                        <button class="language-btn text-gray-500 hover:text-invest-blue" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="de" onclick="setLanguage('de')">DE</button>
                     </div>
                 </div>
 
-                <!-- Mobile menu button -->
-                <div class="flex items-center md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-invest-gray hover:text-invest-blue hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-invest-blue">
-                        <span class="sr-only">Otevřít menu</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <div class="flex items-center lg:hidden">
+                    <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded text-invest-gray hover:text-invest-blue hover:bg-gray-50 focus:outline-none">
+                        <span class="sr-only">Menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-4 space-y-1">
+                <a href="#proces" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Vaše cesta</a>
+                <a href="#off-market" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Off-market trh</a>
+                <a href="#sprava" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Správa a garance</a>
+                <!-- TODO: Vrátit až budou satelity připravené (ceskosobe.cz, chcibytmilionarem.cz)
+                <a href="#akademie" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Akademie</a>
+                -->
+                <a href="dashboard.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Nástěnka</a>
+                <a href="#kontakt" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Kontakt</a>
+                <div class="pt-3 border-t border-gray-100">
+                    <a href="#kontakt" class="block w-full text-center bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[90vh] overflow-hidden">
-        <!-- Background image -->
-        <div class="absolute inset-0 w-full h-full">
+    <section class="relative bg-invest-blue min-h-[92vh] flex items-center">
+        <div class="absolute inset-0">
             <img src="images/hero.png" alt="" class="w-full h-full object-cover">
         </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-invest-blue/95 via-invest-blue/85 to-invest-blue/60"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
+            <div class="max-w-3xl">
+                <p class="text-white/60 text-sm font-semibold tracking-widest uppercase mb-6 animate-fade-in">InvestCzech. Investuje celé Česko.</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] tracking-tight animate-fade-in">
+                    Váš soukromý důchod v&nbsp;cihlách.<br>S&nbsp;kompletním zajištěním.
+                </h1>
+                <p class="text-lg md:text-xl text-white/80 leading-relaxed mt-8 max-w-2xl animate-fade-in-delay">
+                    Vybudujte si portfolio nájemních bytů, které se splácejí samy. Máte čas jen do&nbsp;1.&nbsp;4.&nbsp;2026, než banky zpřísní pravidla na&nbsp;LTV&nbsp;70&nbsp;%. My vše najdeme, zafinancujeme a&nbsp;pohlídáme za&nbsp;vás.
+                </p>
 
-        <div class="relative min-h-[90vh] flex items-center">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <!-- Hlavní obsah -->
-                    <div class="lg:col-span-6 space-y-8 relative z-10 order-1 lg:order-2">
-                        <div class="bg-white/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-blue-50">
-                            <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-invest-blue leading-tight tracking-tight animate-fade-in max-w-3xl" data-i18n="hero_title">
-                                Vybudujte si stabilní příjem <br class="hidden lg:block">z nemovitostí — <span class="text-invest-red">ještě letos</span>
-                            </h1>
-                            <p class="text-xl text-invest-gray font-medium leading-relaxed animate-[fadeIn_0.8s_ease-in-out_0.2s_both] max-w-2xl mt-6" data-i18n="hero_subtitle">
-                                Zajistěte si finanční jistotu, zatímco ostatní nechávají peníze ztrácet hodnotu. <span class="text-invest-red font-semibold">Získejte ověřený postup</span>, jak investovat v Česku i bez obrovského kapitálu.
-                            </p>
-                            <div class="space-y-4 animate-[fadeIn_0.8s_ease-in-out_0.4s_both] mt-8">
-                                <div class="inline-flex items-center space-x-3 px-4 py-2 bg-red-50 rounded-lg border border-red-100 mb-2">
-                                    <div class="w-2.5 h-2.5 rounded-full bg-invest-red animate-pulse"></div>
-                                    <p class="text-invest-red font-semibold text-sm" data-i18n="spots_left">Tento měsíc zbývá pouze 9 volných míst</p>
-                                </div>
-                                
-                                <a href="#kontakt" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-xl text-white bg-invest-red hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-                                    <span data-i18n="cta_button">Chci bezplatnou konzultaci</span>
-                                    <svg class="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                    </svg>
-                                </a>
+                <!-- Urgence countdown -->
+                <div class="mt-10 animate-fade-in-delay-2">
+                    <p class="text-invest-red font-bold text-sm uppercase tracking-wider mb-4">Pozor: Zbývá <span id="countdown-days">--</span> dní do konce 80% hypoték pro investory.</p>
+                    <div class="flex space-x-3" id="countdown-timer">
+                        <div class="countdown-unit bg-white/10 border border-white/20 rounded px-4 py-3 text-center">
+                            <span id="cd-days" class="block text-2xl font-bold text-white">--</span>
+                            <span class="block text-xs text-white/50 mt-1">dní</span>
+                        </div>
+                        <div class="countdown-unit bg-white/10 border border-white/20 rounded px-4 py-3 text-center">
+                            <span id="cd-hours" class="block text-2xl font-bold text-white">--</span>
+                            <span class="block text-xs text-white/50 mt-1">hodin</span>
+                        </div>
+                        <div class="countdown-unit bg-white/10 border border-white/20 rounded px-4 py-3 text-center">
+                            <span id="cd-minutes" class="block text-2xl font-bold text-white">--</span>
+                            <span class="block text-xs text-white/50 mt-1">minut</span>
+                        </div>
+                        <div class="countdown-unit bg-white/10 border border-white/20 rounded px-4 py-3 text-center">
+                            <span id="cd-seconds" class="block text-2xl font-bold text-white">--</span>
+                            <span class="block text-xs text-white/50 mt-1">sekund</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-10 animate-fade-in-delay-2">
+                    <a href="#kontakt" class="inline-flex items-center px-8 py-4 bg-invest-red hover:bg-invest-red-dark text-white text-lg font-semibold rounded transition-colors duration-200">
+                        Chci nezávazný investiční plán
+                        <svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce: 5 bariér českého majitele -->
+    <section id="bolesti" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Co vás brzdí?</h2>
+                <p class="text-lg text-invest-gray-light">Pět nejčastějších překážek, které řešíme za vás.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bariéra 1 -->
+                <div class="border border-gray-100 rounded p-8 hover:border-invest-blue/20 transition-colors">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3">Důchodová nejistota</p>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">73 % Čechů už nevěří státnímu systému</h3>
+                    <p class="text-invest-gray-light leading-relaxed">Cihla je vaše soukromá penzijní pokladna. Nájemní byt generuje měsíční rentu, která roste s inflací a nezávisí na rozhodnutích politiků.</p>
+                </div>
+                <!-- Bariéra 2 -->
+                <div class="border border-gray-100 rounded p-8 hover:border-invest-blue/20 transition-colors">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3">Strach z neplatičů</p>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Služba Vzorný nájemce</h3>
+                    <p class="text-invest-gray-light leading-relaxed">Garantujeme nájem na účet do 15. dne v měsíci, i kdyby byl byt prázdný. Nájemníka prověříme v registrech a zajistíme smluvní ochranu.</p>
+                </div>
+                <!-- Bariéra 3 -->
+                <div class="border border-gray-100 rounded p-8 hover:border-invest-blue/20 transition-colors">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3">Dostupnost financování</p>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Řešíme i po zpřísnění ČNB</h3>
+                    <p class="text-invest-gray-light leading-relaxed">Skládáme úvěry tak, aby portfolio mohlo růst i při LTV 70 % a DTI 7. Hypoteční specialisté zaměření výhradně na nájemní nemovitosti.</p>
+                </div>
+                <!-- Bariéra 4 -->
+                <div class="border border-gray-100 rounded p-8 hover:border-invest-blue/20 transition-colors">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3">Nedostatek času</p>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">360° servis od energií po revize</h3>
+                    <p class="text-invest-gray-light leading-relaxed">Od převodu energií a pojištění až po revize kotle. Vy jen sledujete dashboard a přijímáte rentu na účet.</p>
+                </div>
+                <!-- Bariéra 5 -->
+                <div class="border border-gray-100 rounded p-8 hover:border-invest-blue/20 transition-colors">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3">Předražený trh</p>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Off-market nabídky bez inzerčních bitev</h3>
+                    <p class="text-invest-gray-light leading-relaxed">Přístup k neveřejným nabídkám skrze EstatePrivate.com. Klidnější vyjednávání, exkluzivita a nákup za podmínek, které na veřejných portálech neexistují.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce: 360° Infrastruktura – Vaše cesta -->
+    <section id="proces" class="py-24 bg-invest-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Vše pod jednou střechou</h2>
+                <p class="text-lg text-invest-gray-light">Od první myšlenky až po revizi kotle za 20 let. Uzavřený kruh, který řešíme za vás.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Krok 1 -->
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mb-6">1</div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Akvizice a exkluzivita</h3>
+                    <p class="text-sm text-invest-gray-light leading-relaxed mb-4">Prvním krokem je přístup k nabídkám, které nejsou na Sreality. Off-market tržiště EstatePrivate zajišťuje klidnější vyjednávání a eliminaci inzerčních bitev.</p>
+                    <p class="text-xs text-invest-gray-light">Praha, Beroun, Plzeň, Severní Čechy</p>
+                </div>
+                <!-- Krok 2 -->
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mb-6">2</div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Financování a zajištění</h3>
+                    <p class="text-sm text-invest-gray-light leading-relaxed mb-4">Sledujeme limity ČNB pro rok 2026 (LTV 70 %, DTI 7) a skládáme úvěry tak, aby portfolio mohlo růst. Do správy integrujeme pojištění nemovitosti i odpovědnosti nájemníka.</p>
+                    <p class="text-xs text-invest-gray-light">Audit pojistných smluv, hlídání tržní ceny</p>
+                </div>
+                <!-- Krok 3 -->
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mb-6">3</div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Provozní nastavení</h3>
+                    <p class="text-sm text-invest-gray-light leading-relaxed mb-4">Vyřešíme převody elektřiny a plynu. Díky hromadnému nákupu pro celé portfolio dokážeme ušetřit až 35 % ceny silové složky. Služba Vzorný nájemce garantuje nájem na účet do 15. dne.</p>
+                    <p class="text-xs text-invest-gray-light">Energie, nájemce, smluvní ochrana</p>
+                </div>
+                <!-- Krok 4 -->
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mb-6">4</div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Digitální kontrola</h3>
+                    <p class="text-sm text-invest-gray-light leading-relaxed mb-4">Vše se propisuje do dashboardu HouseMaster: aktuální tržní cena, stav úvěru, termíny fixací, energie, revize a kompletní dokumentace na jednom místě.</p>
+                    <p class="text-xs text-invest-gray-light">Žádné zmuchlané papíry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce: Off-market trh -->
+    <section id="off-market" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-4">EstatePrivate.com</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6">Akviziční exkluzivita a off-market trh</h2>
+                    <p class="text-lg text-invest-gray-light leading-relaxed mb-8">Uzavřená platforma poskytuje přístup k neveřejným nabídkám, což eliminuje inzerční bitvy a umožňuje nákup za podmínek, které na veřejných portálech neexistují.</p>
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-invest-blue pl-6">
+                            <h4 class="font-bold text-invest-blue mb-1">Klidnější vyjednávání</h4>
+                            <p class="text-sm text-invest-gray-light">Absence konkurence stovek zájemců z běžné inzerce.</p>
+                        </div>
+                        <div class="border-l-2 border-invest-blue pl-6">
+                            <h4 class="font-bold text-invest-blue mb-1">Exkluzivita</h4>
+                            <p class="text-sm text-invest-gray-light">Přístup k projektům s ověřenými parametry a přímou vazbou na majitele.</p>
+                        </div>
+                        <div class="border-l-2 border-invest-blue pl-6">
+                            <h4 class="font-bold text-invest-blue mb-1">Systémový nákup</h4>
+                            <p class="text-sm text-invest-gray-light">Možnost vyhledat nemovitost, která přesně odpovídá strategii nastavené v dashboardu HouseMaster.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-invest-bg border border-gray-100 rounded p-10">
+                    <h3 class="text-xl font-bold text-invest-blue mb-6">Jak to funguje</h3>
+                    <ol class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mr-4">1</span>
+                            <p class="text-sm text-invest-gray-light pt-1">Definujete investiční strategii a parametry v dashboardu.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mr-4">2</span>
+                            <p class="text-sm text-invest-gray-light pt-1">EstatePrivate vyhledá odpovídající off-market nabídky.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mr-4">3</span>
+                            <p class="text-sm text-invest-gray-light pt-1">Vyjednáme podmínky, zajistíme financování a převod.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="flex-shrink-0 w-8 h-8 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mr-4">4</span>
+                            <p class="text-sm text-invest-gray-light pt-1">Nemovitost se automaticky propisuje do správy HouseMaster.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce: Správa a garance -->
+    <section id="sprava" class="py-24 bg-invest-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Správa a garance</h2>
+                <p class="text-lg text-invest-gray-light">Eliminace rizik skrze garanci nájmu a kompletní technickou správu.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <h3 class="text-lg font-bold text-invest-blue mb-4">Vzorný nájemce</h3>
+                    <p class="text-invest-gray-light leading-relaxed mb-4">Strach z neplatičů je neutralizován službou, která garantuje připsání nájmu na účet vždy do 15. dne v měsíci, bez ohledu na to, zda je byt zrovna obsazený nebo zda nájemník zaplatil.</p>
+                    <ul class="space-y-2 text-sm text-invest-gray-light">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Prověření nájemníka v registrech</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Smluvní ochrana majitele</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Garance nájmu i při neobsazenosti</li>
+                    </ul>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <h3 class="text-lg font-bold text-invest-blue mb-4">Technická správa</h3>
+                    <p class="text-invest-gray-light leading-relaxed mb-4">Pravidelné revize a údržba skrze systém HouseMaster. Evidence technického stavu, stáří spotřebičů a plánování povinných revizí.</p>
+                    <ul class="space-y-2 text-sm text-invest-gray-light">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Revize plynospotřebičů a komínů</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Audit pojištění a energií</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Digitální evidence veškeré dokumentace</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce: Dashboard HouseMaster (ukázka) -->
+    <section id="dashboard" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-4">Centrální mozek HouseMaster</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6">Moje Nástěnka</h2>
+                    <p class="text-lg text-invest-gray-light leading-relaxed mb-8">Dashboard, který transformuje pasivní vlastnictví na aktivně řízené portfolio. Strategický nástroj pro řízení bohatství, ne jen administrativa.</p>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-invest-red pl-6">
+                            <h4 class="font-bold text-invest-blue mb-1">Správa portfolia a majetku</h4>
+                            <p class="text-sm text-invest-gray-light">Evidence technického stavu, stáří spotřebičů a plánování povinných revizí. Všechny zmuchlané papíry nahrazeny digitální evidencí.</p>
+                        </div>
+                        <div class="border-l-2 border-invest-red pl-6">
+                            <h4 class="font-bold text-invest-blue mb-1">Správa úvěrů a bonity</h4>
+                            <p class="text-sm text-invest-gray-light">Sledování splátkových kalendářů a monitoring LTV a DTI. Systém upozorní na prostor pro další úvěr.</p>
+                        </div>
+                        <div class="border-l-2 border-invest-red pl-6">
+                            <h4 class="font-bold text-invest-blue mb-1">Sledování tržní ceny (AVM)</h4>
+                            <p class="text-sm text-invest-gray-light">Automatický přepočet hodnoty bytu každý měsíc na základě reálných dat z trhu. ROI a ROE bez manuálního oceňování.</p>
+                        </div>
+                        <div class="border-l-2 border-invest-red pl-6">
+                            <h4 class="font-bold text-invest-blue mb-1">Predikce a trendy</h4>
+                            <p class="text-sm text-invest-gray-light">Modelování budoucího vývoje cen. Doporučení pro rotaci aktiv, například prodej energeticky náročné jednotky a nákup novostavby se zeleným prémiem.</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="dashboard.html" class="inline-flex items-center text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">
+                            Zobrazit ukázku nástěnky
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Dashboard preview mockup -->
+                <div class="bg-invest-bg border border-gray-200 rounded p-8">
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between pb-4 border-b border-gray-100">
+                            <h4 class="font-bold text-invest-blue">Portfolio</h4>
+                            <span class="text-xs text-invest-gray-light">Aktualizováno: únor 2026</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white rounded p-4 border border-gray-100">
+                                <p class="text-xs text-invest-gray-light mb-1">Tržní cena portfolia</p>
+                                <p class="text-xl font-bold text-invest-blue">8 450 000 Kč</p>
+                            </div>
+                            <div class="bg-white rounded p-4 border border-gray-100">
+                                <p class="text-xs text-invest-gray-light mb-1">Měsíční čistá renta</p>
+                                <p class="text-xl font-bold text-invest-blue">12 400 Kč</p>
+                            </div>
+                            <div class="bg-white rounded p-4 border border-gray-100">
+                                <p class="text-xs text-invest-gray-light mb-1">ROE (vlastní kapitál)</p>
+                                <p class="text-xl font-bold text-invest-blue">18,6 %</p>
+                            </div>
+                            <div class="bg-white rounded p-4 border border-gray-100">
+                                <p class="text-xs text-invest-gray-light mb-1">DTI (dluh / příjmy)</p>
+                                <p class="text-xl font-bold text-invest-blue">5,2</p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded p-4 border border-gray-100">
+                            <p class="text-xs text-invest-gray-light mb-3">Predikce čisté renty 2026 – 2032</p>
+                            <div class="flex items-end justify-between h-24 px-2">
+                                <div class="w-8 bg-invest-blue/20 rounded-t" style="height: 40%"></div>
+                                <div class="w-8 bg-invest-blue/30 rounded-t" style="height: 50%"></div>
+                                <div class="w-8 bg-invest-blue/40 rounded-t" style="height: 58%"></div>
+                                <div class="w-8 bg-invest-blue/50 rounded-t" style="height: 66%"></div>
+                                <div class="w-8 bg-invest-blue/60 rounded-t" style="height: 75%"></div>
+                                <div class="w-8 bg-invest-blue/70 rounded-t" style="height: 85%"></div>
+                                <div class="w-8 bg-invest-blue rounded-t" style="height: 100%"></div>
+                            </div>
+                            <div class="flex justify-between text-xs text-invest-gray-light mt-2 px-2">
+                                <span>2026</span><span>2027</span><span>2028</span><span>2029</span><span>2030</span><span>2031</span><span>2032</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Scroll šipka -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-            <a href="#socialni-dukaz" class="group flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-bounce">
-                <svg class="w-6 h-6 text-invest-red transform group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-            </a>
+    <!-- Sekce: Lokality -->
+    <section id="lokality" class="py-24 bg-invest-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Regionální strategie</h2>
+                <p class="text-lg text-invest-gray-light">Každá lokalita má jiný investiční profil. Vybíráme tu správnou podle vaší strategie.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <h3 class="text-lg font-bold text-invest-blue mb-2">Praha a Beroun</h3>
+                    <p class="text-sm font-semibold text-invest-red mb-4">Konzervativní jistota</p>
+                    <p class="text-sm text-invest-gray-light leading-relaxed">Stabilní růst ceny, nejvyšší likvidita. Ideální pro dlouhodobé držení a budování hodnoty portfolia s minimálním rizikem.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <h3 class="text-lg font-bold text-invest-blue mb-2">Plzeň a Karlovarsko</h3>
+                    <p class="text-sm font-semibold text-invest-red mb-4">Vyvážený poměr</p>
+                    <p class="text-sm text-invest-gray-light leading-relaxed">Vyvážený poměr ceny a výnosu s rostoucím potenciálem. Atraktivní vstupní cena při zachování kvalitní nájemní poptávky.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <h3 class="text-lg font-bold text-invest-blue mb-2">Severní Čechy</h3>
+                    <p class="text-sm font-semibold text-invest-red mb-4">Maximální cash-flow</p>
+                    <p class="text-sm text-invest-gray-light leading-relaxed">Ústí nad Labem, Teplice. Strategie pro maximální měsíční rentu. Vysoký nájemní výnos při nízké vstupní ceně nemovitosti.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!--
+    ============================================================
+    TODO: AKADEMIE – Vrátit až budou satelitní weby připravené
+    Satelity: ceskosobe.cz | chcibytmilionarem.cz
+    ============================================================
+    <section id="akademie" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Vzdělání a komunita</h2>
+                <p class="text-lg text-invest-gray-light">Naučte se mechaniku trhu dřív, než do něj vložíte miliony.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="border border-gray-100 rounded p-10">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-4">ceskosobe.cz</p>
+                    <h3 class="text-xl font-bold text-invest-blue mb-4">Když se o nás nepostará stát, postaráme se o sebe navzájem.</h3>
+                    <p class="text-invest-gray-light leading-relaxed mb-6">Patriotický manifest a sbírka příběhů českých majitelů nemovitostí. Česká cesta k důchodu v cihlách. Komunita lidí, kteří vzali budoucnost do vlastních rukou.</p>
+                    <a href="https://ceskosobe.cz" target="_blank" class="inline-flex items-center text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">
+                        Navštívit ceskosobe.cz
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                </div>
+                <div class="border border-gray-100 rounded p-10">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-4">chcibytmilionarem.cz</p>
+                    <h3 class="text-xl font-bold text-invest-blue mb-4">Profesionální akademie pro budoucí majitele.</h3>
+                    <p class="text-invest-gray-light leading-relaxed mb-6">Kurz, který z laika udělá partnera, jenž rozumí číslům. Checklisty, kurzy a mentoring. Naučíte se oceňovat nemovitosti, hledat příležitosti a chápat daně.</p>
+                    <a href="https://chcibytmilionarem.cz" target="_blank" class="inline-flex items-center text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">
+                        Navštívit chcibytmilionarem.cz
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
 
+    <!-- Sekce: Finanční matematika -->
+    <section class="py-24 bg-invest-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Finanční matematika a hypoteční páka</h2>
+                <p class="text-lg text-invest-gray-light">I při vyšší akontaci (30 %) zůstává nemovitost díky páce nejefektivnějším nástrojem ochrany před inflací.</p>
+            </div>
+            <div class="bg-white border border-gray-100 rounded p-10">
+                <div class="text-center mb-8">
+                    <p class="text-sm text-invest-gray-light mb-4">Výnos na vlastní kapitál (ROE)</p>
+                    <div class="text-3xl font-bold text-invest-blue font-mono">
+                        ROE = (N - S) / V
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                    <div class="text-center p-4 bg-invest-bg rounded">
+                        <p class="font-bold text-invest-blue mb-1">N</p>
+                        <p class="text-invest-gray-light">Roční čisté nájemné po odečtení správy a pojištění</p>
+                    </div>
+                    <div class="text-center p-4 bg-invest-bg rounded">
+                        <p class="font-bold text-invest-blue mb-1">S</p>
+                        <p class="text-invest-gray-light">Roční splátka úroku</p>
+                    </div>
+                    <div class="text-center p-4 bg-invest-bg rounded">
+                        <p class="font-bold text-invest-blue mb-1">V</p>
+                        <p class="text-invest-gray-light">Výše vlastních investovaných prostředků (30 % ceny)</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="calculator.html" class="inline-flex items-center text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">
+                        Spočítejte si vlastní ROE v kalkulačce
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Kontaktní formulář -->
     <section id="kontakt" class="py-24 bg-white">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6" data-i18n="contact_title">Kontaktujte nás</h2>
-                <p class="text-xl text-invest-gray" data-i18n="contact_subtitle">Zanechte nám zprávu a my se vám ozveme do 24 hodin</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Chci nezávazný investiční plán</h2>
+                <p class="text-lg text-invest-gray-light">Zanechte nám kontakt a ozveme se vám do 24 hodin s konkrétním návrhem.</p>
             </div>
-            <div class="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
-            <script>
-                (function (w,d,s,o,f,js,fjs) {
-                    w['ecm-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
-                    js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-                    js.id = '19-4abfdf42e682f87cd40907d9a0cd4e16'; js.dataset.a = 'ptf'; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-                }(window, document, 'script', 'ecmwidget', 'https://d70shl7vidtft.cloudfront.net/widget.js'));
- 
-                     // Přizpůsobení formuláře po načtení
-                     window.addEventListener('load', function() {
-                        setTimeout(function() {
-                            // Pokus o přizpůsobení stylů formuláře
-                            var formContainer = document.getElementById('f-18-eeb96ecd8eefc15f2198246e728510f1');
-                            if (formContainer) {
-                                formContainer.style.maxWidth = '100%';
-                                
-                                // Pokus o přizpůsobení tlačítka, pokud existuje
-                                var buttons = formContainer.querySelectorAll('button');
-                                buttons.forEach(function(button) {
-                                    button.classList.add('bg-invest-red');
-                                    button.classList.add('hover:bg-red-700');
-                                    button.classList.add('rounded-xl');
-                                    button.classList.add('shadow-lg');
-                                    button.classList.add('hover:shadow-xl');
-                                });
-                            }
-                        }, 1000); // Počkáme 1 sekundu na načtení formuláře
-                    });
- </script>
-                    <div id="f-19-4abfdf42e682f87cd40907d9a0cd4e16"></div>
-                </div>
-            </div>            
+            <div class="bg-white border border-gray-100 rounded p-8">
+                <script>
+                    (function (w,d,s,o,f,js,fjs) {
+                        w['ecm-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+                        js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+                        js.id = '19-4abfdf42e682f87cd40907d9a0cd4e16'; js.dataset.a = 'ptf'; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+                    }(window, document, 'script', 'ecmwidget', 'https://d70shl7vidtft.cloudfront.net/widget.js'));
+                </script>
+                <div id="f-19-4abfdf42e682f87cd40907d9a0cd4e16"></div>
+            </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-100 mt-12 py-12">
+    <footer class="bg-invest-blue py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-                <!-- Logo a copyright -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                 <div>
-                    <span class="text-xl font-bold">
-                        <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
+                    <span class="text-xl font-bold tracking-tight">
+                        <span class="text-white">INVEST</span><span class="text-invest-red">CZECH</span>
                     </span>
-                    <p class="text-gray-600 text-sm mt-2">&copy; 2024 InvestCzech. All rights reserved.</p>
-                    <p class="text-gray-600 text-sm mt-2" data-i18n="footer_operator">Provozovatel portálu: PTF reality, s.r.o.</p>
-                    <p class="text-gray-600 text-sm mt-2">
-                        IČO: 06684394<br>
-                        DIČ: CZ06684394
-                    </p>
+                    <p class="text-white/50 text-sm mt-4">Provozovatel portálu: PTF reality, s.r.o.</p>
+                    <p class="text-white/50 text-sm mt-1">IČO: 06684394 | DIČ: CZ06684394</p>
                 </div>
-                
-                <!-- Plzeňská adresa -->
                 <div>
-                    <h3 class="font-medium text-invest-gray mb-3" data-i18n="footer_address_plzen_title">Plzeň:</h3>
-                    <address class="text-gray-600 text-sm not-italic">
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Plzeň</h3>
+                    <address class="text-white/50 text-sm not-italic leading-relaxed">
                         Dřevěná 99/3<br>
                         301 00 Plzeň
                     </address>
                 </div>
-                
-                <!-- Pražská adresa -->
                 <div>
-                    <h3 class="font-medium text-invest-gray mb-3" data-i18n="footer_address_praha_title">Praha:</h3>
-                    <address class="text-gray-600 text-sm not-italic">
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Praha</h3>
+                    <address class="text-white/50 text-sm not-italic leading-relaxed">
                         Pod turnovskou tratí 182/18<br>
-                        198 00 Praha - Hloubětín
+                        198 00 Praha – Hloubětín
                     </address>
                 </div>
-                
-                <!-- Odkazy -->
                 <div>
-                    <h3 class="font-medium text-invest-gray mb-3" data-i18n="footer_legal_title">Právní informace a disclaimer</h3>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Ekosystém</h3>
                     <ul class="text-sm space-y-2">
-                        <li>
-                            <a href="about.html" class="text-gray-600 hover:text-invest-blue transition-colors" data-i18n="nav_about">O nás</a>
-                        </li>
-
+                        <li><a href="https://estateprivate.com" target="_blank" class="text-white/50 hover:text-white transition-colors">EstatePrivate.com</a></li>
+                        <li><a href="https://ceskosobe.cz" target="_blank" class="text-white/50 hover:text-white transition-colors">ceskosobe.cz</a></li>
+                        <li><a href="https://chcibytmilionarem.cz" target="_blank" class="text-white/50 hover:text-white transition-colors">chcibytmilionarem.cz</a></li>
+                        <li><a href="about.html" class="text-white/50 hover:text-white transition-colors">O nás</a></li>
+                        <li><a href="calculator.html" class="text-white/50 hover:text-white transition-colors">Kalkulačka</a></li>
                     </ul>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-200 pt-6">
-                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p data-i18n="footer_copyright">&copy; 2024 InvestCzech. Všechna práva vyhrazena.</p>
+            <div class="border-t border-white/10 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
+                    <p>&copy; 2026 InvestCzech. Všechna práva vyhrazena.</p>
+                    <p class="mt-2 md:mt-0">Investice do nemovitostí na klíč s digitální kontrolou.</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Načtení jazykových skriptů -->
+    <!-- Skripty -->
     <script src="js/translations.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('mobile-menu-btn');
+            var menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', function() {
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+
+        // Countdown do 1. 4. 2026 + alternativní narativ po deadline
+        (function() {
+            var deadline = new Date('2026-04-01T00:00:00+02:00').getTime();
+            var heroSubtitle = document.querySelector('.hero-subtitle');
+            var countdownSection = document.querySelector('.countdown-section');
+
+            function activatePostDeadline() {
+                // Skrýt countdown
+                var timer = document.getElementById('countdown-timer');
+                if (timer) timer.style.display = 'none';
+                var urgenceText = timer ? timer.previousElementSibling : null;
+                // Změnit urgence text
+                var cdDaysInline = document.getElementById('countdown-days');
+                if (cdDaysInline && cdDaysInline.parentElement) {
+                    cdDaysInline.parentElement.innerHTML = 'Od 1. 4. 2026 platí LTV 70 %. Stále máme řešení pro růst vašeho portfolia.';
+                    cdDaysInline.parentElement.classList.remove('text-invest-red');
+                    cdDaysInline.parentElement.classList.add('text-white/70');
+                }
+            }
+
+            function update() {
+                var now = new Date().getTime();
+                var diff = deadline - now;
+                if (diff <= 0) {
+                    activatePostDeadline();
+                    return;
+                }
+                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                document.getElementById('countdown-days').textContent = days;
+                document.getElementById('cd-days').textContent = days;
+                document.getElementById('cd-hours').textContent = hours;
+                document.getElementById('cd-minutes').textContent = minutes;
+                document.getElementById('cd-seconds').textContent = seconds;
+            }
+            update();
+            setInterval(update, 1000);
+        })();
+    </script>
 </body>
 </html>

@@ -12,36 +12,26 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O nás - INVESTCZECH</title>
+    <title>O nás | InvestCzech</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .hero-pattern {
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%230052CC' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'invest-blue': '#0052CC',
-                        'invest-red': '#E4002B',
-                        'invest-gray': '#1A1A1A'
+                        'invest-blue': '#0A2540',
+                        'invest-blue-light': '#1A3A5C',
+                        'invest-red': '#D7141A',
+                        'invest-red-dark': '#B01016',
+                        'invest-gray': '#1A1A1A',
+                        'invest-gray-light': '#6B7280',
+                        'invest-bg': '#FAFBFC',
                     },
                     fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 0.5s ease-in-out',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            'from': { opacity: '0', transform: 'translateY(10px)' },
-                            'to': { opacity: '1', transform: 'translateY(0)' },
-                        }
+                        'sans': ['Montserrat', 'sans-serif'],
                     }
                 }
             }
@@ -50,72 +40,75 @@
 </head>
 <body class="bg-white font-sans">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-sm z-50">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20">
+            <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <!-- Logo -->
-                    <div class="flex-shrink-0 flex items-center">
-                        <span class="text-2xl font-bold">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold tracking-tight">
                             <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
                         </span>
-                    </div>
-                    <!-- Navigation Links (left side) -->
-                    <div class="hidden md:flex md:ml-6">
-                        <a href="index.html" class="px-3 py-2 text-gray-600 hover:text-invest-blue font-medium" data-i18n="nav_home">Domů</a>
-                        <a href="about.html" class="px-3 py-2 text-invest-blue font-semibold border-b-2 border-invest-blue" data-i18n="nav_about">O nás</a>
-                    </div>
-                </div>
-                
-                <!-- Right side navigation (consultation button and language switcher) -->
-                <div class="hidden md:flex md:items-center">
-                    <!-- Navigation Button -->
-                    <div class="md:flex md:items-center md:mr-8">
-                        <a href="index.html#kontakt" class="bg-invest-red text-white hover:bg-red-700 px-6 py-3 rounded-lg text-sm font-semibold transition-colors duration-200" data-i18n="nav_consultation">Nezávazná konzultace</a>
-                    </div>
-                
-                    <!-- Language Switcher -->
-                    <div class="md:flex md:items-center md:space-x-4">
-                        <button class="language-btn text-invest-blue font-medium" data-lang="cs" onclick="setLanguage('cs')">CZ</button>
-                        <span class="text-gray-300">|</span>
-                        <button class="language-btn text-gray-500 hover:text-invest-blue" data-lang="en" onclick="setLanguage('en')">EN</button>
-                        <span class="text-gray-300">|</span>
-                        <button class="language-btn text-gray-500 hover:text-invest-blue" data-lang="de" onclick="setLanguage('de')">DE</button>
-                        <span class="text-gray-300">|</span>
-                        <button class="language-btn text-gray-500 hover:text-invest-blue" data-lang="fr" onclick="setLanguage('fr')">FR</button>
+                    </a>
+                    <div class="hidden lg:flex lg:ml-10 lg:space-x-1">
+                        <a href="index.html#proces" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="index.html#off-market" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Off-market trh</a>
+                        <a href="index.html#sprava" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Správa a garance</a>
+                        <!-- TODO: Akademie (ceskosobe.cz, chcibytmilionarem.cz)
+                        <a href="index.html#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Akademie</a>
+                        -->
+                        <a href="dashboard.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Nástěnka</a>
+                        <a href="about.html" class="px-3 py-2 text-sm font-semibold text-invest-blue border-b-2 border-invest-blue transition-colors">O nás</a>
                     </div>
                 </div>
-
-                <!-- Mobile menu button -->
-                <div class="flex items-center md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-invest-gray hover:text-invest-blue hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-invest-blue">
-                        <span class="sr-only">Otevřít menu</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <div class="hidden lg:flex lg:items-center lg:space-x-4">
+                    <a href="index.html#kontakt" class="bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors duration-200">Chci investiční plán</a>
+                    <div class="flex items-center space-x-2 text-xs">
+                        <button class="language-btn text-invest-blue font-semibold" data-lang="cs" onclick="setLanguage('cs')">CZ</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="de" onclick="setLanguage('de')">DE</button>
+                    </div>
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded text-invest-gray hover:text-invest-blue hover:bg-gray-50 focus:outline-none">
+                        <span class="sr-only">Menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-4 space-y-1">
+                <a href="index.html#proces" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Vaše cesta</a>
+                <a href="index.html#off-market" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Off-market trh</a>
+                <a href="index.html#sprava" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Správa a garance</a>
+                <!-- TODO: Akademie (ceskosobe.cz, chcibytmilionarem.cz)
+                <a href="index.html#akademie" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Akademie</a>
+                -->
+                <a href="dashboard.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Nástěnka</a>
+                <a href="about.html" class="block px-3 py-2 text-sm font-semibold text-invest-blue">O nás</a>
+                <div class="pt-3 border-t border-gray-100">
+                    <a href="index.html#kontakt" class="block w-full text-center bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Article Header -->
-    <section class="pt-32 pb-16 bg-gray-50 hero-pattern">
+    <section class="pt-28 pb-12 bg-invest-blue">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8">
-                <h1 class="text-4xl font-bold text-invest-blue mb-4" data-i18n="about_title">INVESTCZECH</h1>
-                <div class="flex justify-center items-center space-x-4 mb-6">
-                    <img src="images/author.jpg" alt="David Choc" class="w-12 h-12 rounded-full object-cover" data-i18n-alt="about_author_alt">
-                    <div class="text-left">
-                        <p class="font-medium text-invest-gray" data-i18n="about_author">David Choc</p>
-                        <p class="text-sm text-gray-500" data-i18n="about_date">16. 6. 2024</p>
+            <div class="max-w-3xl">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-4">O společnosti</p>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-white leading-tight tracking-tight" data-i18n="about_title">InvestCzech</h1>
+                <div class="flex items-center space-x-4 mt-6">
+                    <img src="images/author.jpg" alt="David Choc" class="w-10 h-10 rounded-full object-cover" data-i18n-alt="about_author_alt">
+                    <div>
+                        <p class="text-white font-medium text-sm" data-i18n="about_author">David Choc</p>
+                        <p class="text-white/50 text-xs" data-i18n="about_date">16. 6. 2024</p>
                     </div>
-                </div>
-                <div class="inline-flex items-center space-x-2 text-sm text-gray-500">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <span data-i18n="about_read_time">Minut čtení: 2</span>
                 </div>
             </div>
         </div>
@@ -157,62 +150,33 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 mt-12 py-12">
+    <footer class="bg-invest-blue py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-                <!-- Logo a copyright -->
-                <div>
-                    <span class="text-xl font-bold">
-                        <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <span class="text-lg font-bold tracking-tight mr-6">
+                        <span class="text-white">INVEST</span><span class="text-invest-red">CZECH</span>
                     </span>
-                    <p class="text-gray-600 text-sm mt-2">&copy; 2024 InvestCzech. All rights reserved.</p>
-                    <p class="text-gray-600 text-sm mt-2" data-i18n="footer_operator">Provozovatel portálu: PTF reality, s.r.o.</p>
-                    <p class="text-gray-600 text-sm mt-2">
-                        IČO: 06684394<br>
-                        DIČ: CZ06684394
-                    </p>
+                    <p>&copy; 2026 InvestCzech. Všechna práva vyhrazena.</p>
                 </div>
-                
-                <!-- Plzeňská adresa -->
-                <div>
-                    <h3 class="font-medium text-invest-gray mb-3" data-i18n="footer_address_plzen_title">Plzeň:</h3>
-                    <address class="text-gray-600 text-sm not-italic">
-                        Dřevěná 99/3<br>
-                        301 00 Plzeň
-                    </address>
-                </div>
-                
-                <!-- Pražská adresa -->
-                <div>
-                    <h3 class="font-medium text-invest-gray mb-3" data-i18n="footer_address_praha_title">Praha:</h3>
-                    <address class="text-gray-600 text-sm not-italic">
-                        Pod turnovskou tratí 182/18<br>
-                        198 00 Praha - Hloubětín
-                    </address>
-                </div>
-                
-                <!-- Odkazy -->
-                <div>
-                    <h3 class="font-medium text-invest-gray mb-3" data-i18n="footer_legal_title">Právní informace a disclaimer</h3>
-                    <ul class="text-sm space-y-2">
-                        <li>
-                            <a href="index.html" class="text-gray-600 hover:text-invest-blue transition-colors" data-i18n="nav_home">Domů</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-200 pt-6">
-                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-                    <p data-i18n="footer_copyright">&copy; 2024 InvestCzech. Všechna práva vyhrazena.</p>
-                </div>
+                <p>Provozovatel: PTF reality, s.r.o. | IČO: 06684394</p>
             </div>
         </div>
     </footer>
 
-    <!-- Načtení jazykových skriptů -->
+    <!-- Skripty -->
     <script src="js/translations.js"></script>
     <script src="js/about-translations.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('mobile-menu-btn');
+            var menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', function() {
+                    menu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
 </body>
 </html>

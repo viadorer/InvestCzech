@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP4KNZWHT8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QP4KNZWHT8');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HouseMaster Dashboard | InvestCzech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'invest-blue': '#0A2540',
+                        'invest-blue-light': '#0F3460',
+                        'invest-red': '#D7141A',
+                        'invest-red-dark': '#B01016',
+                        'invest-gray': '#1A1A1A',
+                        'invest-gray-light': '#6B7280',
+                        'invest-bg': '#F8F9FA',
+                    },
+                    fontFamily: {
+                        'sans': ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-invest-bg font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold tracking-tight">
+                            <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
+                        </span>
+                    </a>
+                    <div class="hidden md:flex md:ml-8 md:space-x-1">
+                        <a href="index.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Domov</a>
+                        <a href="index.html#bolesti" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="index.html#off-market" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Off-market trh</a>
+                        <a href="index.html#sprava" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Správa a garance</a>
+                        <!-- TODO: Akademie (ceskosobe.cz, chcibytmilionarem.cz)
+                        <a href="index.html#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Akademie</a>
+                        -->
+                        <a href="#" class="px-3 py-2 text-sm font-semibold text-invest-blue border-b-2 border-invest-blue transition-colors">Nástěnka</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex md:items-center">
+                    <a href="index.html#kontakt" class="bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-28 pb-16 bg-invest-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-4">Centrální mozek HouseMaster</p>
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight tracking-tight">
+                    Moje Nástěnka
+                </h1>
+                <p class="text-lg text-white/70 leading-relaxed mt-6 max-w-2xl">
+                    Dashboard, který transformuje pasivní vlastnictví na aktivně řízené portfolio. Strategický nástroj pro řízení bohatství, ne jen administrativa.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Demo -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Top stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-white border border-gray-100 rounded p-6">
+                    <p class="text-xs text-invest-gray-light mb-2">Tržní cena portfolia</p>
+                    <p class="text-2xl font-bold text-invest-blue">8 450 000 Kč</p>
+                    <p class="text-xs text-green-600 mt-1">+3,2 % za poslední rok</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-6">
+                    <p class="text-xs text-invest-gray-light mb-2">Měsíční čistá renta</p>
+                    <p class="text-2xl font-bold text-invest-blue">12 400 Kč</p>
+                    <p class="text-xs text-green-600 mt-1">Po odečtení správy a pojištění</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-6">
+                    <p class="text-xs text-invest-gray-light mb-2">ROE (vlastní kapitál)</p>
+                    <p class="text-2xl font-bold text-invest-blue">18,6 %</p>
+                    <p class="text-xs text-invest-gray-light mt-1">Roční výnos na vložený kapitál</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-6">
+                    <p class="text-xs text-invest-gray-light mb-2">DTI (dluh / příjmy)</p>
+                    <p class="text-2xl font-bold text-invest-blue">5,2</p>
+                    <p class="text-xs text-green-600 mt-1">Prostor pro další úvěr</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Portfolio overview -->
+                <div class="lg:col-span-2 bg-white border border-gray-100 rounded p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="font-bold text-invest-blue">Přehled nemovitostí</h3>
+                        <span class="text-xs text-invest-gray-light">2 jednotky v portfoliu</span>
+                    </div>
+                    <!-- Property 1 -->
+                    <div class="border border-gray-100 rounded p-6 mb-4">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h4 class="font-bold text-invest-blue">Byt 2+kk, Plzeň – Slovany</h4>
+                                <p class="text-xs text-invest-gray-light mt-1">52 m2 | 3. patro | Osobní vlastnictví</p>
+                            </div>
+                            <span class="text-xs bg-green-50 text-green-700 px-3 py-1 rounded font-medium">Pronajato</span>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                            <div>
+                                <p class="text-xs text-invest-gray-light">Tržní cena</p>
+                                <p class="font-bold text-invest-blue">3 850 000 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light">Měsíční nájem</p>
+                                <p class="font-bold text-invest-blue">14 500 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light">Zůstatek úvěru</p>
+                                <p class="font-bold text-invest-blue">2 695 000 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light">Konec fixace</p>
+                                <p class="font-bold text-invest-red">03/2027</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property 2 -->
+                    <div class="border border-gray-100 rounded p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h4 class="font-bold text-invest-blue">Byt 1+1, Ústí nad Labem – Centrum</h4>
+                                <p class="text-xs text-invest-gray-light mt-1">38 m2 | 2. patro | Osobní vlastnictví</p>
+                            </div>
+                            <span class="text-xs bg-green-50 text-green-700 px-3 py-1 rounded font-medium">Pronajato</span>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                            <div>
+                                <p class="text-xs text-invest-gray-light">Tržní cena</p>
+                                <p class="font-bold text-invest-blue">1 450 000 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light">Měsíční nájem</p>
+                                <p class="font-bold text-invest-blue">8 900 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light">Zůstatek úvěru</p>
+                                <p class="font-bold text-invest-blue">1 015 000 Kč</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-invest-gray-light">Konec fixace</p>
+                                <p class="font-bold text-invest-blue">11/2028</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="space-y-8">
+                    <!-- Upcoming events -->
+                    <div class="bg-white border border-gray-100 rounded p-6">
+                        <h3 class="font-bold text-invest-blue mb-4">Nadcházející události</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-invest-red/10 rounded flex items-center justify-center flex-shrink-0 mr-3">
+                                    <span class="text-invest-red text-xs font-bold">15.3</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-invest-blue">Revize plynu</p>
+                                    <p class="text-xs text-invest-gray-light">Byt Plzeň – Slovany</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-invest-blue/10 rounded flex items-center justify-center flex-shrink-0 mr-3">
+                                    <span class="text-invest-blue text-xs font-bold">1.4</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-invest-blue">Změna pravidel ČNB</p>
+                                    <p class="text-xs text-invest-gray-light">LTV 70 %, DTI 7</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-invest-blue/10 rounded flex items-center justify-center flex-shrink-0 mr-3">
+                                    <span class="text-invest-blue text-xs font-bold">15.4</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-medium text-invest-blue">Přípis nájmu</p>
+                                    <p class="text-xs text-invest-gray-light">Garance Vzorný nájemce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick actions -->
+                    <div class="bg-white border border-gray-100 rounded p-6">
+                        <h3 class="font-bold text-invest-blue mb-4">Rychlé akce</h3>
+                        <div class="space-y-2">
+                            <a href="#" class="block text-sm text-invest-gray-light hover:text-invest-blue transition-colors py-2 border-b border-gray-50">Stáhnout přehled portfolia (PDF)</a>
+                            <a href="#" class="block text-sm text-invest-gray-light hover:text-invest-blue transition-colors py-2 border-b border-gray-50">Zobrazit splátkový kalendář</a>
+                            <a href="#" class="block text-sm text-invest-gray-light hover:text-invest-blue transition-colors py-2 border-b border-gray-50">Audit pojistných smluv</a>
+                            <a href="#" class="block text-sm text-invest-gray-light hover:text-invest-blue transition-colors py-2">Kontaktovat správce</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moduly dashboardu -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Moduly HouseMaster</h2>
+                <p class="text-lg text-invest-gray-light">Každý modul řeší konkrétní oblast správy nemovitostního portfolia.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Modul 1 -->
+                <div class="border border-gray-100 rounded p-8">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mb-6">1</div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Správa portfolia a majetku</h3>
+                    <p class="text-invest-gray-light leading-relaxed mb-4">Kompletní evidence všech nemovitostí na jednom místě. Technický stav, stáří spotřebičů, dokumentace, fotografie a plánování povinných revizí.</p>
+                    <ul class="space-y-2 text-sm text-invest-gray-light">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Digitální evidence veškeré dokumentace</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Automatické upozornění na revize a údržbu</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Přehled technických parametrů každé jednotky</li>
+                    </ul>
+                </div>
+                <!-- Modul 2 -->
+                <div class="border border-gray-100 rounded p-8">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mb-6">2</div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Správa úvěrů a bonity</h3>
+                    <p class="text-invest-gray-light leading-relaxed mb-4">Sledování splátkových kalendářů, monitoring LTV a DTI. Systém upozorní na prostor pro další úvěr nebo na blížící se konec fixace.</p>
+                    <ul class="space-y-2 text-sm text-invest-gray-light">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Splátkové kalendáře všech úvěrů</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Monitoring limitů ČNB (LTV, DTI, DSTI)</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Upozornění na konec fixace a možnost refinancování</li>
+                    </ul>
+                </div>
+                <!-- Modul 3 -->
+                <div class="border border-gray-100 rounded p-8">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mb-6">3</div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Sledování tržní ceny (AVM)</h3>
+                    <p class="text-invest-gray-light leading-relaxed mb-4">Automatický přepočet hodnoty bytu každý měsíc na základě reálných dat z trhu. ROI a ROE bez manuálního oceňování.</p>
+                    <ul class="space-y-2 text-sm text-invest-gray-light">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Měsíční aktualizace tržní ceny</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Automatický výpočet ROI a ROE</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Srovnání s trhem v dané lokalitě</li>
+                    </ul>
+                </div>
+                <!-- Modul 4 -->
+                <div class="border border-gray-100 rounded p-8">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded flex items-center justify-center text-sm font-bold mb-6">4</div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Predikce a trendy</h3>
+                    <p class="text-invest-gray-light leading-relaxed mb-4">Modelování budoucího vývoje cen. Doporučení pro rotaci aktiv, např. prodej energeticky náročné jednotky a nákup novostavby se zeleným prémiem.</p>
+                    <ul class="space-y-2 text-sm text-invest-gray-light">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Predikce vývoje cen v horizontu 1–5 let</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Doporučení pro optimalizaci portfolia</li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-blue rounded-full mt-2 mr-3 flex-shrink-0"></span>Analýza energetické náročnosti a zeleného prémia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-invest-blue">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl lg:text-3xl font-bold text-white mb-4">Chcete vidět svůj vlastní dashboard?</h2>
+            <p class="text-white/60 mb-8">Zanechte nám kontakt a připravíme vám ukázku s vašimi reálnými čísly.</p>
+            <a href="index.html#kontakt" class="inline-flex items-center px-8 py-4 bg-invest-red hover:bg-invest-red-dark text-white text-lg font-semibold rounded transition-colors duration-200">
+                Chci nezávazný investiční plán
+                <svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-invest-blue border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <span class="text-lg font-bold tracking-tight mr-6">
+                        <span class="text-white">INVEST</span><span class="text-invest-red">CZECH</span>
+                    </span>
+                    <p>&copy; 2026 InvestCzech. Všechna práva vyhrazena.</p>
+                </div>
+                <p>Provozovatel: PTF reality, s.r.o. | IČO: 06684394</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

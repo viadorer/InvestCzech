@@ -1,80 +1,46 @@
 // Překlady textů pro různé jazyky
 const translations = {
   'cs': {
-    'nav_home': 'Domů',
+    'nav_home': 'Domov',
     'nav_about': 'O nás',
-    'nav_consultation': 'Nezávazná konzultace',
-    'hero_title': 'Vybudujte si stabilní příjem z nemovitostí — ještě letos',
-    'hero_subtitle': 'Zajistěte si finanční jistotu, zatímco ostatní nechávají peníze ztrácet hodnotu. <span class="text-invest-red font-semibold">Získejte ověřený postup</span>, jak investovat v Česku i bez obrovského kapitálu.',
-    'spots_left': 'Tento měsíc zbývá pouze 9 volných míst',
-    'cta_button': 'Chci bezplatnou konzultaci',
-    'contact_title': 'Kontaktujte nás',
-    'contact_subtitle': 'Zanechte nám zprávu a my se vám ozveme do 24 hodin',
-    'footer_operator': 'Provozovatel portálu: PTF reality, s.r.o.',
-    'footer_address_plzen_title': 'Plzeň:',
-    'footer_address_praha_title': 'Praha:',
-    'footer_legal_title': 'Právní informace a disclaimer',
-    'footer_gdpr': 'Ochrana osobních údajů (GDPR)',
-    'footer_cookies': 'Cookies',
-    'footer_terms': 'Obchodní podmínky',
-    'footer_copyright': '&copy; 2024 InvestCzech. Všechna práva vyhrazena.'
+    'nav_cesta': 'Vaše cesta',
+    'nav_offmarket': 'Off-market trh',
+    'nav_sprava': 'Správa a garance',
+    'nav_akademie': 'Akademie',
+    'nav_nastenka': 'Nástěnka',
+    'nav_kontakt': 'Kontakt',
+    'nav_cta': 'Chci investiční plán',
+    'contact_title': 'Chci nezávazný investiční plán',
+    'contact_subtitle': 'Zanechte nám kontakt a ozveme se vám do 24 hodin s konkrétním návrhem.',
+    'footer_copyright': '&copy; 2026 InvestCzech. Všechna práva vyhrazena.'
   },
   'en': {
     'nav_home': 'Home',
     'nav_about': 'About Us',
-    'nav_consultation': 'Free Consultation',
-    'hero_title': 'Build a stable income from real estate — this year',
-    'hero_subtitle': 'Secure your financial future while others let their money lose value. <span class="text-invest-red font-semibold">Get a proven method</span> for investing in the Czech Republic even without huge capital.',
-    'spots_left': 'Only 9 spots left this month',
-    'cta_button': 'I want a free consultation',
-    'contact_title': 'Contact Us',
-    'contact_subtitle': 'Leave us a message and we will get back to you within 24 hours',
-    'footer_operator': 'Portal operator: PTF reality, s.r.o.',
-    'footer_address_plzen_title': 'Pilsen:',
-    'footer_address_praha_title': 'Prague:',
-    'footer_legal_title': 'Legal information and disclaimer',
-    'footer_gdpr': 'Personal data protection (GDPR)',
-    'footer_cookies': 'Cookies',
-    'footer_terms': 'Terms and conditions',
-    'footer_copyright': '&copy; 2024 InvestCzech. All rights reserved.'
+    'nav_cesta': 'Your Journey',
+    'nav_offmarket': 'Off-market',
+    'nav_sprava': 'Management & Guarantees',
+    'nav_akademie': 'Academy',
+    'nav_nastenka': 'Dashboard',
+    'nav_kontakt': 'Contact',
+    'nav_cta': 'Get Investment Plan',
+    'contact_title': 'Get a Non-binding Investment Plan',
+    'contact_subtitle': 'Leave us your contact and we will get back to you within 24 hours with a specific proposal.',
+    'footer_copyright': '&copy; 2026 InvestCzech. All rights reserved.'
   },
   'de': {
     'nav_home': 'Startseite',
     'nav_about': 'Über uns',
-    'nav_consultation': 'Kostenlose Beratung',
-    'hero_title': 'Bauen Sie ein stabiles Einkommen aus Immobilien auf — noch in diesem Jahr',
-    'hero_subtitle': 'Sichern Sie Ihre finanzielle Zukunft, während andere ihr Geld an Wert verlieren lassen. <span class="text-invest-red font-semibold">Erhalten Sie eine bewährte Methode</span> für Investitionen in der Tschechischen Republik auch ohne großes Kapital.',
-    'spots_left': 'Nur noch 9 Plätze in diesem Monat',
-    'cta_button': 'Ich möchte eine kostenlose Beratung',
-    'contact_title': 'Kontaktieren Sie uns',
-    'contact_subtitle': 'Hinterlassen Sie uns eine Nachricht und wir melden uns innerhalb von 24 Stunden bei Ihnen',
-    'footer_operator': 'Portalbetreiber: PTF reality, s.r.o.',
-    'footer_address_plzen_title': 'Pilsen:',
-    'footer_address_praha_title': 'Prag:',
-    'footer_legal_title': 'Rechtliche Informationen und Haftungsausschluss',
-    'footer_gdpr': 'Datenschutz (DSGVO)',
-    'footer_cookies': 'Cookies',
-    'footer_terms': 'Geschäftsbedingungen',
-    'footer_copyright': '&copy; 2024 InvestCzech. Alle Rechte vorbehalten.'
-  },
-  'fr': {
-    'nav_home': 'Accueil',
-    'nav_about': 'À propos',
-    'nav_consultation': 'Consultation gratuite',
-    'hero_title': 'Construisez un revenu immobilier stable — cette année',
-    'hero_subtitle': 'Assurez votre avenir financier pendant que d\'autres laissent leur argent perdre de la valeur. <span class="text-invest-red font-semibold">Obtenez une méthode éprouvée</span> pour investir en République tchèque même sans capital important.',
-    'spots_left': 'Seulement 9 places disponibles ce mois-ci',
-    'cta_button': 'Je souhaite une consultation gratuite',
-    'contact_title': 'Contactez-nous',
-    'contact_subtitle': 'Laissez-nous un message et nous vous répondrons dans les 24 heures',
-    'footer_operator': 'Opérateur du portail: PTF reality, s.r.o.',
-    'footer_address_plzen_title': 'Pilsen:',
-    'footer_address_praha_title': 'Prague:',
-    'footer_legal_title': 'Informations juridiques et disclaimer',
-    'footer_gdpr': 'Protection des données personnelles (RGPD)',
-    'footer_cookies': 'Cookies',
-    'footer_terms': 'Conditions générales',
-    'footer_copyright': '&copy; 2024 InvestCzech. Tous droits réservés.'
+    'nav_cesta': 'Ihr Weg',
+    'nav_offmarket': 'Off-Market',
+    'nav_sprava': 'Verwaltung & Garantien',
+    'nav_akademie': 'Akademie',
+    'nav_nastenka': 'Dashboard',
+    'nav_kontakt': 'Kontakt',
+    'nav_cta': 'Investitionsplan anfordern',
+    'contact_title': 'Unverbindlichen Investitionsplan anfordern',
+    'contact_subtitle': 'Hinterlassen Sie uns Ihre Kontaktdaten und wir melden uns innerhalb von 24 Stunden mit einem konkreten Vorschlag.',
+    'footer_copyright': '&copy; 2026 InvestCzech. Alle Rechte vorbehalten.'
   }
 };
 
@@ -89,11 +55,11 @@ function setLanguage(language) {
   // Zvýrazní aktivní jazyk
   document.querySelectorAll('.language-btn').forEach(btn => {
     if (btn.getAttribute('data-lang') === language) {
-      btn.classList.add('text-invest-blue', 'font-medium');
-      btn.classList.remove('text-gray-500');
+      btn.classList.add('text-invest-blue', 'font-semibold');
+      btn.classList.remove('text-gray-400');
     } else {
-      btn.classList.remove('text-invest-blue', 'font-medium');
-      btn.classList.add('text-gray-500');
+      btn.classList.remove('text-invest-blue', 'font-semibold');
+      btn.classList.add('text-gray-400');
     }
   });
   
