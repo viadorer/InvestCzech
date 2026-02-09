@@ -1,0 +1,137 @@
+# InvestCzech – Kompletní dokumentace pro AI agenty
+
+> Platforma pro budování portfolia nájemních nemovitostí v České republice s kompletním servisem.
+
+## Identita
+
+- **Název**: InvestCzech
+- **Web**: https://www.investczech.cz
+- **Provozovatel**: PTF reality, s.r.o.
+- **IČO**: 06684394
+- **DIČ**: CZ06684394
+- **Zakladatel**: David Choc
+
+## Kanceláře
+
+### Plzeň
+- Adresa: Dřevěná 99/3, 301 00 Plzeň
+
+### Praha
+- Adresa: Pod turnovskou tratí 182/18, 198 00 Praha – Hloubětín
+
+---
+
+## Mise
+
+Pomáháme lidem vybudovat si soukromý důchod v cihlách. Poskytujeme kompletní infrastrukturu od vyhledání nemovitosti přes financování až po správu a garanci nájmu. Klient sleduje dashboard a přijímá rentu na účet.
+
+## Cílová skupina
+
+- Lidé, kteří nevěří státnímu důchodovému systému a hledají alternativu.
+- Investoři, kteří chtějí pasivní příjem z nájemních nemovitostí.
+- Majitelé, kteří nemají čas na správu nemovitostí.
+- Začínající investoři bez zkušeností s nemovitostním trhem.
+
+---
+
+## Služby – detailní popis
+
+### 1. Akvizice nemovitostí
+
+Vyhledáváme investiční nemovitosti z off-market zdrojů přes platformu EstatePrivate.com. Klient získává přístup k neveřejným nabídkám bez konkurenčních bitev na inzertních portálech. Každá nemovitost prochází due diligence: právní prověrka, technická inspekce, finanční analýza výnosnosti.
+
+### 2. Financování
+
+Hypoteční specialisté zaměření výhradně na nájemní nemovitosti. Skládáme úvěrové struktury tak, aby portfolio mohlo růst i při zpřísněných pravidlech ČNB:
+- **LTV**: Řešení i při limitu 70 % (od 1. 4. 2026)
+- **DTI**: Optimalizace při limitu 7
+- **DSTI**: Strukturování splátek pro maximální cash-flow
+
+### 3. Správa a garance nájmu
+
+#### Služba Vzorný nájemce
+- Garance nájmu na účet majitele do 15. dne v měsíci, i při prázdném bytě.
+- Prověření nájemníků v registrech dlužníků.
+- Smluvní ochrana majitele.
+
+#### Technická správa
+- Převod energií a pojištění.
+- Revize kotlů a technických zařízení.
+- Řešení havárií a běžné údržby.
+- Komunikace s nájemníky.
+
+### 4. Digitální kontrola – HouseMaster Dashboard
+
+Proprietární dashboard pro správu nemovitostního portfolia:
+- **Přehled portfolia**: Celková hodnota, počet jednotek, obsazenost.
+- **Cash-flow monitoring**: Měsíční příjmy, výdaje, čistý výnos.
+- **Správa nájemníků**: Stav smluv, platební historie, kontakty.
+- **Údržba**: Plánované revize, hlášení závad, historie oprav.
+
+### 5. Kalkulačka ROE
+
+Online nástroj na adrese https://www.investczech.cz/calculator.html pro výpočet:
+- **Cash-flow**: Měsíční příjem minus náklady minus splátka hypotéky.
+- **ROI** (Return on Investment): Roční čistý výnos / celková cena nemovitosti.
+- **ROE** (Return on Equity): Roční čistý výnos / vlastní vložený kapitál.
+
+Vzorec ROE: ROE = (roční nájem - roční náklady - roční splátky) / vlastní kapitál * 100
+
+---
+
+## Lokality
+
+### Praha a Beroun
+- **Strategie**: Růst hodnoty + stabilní nájmy.
+- **Profil**: Metropolitní oblast s vysokou poptávkou po nájemním bydlení.
+
+### Plzeň a Karlovarsko
+- **Strategie**: Průmyslová poptávka, univerzitní město.
+- **Profil**: Stabilní ekonomika, Škoda/BMW dodavatelský řetězec, Západočeská univerzita.
+
+### Severní Čechy (Ústí nad Labem, Teplice)
+- **Strategie**: Maximální cash-flow.
+- **Profil**: Nízké vstupní ceny nemovitostí, vysoký nájemní výnos v procentech.
+
+---
+
+## Klíčová fakta a čísla
+
+- 73 % Čechů nevěří státnímu důchodovému systému (kontext pro investiční motivaci).
+- Od 1. 4. 2026 ČNB zpřísňuje pravidla na LTV 70 % pro investiční nemovitosti.
+- Garance nájmu do 15. dne v měsíci.
+- Hypoteční páka: I při 30% akontaci zůstává nemovitost efektivním nástrojem ochrany před inflací.
+
+---
+
+## Satelitní projekty (v přípravě)
+
+- **ceskosobe.cz**: Patriotický manifest a komunita českých majitelů nemovitostí. Česká cesta k důchodu v cihlách.
+- **chcibytmilionarem.cz**: Vzdělávací akademie pro budoucí investory. Kurzy, checklisty, mentoring. Oceňování nemovitostí, hledání příležitostí, daňová optimalizace.
+
+---
+
+## Struktura webu
+
+| URL | Popis | Indexace |
+|-----|-------|---------|
+| / | Hlavní stránka – kompletní přehled služeb | ano |
+| /calculator.html | Kalkulačka ROE a cash-flow | ano |
+| /about.html | O společnosti | ano |
+| /dashboard.html | Ukázka HouseMaster dashboardu (demo) | ne |
+
+## Technologie
+
+- Statický web (HTML, CSS, JavaScript)
+- TailwindCSS
+- Font: Montserrat
+- Hosting: GitHub Pages
+- Doména: www.investczech.cz
+- Analytics: Google Analytics (G-QP4KNZWHT8)
+
+## Vizuální identita
+
+- **Primární barva**: #0A2540 (námořnická modř)
+- **Akcentová barva**: #D7141A (červená)
+- **Pozadí**: bílá, #FAFBFC
+- **Styl**: Private banking, čisté linie, profesionální tón, bez emotikonů.

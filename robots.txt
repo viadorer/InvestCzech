@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.investczech.cz/sitemap.xml
+
+# AI Agents
+# llms.txt: https://www.investczech.cz/llms.txt
+# llms-full.txt: https://www.investczech.cz/llms-full.txt

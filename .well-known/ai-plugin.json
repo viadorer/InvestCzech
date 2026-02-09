@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "InvestCzech",
+    "name_for_model": "investczech",
+    "description_for_human": "Kompletní servis pro investory do nájemních nemovitostí v České republice.",
+    "description_for_model": "InvestCzech je česká platforma poskytující 360° infrastrukturu pro budování portfolia nájemních bytů. Služby zahrnují: akvizice off-market nemovitostí (EstatePrivate.com), financování hypoték pro investiční nemovitosti, správu a garanci nájmu (služba Vzorný nájemce), digitální dashboard HouseMaster a kalkulačku ROE. Lokality: Praha, Plzeň, Severní Čechy. Provozovatel: PTF reality, s.r.o., IČO 06684394. Zakladatel: David Choc.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://www.investczech.cz/llms.txt"
+    },
+    "logo_url": "https://www.investczech.cz/favicon.svg",
+    "contact_email": "",
+    "legal_info_url": "https://www.investczech.cz/about.html"
+}
