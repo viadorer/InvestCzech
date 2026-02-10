@@ -23,7 +23,7 @@
 
 ## Mise
 
-Pomáháme lidem vybudovat si soukromý důchod v cihlách. Poskytujeme kompletní infrastrukturu od vyhledání nemovitosti přes financování až po správu a garanci nájmu. Klient sleduje dashboard a přijímá rentu na účet.
+Pomáháme lidem vybudovat si soukromý důchod postavený z cihel. Poskytujeme kompletní infrastrukturu od vyhledání nemovitosti přes financování až po správu a garanci nájmu. Klient sleduje dashboard a přijímá rentu na účet.
 
 ## Cílová skupina
 
