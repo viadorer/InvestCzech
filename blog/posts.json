@@ -1,3 +1,21 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "date": "2026-03-08",
+      "slug": "invest-czech-vse-pro-investicni-nemovitosti",
+      "image": "/images/blog/invest-czech-vse-pro-investicni-nemovitosti.png",
+      "title": "Invest Czech: Vše, co potřebujete pro investiční nemovitosti na jednom místě",
+      "excerpt": "Uvažujete o investici do nemovitostí, ale nevíte, kde začít? Invest Czech je komplexní platforma, která vás provede celým procesem – od výběru vhodné nemovitosti až po její správu a sledování tržní hodnoty. Vše pod jednou střechou.",
+      "category": "guide",
+      "featured": false,
+      "imageAlt": "Moderní byt s výhledem na město, symbol investiční nemovitosti",
+      "keywords": "investiční nemovitosti, správa nemovitostí, nákup nemovitostí, hypotéka, garance nájmu, investice, realitní trh",
+      "readTime": 7,
+      "seoTitle": "Invest Czech: Investice do nemovitostí bez starostí",
+      "categoryName": "Průvodce",
+      "dateFormatted": "8. března 2026",
+      "seoDescription": "Invest Czech je all-in-one platforma pro investiční nemovitosti v ČR. Nákup, hypotéka, správa, garance nájmu, analytika. Investujte chytře a bez starostí.",
+      "id": "invest-czech-vse-pro-investicni-nemovitosti"
+    }
+  ]
 }
