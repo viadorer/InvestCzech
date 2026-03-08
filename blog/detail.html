@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Načítání článku... | Blog | InvestCzech</title>
+    <meta name="description" content="Článek z blogu InvestCzech o investicích do nemovitostí.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="InvestCzech">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'invest-blue': '#0A2540',
+                        'invest-blue-light': '#1A3A5C',
+                        'invest-red': '#D7141A',
+                        'invest-red-dark': '#B01016',
+                        'invest-gray': '#1A1A1A',
+                        'invest-gray-light': '#6B7280',
+                        'invest-bg': '#FAFBFC',
+                    },
+                    fontFamily: {
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .prose { color: #374151; max-width: none; }
+        .prose p { margin-top: 1.25em; margin-bottom: 1.25em; line-height: 1.8; }
+        .prose h2 { color: #0A2540; font-weight: 700; font-size: 1.5em; margin-top: 2em; margin-bottom: 1em; line-height: 1.33; border-left: 4px solid #D7141A; padding-left: 1rem; }
+        .prose h3 { color: #0A2540; font-weight: 600; font-size: 1.25em; margin-top: 1.6em; margin-bottom: 0.6em; line-height: 1.6; }
+        .prose h4 { color: #0A2540; font-weight: 600; margin-top: 1.5em; margin-bottom: 0.5em; }
+        .prose strong { color: #0A2540; font-weight: 600; }
+        .prose a { color: #D7141A; text-decoration: underline; font-weight: 500; }
+        .prose a:hover { color: #0A2540; }
+        .prose blockquote { font-style: italic; color: #0A2540; border-left: 4px solid #D7141A; margin: 1.6em 0; padding-left: 1em; }
+        .prose ul, .prose ol { margin: 1.25em 0; padding-left: 1.625em; }
+        .prose li { margin: 0.5em 0; line-height: 1.7; }
+        .prose ul > li::marker { color: #D7141A; }
+        .prose ol > li::marker { color: #D7141A; }
+        .prose img { margin: 2em 0; border-radius: 0.5rem; }
+        .prose .lead { color: #4b5563; font-size: 1.25em; line-height: 1.6; margin: 1.2em 0; }
+        .prose .bg-blue-50 { background-color: #eff6ff; }
+        .prose .border-blue-400 { border-color: #60a5fa; }
+        .prose .bg-green-50 { background-color: #f0fdf4; }
+        .prose .border-green-400 { border-color: #4ade80; }
+        .prose .bg-red-50 { background-color: #fef2f2; }
+        .prose .border-red-400 { border-color: #f87171; }
+    </style>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold tracking-tight">
+                            <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
+                        </span>
+                    </a>
+                    <div class="hidden lg:flex lg:ml-10 lg:space-x-1">
+                        <a href="../index.html#proces" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="../index.html#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Akademie</a>
+                        <a href="./" class="px-3 py-2 text-sm font-medium text-invest-blue transition-colors">Blog</a>
+                        <a href="../index.html#kontakt" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Kontakt</a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex lg:items-center">
+                    <a href="../index.html#kontakt" class="bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors duration-200">Chci investiční plán</a>
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="p-2 rounded text-invest-gray hover:text-invest-blue">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-4 space-y-1">
+                <a href="../index.html#proces" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Vaše cesta</a>
+                <a href="../index.html#akademie" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Akademie</a>
+                <a href="./" class="block px-3 py-2 text-sm font-medium text-invest-blue">Blog</a>
+                <a href="../index.html#kontakt" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Kontakt</a>
+                <div class="pt-3 border-t border-gray-100">
+                    <a href="../index.html#kontakt" class="block w-full text-center bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Loading -->
+    <div id="state-loading" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="text-center">
+            <div class="inline-block w-8 h-8 border-2 border-invest-blue/20 border-t-invest-blue rounded-full animate-spin mb-4"></div>
+            <p class="text-invest-gray-light text-sm">Načítání článku...</p>
+        </div>
+    </div>
+
+    <!-- Error -->
+    <div id="state-error" class="hidden min-h-screen items-center justify-center pt-16">
+        <div class="text-center max-w-md mx-auto px-4">
+            <h1 class="text-2xl font-bold text-invest-blue mb-4">Článek nenalezen</h1>
+            <p id="error-message" class="text-invest-gray-light mb-8"></p>
+            <a href="./" class="inline-block px-6 py-3 bg-invest-red text-white text-sm font-semibold rounded hover:bg-invest-red-dark transition-colors">Zpět na blog</a>
+        </div>
+    </div>
+
+    <!-- Article -->
+    <article id="state-article" class="hidden">
+        <div class="pt-28 pb-16">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-8">
+                    <a href="./" class="text-invest-gray-light hover:text-invest-blue text-sm font-medium transition-colors">Zpět na blog</a>
+                </div>
+
+                <div class="mb-4">
+                    <span id="article-category" class="inline-block bg-invest-red text-white text-xs font-semibold px-3 py-1 rounded"></span>
+                </div>
+
+                <h1 id="article-title" class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6 leading-tight"></h1>
+
+                <div class="flex items-center text-sm text-invest-gray-light mb-10">
+                    <span id="article-date"></span>
+                    <span class="mx-3 w-1 h-1 rounded-full bg-gray-300 inline-block"></span>
+                    <span id="article-readtime"></span>
+                </div>
+
+                <div id="article-image-wrap" class="mb-12 rounded overflow-hidden hidden">
+                    <img id="article-image" src="" alt="" class="w-full h-auto">
+                </div>
+
+                <div id="article-content" class="prose prose-lg max-w-none mb-16"></div>
+
+                <!-- CTA -->
+                <div class="bg-invest-bg border border-gray-100 rounded-lg p-8 text-center mb-16">
+                    <h3 class="text-xl font-bold text-invest-blue mb-3">Potřebujete poradit s investicí do nemovitosti?</h3>
+                    <p class="text-invest-gray-light text-sm mb-6">Nechte si zpracovat nezávazný investiční plán na míru.</p>
+                    <a href="../index.html#kontakt" class="inline-block bg-invest-red text-white hover:bg-invest-red-dark px-6 py-3 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Posts -->
+        <section id="related-section" class="hidden py-16 bg-invest-bg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-invest-blue mb-10 text-center">Podobné články</h2>
+                <div id="related-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            </div>
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-invest-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div>
+                    <span class="text-lg font-bold tracking-tight">
+                        <span class="text-white">INVEST</span><span class="text-invest-red">CZECH</span>
+                    </span>
+                    <p class="text-xs text-white/40 mt-1">PTF reality, s.r.o.</p>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="https://www.ceskosobe.cz" class="text-xs text-white/40 hover:text-white/70 transition-colors">CeskoSobe.cz</a>
+                    <a href="https://www.chcibytmilionarem.cz" class="text-xs text-white/40 hover:text-white/70 transition-colors">ChciBytMilionarem.cz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            var params = new URLSearchParams(window.location.search);
+            var postId = params.get('id');
+
+            if (!postId) {
+                showError('Nebyl zadán identifikátor článku.');
+                return;
+            }
+
+            try {
+                var response = await fetch('./posts.json');
+                var data = await response.json();
+                var posts = data.posts || [];
+                var post = posts.find(function(p) { return p.id === postId; });
+
+                if (!post) {
+                    showError('Článek s tímto identifikátorem nebyl nalezen.');
+                    return;
+                }
+
+                document.getElementById('article-title').textContent = post.title;
+                document.getElementById('article-category').textContent = post.categoryName || post.category;
+                document.getElementById('article-date').textContent = post.dateFormatted || formatDate(post.date);
+                document.getElementById('article-readtime').textContent = (post.readTime || 5) + ' min';
+
+                if (post.image) {
+                    var imgWrap = document.getElementById('article-image-wrap');
+                    imgWrap.classList.remove('hidden');
+                    var img = document.getElementById('article-image');
+                    img.src = post.image;
+                    img.alt = post.imageAlt || post.title;
+                }
+
+                try {
+                    var contentResp = await fetch('./posts/' + postId + '.html');
+                    if (contentResp.ok) {
+                        document.getElementById('article-content').innerHTML = await contentResp.text();
+                    } else {
+                        document.getElementById('article-content').innerHTML = '<p>Obsah článku se nepodařilo načíst.</p>';
+                    }
+                } catch (e) {
+                    document.getElementById('article-content').innerHTML = '<p>Obsah článku se nepodařilo načíst.</p>';
+                }
+
+                var pageTitle = (post.seoTitle || post.title) + ' | Blog | InvestCzech';
+                document.title = pageTitle;
+                updateMeta('name', 'description', post.seoDescription || post.excerpt);
+                updateMeta('property', 'og:title', pageTitle);
+                updateMeta('property', 'og:description', post.seoDescription || post.excerpt);
+                updateMeta('property', 'og:url', window.location.href);
+
+                var related = posts.filter(function(p) { return p.id !== postId && p.category === post.category; }).slice(0, 3);
+                if (related.length > 0) {
+                    var grid = document.getElementById('related-grid');
+                    related.forEach(function(rp) {
+                        var card = document.createElement('a');
+                        card.href = './detail.html?id=' + rp.id;
+                        card.className = 'group block';
+                        card.innerHTML =
+                            '<div class="relative h-44 overflow-hidden rounded mb-4">' +
+                                '<img src="' + rp.image + '" alt="' + (rp.imageAlt || rp.title) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">' +
+                            '</div>' +
+                            '<div class="text-xs text-invest-gray-light mb-2">' + (rp.dateFormatted || '') + '</div>' +
+                            '<h3 class="text-invest-blue font-bold leading-snug group-hover:text-invest-red transition-colors">' + rp.title + '</h3>';
+                        grid.appendChild(card);
+                    });
+                    document.getElementById('related-section').classList.remove('hidden');
+                }
+
+                document.getElementById('state-loading').style.display = 'none';
+                document.getElementById('state-article').classList.remove('hidden');
+
+            } catch (err) {
+                console.error('Chyba:', err);
+                showError('Došlo k chybě při načítání článku.');
+            }
+        });
+
+        function showError(msg) {
+            document.getElementById('state-loading').style.display = 'none';
+            document.getElementById('error-message').textContent = msg;
+            document.getElementById('state-error').classList.remove('hidden');
+            document.getElementById('state-error').style.display = 'flex';
+        }
+
+        function updateMeta(attr, name, content) {
+            var el = document.querySelector('meta[' + attr + '="' + name + '"]');
+            if (el) el.content = content;
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            return new Date(dateStr).toLocaleDateString('cs-CZ', { year: 'numeric', month: 'long', day: 'numeric' });
+        }
+    </script>
+</body>
+</html>

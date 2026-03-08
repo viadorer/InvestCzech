@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog InvestCzech – Články o investicích do nemovitostí, trhu s nemovitostmi, financování a správě nájemních bytů v České republice.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Blog | InvestCzech">
+    <meta property="og:description" content="Články o investicích do nemovitostí, trhu s nemovitostmi, financování a správě nájemních bytů.">
+    <meta property="og:url" content="https://www.investczech.cz/blog/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="InvestCzech">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Blog | InvestCzech</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="canonical" href="https://www.investczech.cz/blog/">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "headline": "Blog InvestCzech",
+      "description": "Články o investicích do nemovitostí, trhu s nemovitostmi, financování a správě nájemních bytů v České republice.",
+      "url": "https://www.investczech.cz/blog/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "InvestCzech",
+        "url": "https://www.investczech.cz"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'invest-blue': '#0A2540',
+                        'invest-blue-light': '#1A3A5C',
+                        'invest-red': '#D7141A',
+                        'invest-red-dark': '#B01016',
+                        'invest-gray': '#1A1A1A',
+                        'invest-gray-light': '#6B7280',
+                        'invest-bg': '#FAFBFC',
+                    },
+                    fontFamily: {
+                        'sans': ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold tracking-tight">
+                            <span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span>
+                        </span>
+                    </a>
+                    <div class="hidden lg:flex lg:ml-10 lg:space-x-1">
+                        <a href="../index.html#proces" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="../index.html#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Akademie</a>
+                        <a href="./" class="px-3 py-2 text-sm font-medium text-invest-blue transition-colors">Blog</a>
+                        <a href="../index.html#kontakt" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Kontakt</a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex lg:items-center">
+                    <a href="../index.html#kontakt" class="bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors duration-200">Chci investiční plán</a>
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <button id="mobile-menu-btn" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="p-2 rounded text-invest-gray hover:text-invest-blue">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-4 space-y-1">
+                <a href="../index.html#proces" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Vaše cesta</a>
+                <a href="../index.html#akademie" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Akademie</a>
+                <a href="./" class="block px-3 py-2 text-sm font-medium text-invest-blue">Blog</a>
+                <a href="../index.html#kontakt" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Kontakt</a>
+                <div class="pt-3 border-t border-gray-100">
+                    <a href="../index.html#kontakt" class="block w-full text-center bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-28 pb-16 bg-invest-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <h1 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Blog</h1>
+                <p class="text-lg text-invest-gray-light leading-relaxed">Články o investicích do nemovitostí, trhu, financování a správě nájemních bytů.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="bg-white border-b border-gray-100 sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="category-filter" class="flex gap-2 overflow-x-auto py-4 -mx-1"></div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div id="loading" class="text-center py-20">
+                <div class="inline-block w-8 h-8 border-2 border-invest-blue/20 border-t-invest-blue rounded-full animate-spin"></div>
+                <p class="text-invest-gray-light text-sm mt-4">Načítání článků...</p>
+            </div>
+
+            <div id="error" class="hidden text-center py-20">
+                <p class="text-invest-red text-sm">Nepodařilo se načíst články. Zkuste to později.</p>
+            </div>
+
+            <div id="posts-container" class="relative overflow-hidden min-h-[400px]">
+                <div id="blog-grid" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-300"></div>
+            </div>
+
+            <!-- Pagination -->
+            <div id="pagination-container" class="hidden flex justify-center items-center mt-16 gap-3">
+                <button id="prev-page" onclick="changePage(-1)" class="px-5 py-2.5 border border-gray-200 text-invest-gray text-sm font-medium rounded hover:border-invest-blue hover:text-invest-blue transition-colors disabled:opacity-40 disabled:cursor-not-allowed" disabled>
+                    Předchozí
+                </button>
+                <div id="page-numbers" class="flex gap-2 items-center"></div>
+                <button id="next-page" onclick="changePage(1)" class="px-5 py-2.5 border border-gray-200 text-invest-gray text-sm font-medium rounded hover:border-invest-blue hover:text-invest-blue transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+                    Další
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-invest-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div>
+                    <span class="text-lg font-bold tracking-tight">
+                        <span class="text-white">INVEST</span><span class="text-invest-red">CZECH</span>
+                    </span>
+                    <p class="text-xs text-white/40 mt-1">PTF reality, s.r.o.</p>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="https://www.ceskosobe.cz" class="text-xs text-white/40 hover:text-white/70 transition-colors">CeskoSobe.cz</a>
+                    <a href="https://www.chcibytmilionarem.cz" class="text-xs text-white/40 hover:text-white/70 transition-colors">ChciBytMilionarem.cz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var originalPosts = [];
+        var allPosts = [];
+        var currentPage = 1;
+        var postsPerPage = 9;
+        var isAnimating = false;
+        var selectedCategory = 'all';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loadBlogPosts();
+            initCategoryFilter();
+        });
+
+        async function loadBlogPosts() {
+            var loading = document.getElementById('loading');
+            var error = document.getElementById('error');
+            var blogGrid = document.getElementById('blog-grid');
+
+            try {
+                var response = await fetch('./posts.json');
+                if (!response.ok) throw new Error('Nepodařilo se načíst data');
+
+                var data = await response.json();
+                var sortedPosts = (data.posts || []).slice().sort(function(a, b) { return new Date(b.date) - new Date(a.date); });
+                originalPosts = sortedPosts;
+                applyFilterAndRender();
+
+                loading.style.display = 'none';
+                blogGrid.classList.remove('hidden');
+                blogGrid.style.display = 'grid';
+            } catch (err) {
+                console.error('Chyba:', err);
+                loading.style.display = 'none';
+                error.classList.remove('hidden');
+            }
+        }
+
+        function initCategoryFilter() {
+            var container = document.getElementById('category-filter');
+            if (!container) return;
+            var categories = [
+                { key: 'all', label: 'Vše' },
+                { key: 'market', label: 'Trh a finance' },
+                { key: 'tips', label: 'Tipy' },
+                { key: 'investment', label: 'Investice' },
+                { key: 'legal', label: 'Právní rady' },
+                { key: 'renovation', label: 'Renovace' },
+            ];
+            container.innerHTML = '';
+            categories.forEach(function(cat) {
+                var btn = document.createElement('button');
+                btn.textContent = cat.label;
+                btn.setAttribute('data-cat', cat.key);
+                btn.className = 'px-4 py-2 text-sm font-medium rounded border transition-colors whitespace-nowrap';
+                btn.onclick = function() { setCategory(cat.key); };
+                container.appendChild(btn);
+            });
+            updateFilterActiveStyles();
+        }
+
+        function setCategory(cat) {
+            if (selectedCategory === cat) return;
+            selectedCategory = cat;
+            applyFilterAndRender();
+        }
+
+        function updateFilterActiveStyles() {
+            var container = document.getElementById('category-filter');
+            if (!container) return;
+            var buttons = Array.from(container.querySelectorAll('button[data-cat]'));
+            buttons.forEach(function(btn) {
+                var cat = btn.getAttribute('data-cat');
+                var active = (cat === selectedCategory);
+                if (active) {
+                    btn.className = 'px-4 py-2 text-sm font-medium rounded border border-invest-blue bg-invest-blue text-white transition-colors whitespace-nowrap';
+                } else {
+                    btn.className = 'px-4 py-2 text-sm font-medium rounded border border-gray-200 text-invest-gray hover:border-invest-blue hover:text-invest-blue transition-colors whitespace-nowrap';
+                }
+            });
+        }
+
+        function applyFilterAndRender() {
+            var filtered = selectedCategory === 'all' ? originalPosts : originalPosts.filter(function(p) { return p.category === selectedCategory; });
+            allPosts = filtered;
+            currentPage = 1;
+            updatePostsView();
+            updatePagination();
+            updateFilterActiveStyles();
+        }
+
+        function updatePostsView() {
+            if (isAnimating) return;
+
+            var blogGrid = document.getElementById('blog-grid');
+            var paginationContainer = document.getElementById('pagination-container');
+
+            var startIndex = (currentPage - 1) * postsPerPage;
+            var endIndex = startIndex + postsPerPage;
+            var currentPosts = allPosts.slice(startIndex, endIndex);
+
+            isAnimating = true;
+            blogGrid.style.opacity = '0';
+
+            setTimeout(function() {
+                blogGrid.innerHTML = '';
+                currentPosts.forEach(function(post) {
+                    blogGrid.appendChild(createBlogCard(post));
+                });
+
+                setTimeout(function() {
+                    blogGrid.style.opacity = '1';
+                    isAnimating = false;
+                }, 50);
+            }, 200);
+
+            blogGrid.style.display = 'grid';
+            paginationContainer.style.display = allPosts.length > postsPerPage ? 'flex' : 'none';
+        }
+
+        function createBlogCard(post) {
+            var card = document.createElement('div');
+            card.className = 'group cursor-pointer';
+            card.onclick = function() { window.location.href = './detail.html?id=' + post.id; };
+
+            card.innerHTML =
+                '<div class="relative h-52 overflow-hidden rounded">' +
+                    '<img src="' + post.image + '" alt="' + post.imageAlt + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src=\'../images/placeholder.jpg\'">' +
+                    '<span class="absolute top-3 left-3 bg-invest-red text-white text-xs font-semibold px-3 py-1 rounded">' + post.categoryName + '</span>' +
+                '</div>' +
+                '<div class="pt-5">' +
+                    '<div class="flex items-center text-xs text-invest-gray-light space-x-3 mb-3">' +
+                        '<span>' + post.dateFormatted + '</span>' +
+                        '<span class="w-1 h-1 rounded-full bg-gray-300"></span>' +
+                        '<span>' + post.readTime + ' min</span>' +
+                    '</div>' +
+                    '<h3 class="text-invest-blue font-bold leading-snug mb-2 group-hover:text-invest-red transition-colors">' + post.title + '</h3>' +
+                    '<p class="text-sm text-invest-gray-light leading-relaxed line-clamp-3">' + post.excerpt + '</p>' +
+                '</div>';
+
+            return card;
+        }
+
+        function changePage(direction) {
+            if (isAnimating) return;
+            var totalPages = Math.ceil(allPosts.length / postsPerPage);
+            var newPage = currentPage + direction;
+            if (newPage >= 1 && newPage <= totalPages) {
+                currentPage = newPage;
+                updatePostsView();
+                updatePagination();
+                document.querySelector('#posts-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function goToPage(page) {
+            if (isAnimating) return;
+            var totalPages = Math.ceil(allPosts.length / postsPerPage);
+            if (page >= 1 && page <= totalPages && page !== currentPage) {
+                currentPage = page;
+                updatePostsView();
+                updatePagination();
+                document.querySelector('#posts-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function updatePagination() {
+            var totalPages = Math.ceil(allPosts.length / postsPerPage);
+            var prevBtn = document.getElementById('prev-page');
+            var nextBtn = document.getElementById('next-page');
+            var pageNumbers = document.getElementById('page-numbers');
+
+            prevBtn.disabled = currentPage <= 1;
+            nextBtn.disabled = currentPage >= totalPages;
+
+            pageNumbers.innerHTML = '';
+            if (totalPages <= 1) return;
+
+            for (var i = 1; i <= totalPages; i++) {
+                var btn = document.createElement('button');
+                btn.textContent = i;
+                btn.setAttribute('data-page', i);
+                btn.onclick = (function(p) { return function() { goToPage(p); }; })(i);
+                if (i === currentPage) {
+                    btn.className = 'w-10 h-10 text-sm font-semibold rounded bg-invest-blue text-white';
+                } else {
+                    btn.className = 'w-10 h-10 text-sm font-medium rounded border border-gray-200 text-invest-gray hover:border-invest-blue hover:text-invest-blue transition-colors';
+                }
+                pageNumbers.appendChild(btn);
+            }
+        }
+    </script>
+</body>
+</html>
