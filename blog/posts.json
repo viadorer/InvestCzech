@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "date": "2026-03-13",
+      "slug": "investicni-nemovitost-s-hypotekou-kalkulace-rizika-vyhody",
+      "image": "/images/blog/investicni-nemovitost-s-hypotekou-kalkulace-rizika-vyhody.png",
+      "title": "Investiční nemovitost s hypotékou: Kalkulace, rizika a výhody",
+      "excerpt": "Zvažujete investici do nemovitosti s pomocí hypotéky? Probereme kalkulace, rizika a výhody. Ukážeme, jak na to, aby nájem splácel hypotéku a vy jste budovali majetek.",
+      "category": "guide",
+      "featured": false,
+      "imageAlt": "Byt s hypotékou",
+      "keywords": "investiční nemovitost, hypotéka, investiční hypotéka, nájem, výnos, rizika, správa nemovitosti",
+      "readTime": 9,
+      "seoTitle": "Investiční nemovitost a hypotéka: Kalkulace a rizika",
+      "categoryName": "Průvodce",
+      "dateFormatted": "13. března 2026",
+      "seoDescription": "Investiční nemovitost s hypotékou: Kalkulace, rizika, výhody. Jak na to, aby nájem splácel hypotéku a vy budovali majetek. Tipy a triky.",
+      "id": "investicni-nemovitost-s-hypotekou-kalkulace-rizika-vyhody"
+    },
+    {
       "date": "2026-03-08",
       "slug": "invest-czech-vse-pro-investicni-nemovitosti",
       "image": "/images/blog/invest-czech-vse-pro-investicni-nemovitosti.png",
