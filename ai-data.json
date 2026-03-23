@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generatedAt": "2026-03-08T13:10:43.361Z",
+  "generatedAt": "2026-03-23T07:03:53.083Z",
   "generatedBy": "Hugo Orchestrator AIO Engine",
   "projectType": "html",
   "schemas": {
@@ -31,15 +31,15 @@
         },
         {
           "@type": "Question",
-          "name": "Jaké služby nabízí Invest Czech?",
+          "name": "Jaké služby Invest Czech nabízí?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Invest Czech nabízí kompletní servis pro investory do nemovitostí, včetně akvizice nemovitostí, financování, správy a garance nájmu."
+            "text": "Invest Czech poskytuje kompletní servis pro investory do nemovitostí, včetně akvizice, financování, správy a garance nájmu."
           }
         },
         {
           "@type": "Question",
-          "name": "Kde sídlí Invest Czech?",
+          "name": "Kde má Invest Czech sídlo?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Invest Czech má dvě adresy: Dřevěná 99/3, Plzeň a Pod turnovskou tratí 182/18, Praha."
@@ -51,14 +51,6 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Zakladatelem Invest Czech je David Choc."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Na co se Invest Czech specializuje?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Invest Czech se specializuje na pomoc investorům s budováním portfolia nájemních bytů, které se splácejí samy."
           }
         }
       ]
