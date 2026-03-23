@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generatedAt": "2026-03-23T07:03:53.083Z",
+  "generatedAt": "2026-03-23T08:03:17.169Z",
   "generatedBy": "Hugo Orchestrator AIO Engine",
   "projectType": "html",
   "schemas": {
@@ -26,15 +26,15 @@
           "name": "Co je Invest Czech?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Invest Czech je společnost, která se specializuje na budování portfolia nájemních bytů pro investory. Nabízí kompletní servis zahrnující akvizici, financování, správu a garanci nájmu."
+            "text": "Invest Czech je společnost, která se zaměřuje na budování portfolia nájemních bytů investorům. Poskytuje kompletní servis, včetně akvizice, financování, správy a garance nájmu."
           }
         },
         {
           "@type": "Question",
-          "name": "Jaké služby Invest Czech nabízí?",
+          "name": "Jaké služby nabízí Invest Czech?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Invest Czech poskytuje kompletní servis pro investory do nemovitostí, včetně akvizice, financování, správy a garance nájmu."
+            "text": "Invest Czech nabízí akvizici nemovitostí, financování, správu nemovitostí a garanci nájmu."
           }
         },
         {
