@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "date": "2026-04-03",
+      "slug": "investicni-nemovitost-jak-vybrat-lokalitu",
+      "image": "/images/blog/investicni-nemovitost-jak-vybrat-lokalitu.png",
+      "title": "Investiční nemovitost: Jak vybrat lokalitu pro maximální výnos?",
+      "excerpt": "Výběr správné lokality je klíčový pro úspěch investiční nemovitosti. Jaké faktory zohlednit a kde hledat nejlepší příležitosti? Invest Czech vám poradí s výběrem lokality pro maximální výnos.",
+      "category": "guide",
+      "featured": false,
+      "imageAlt": "Mapa města s vyznačenými oblastmi pro investice do nemovitostí",
+      "keywords": "investiční nemovitost, lokalita, výnos, investice, nemovitosti, nájem, trh nemovitostí, Invest Czech",
+      "readTime": 9,
+      "seoTitle": "Investiční nemovitost: Výběr lokality pro maximální výnos",
+      "categoryName": "Průvodce",
+      "dateFormatted": "3. dubna 2026",
+      "seoDescription": "Jak vybrat lokalitu pro investiční nemovitost? Faktory, trendy, tipy a triky od Invest Czech. Maximalizujte svůj výnos a minimalizujte rizika.",
+      "id": "investicni-nemovitost-jak-vybrat-lokalitu"
+    },
+    {
       "date": "2026-03-13",
       "slug": "investicni-nemovitost-s-hypotekou-kalkulace-rizika-vyhody",
       "image": "/images/blog/investicni-nemovitost-s-hypotekou-kalkulace-rizika-vyhody.png",
