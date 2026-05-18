@@ -69,6 +69,57 @@
       "imageAlt": "Pohled na bytový dům v Praze ze střechy sousední budovy",
       "category": "investment",
       "categoryName": "Investice"
+    },
+    {
+      "id": "investicni-nemovitost-jak-vybrat-lokalitu",
+      "slug": "investicni-nemovitost-jak-vybrat-lokalitu",
+      "title": "Investiční nemovitost: Jak vybrat lokalitu pro maximální výnos?",
+      "excerpt": "Výběr správné lokality je klíčový pro úspěch investiční nemovitosti. Jaké faktory zohlednit a kde hledat nejlepší příležitosti? Invest Czech vám poradí s výběrem lokality pro maximální výnos.",
+      "seoTitle": "Investiční nemovitost: Výběr lokality pro maximální výnos",
+      "seoDescription": "Jak vybrat lokalitu pro investiční nemovitost? Faktory, trendy, tipy a triky od Invest Czech. Maximalizujte svůj výnos a minimalizujte rizika.",
+      "date": "2026-04-03",
+      "dateFormatted": "3. dubna 2026",
+      "readTime": 9,
+      "image": "/images/blog/investicni-nemovitost-jak-vybrat-lokalitu.png",
+      "imageAlt": "Mapa města s vyznačenými oblastmi pro investice do nemovitostí",
+      "category": "guide",
+      "categoryName": "Průvodce",
+      "keywords": "investiční nemovitost, lokalita, výnos, investice, nemovitosti, nájem, trh nemovitostí, Invest Czech",
+      "featured": false
+    },
+    {
+      "id": "investicni-nemovitost-s-hypotekou-kalkulace-rizika-vyhody",
+      "slug": "investicni-nemovitost-s-hypotekou-kalkulace-rizika-vyhody",
+      "title": "Investiční nemovitost s hypotékou: Kalkulace, rizika a výhody",
+      "excerpt": "Zvažujete investici do nemovitosti s pomocí hypotéky? Probereme kalkulace, rizika a výhody. Ukážeme, jak na to, aby nájem splácel hypotéku a vy jste budovali majetek.",
+      "seoTitle": "Investiční nemovitost a hypotéka: Kalkulace a rizika",
+      "seoDescription": "Investiční nemovitost s hypotékou: Kalkulace, rizika, výhody. Jak na to, aby nájem splácel hypotéku a vy budovali majetek. Tipy a triky.",
+      "date": "2026-03-13",
+      "dateFormatted": "13. března 2026",
+      "readTime": 9,
+      "image": "/images/blog/investicni-nemovitost-s-hypotekou-kalkulace-rizika-vyhody.png",
+      "imageAlt": "Byt s hypotékou",
+      "category": "guide",
+      "categoryName": "Průvodce",
+      "keywords": "investiční nemovitost, hypotéka, investiční hypotéka, nájem, výnos, rizika, správa nemovitosti",
+      "featured": false
+    },
+    {
+      "id": "invest-czech-vse-pro-investicni-nemovitosti",
+      "slug": "invest-czech-vse-pro-investicni-nemovitosti",
+      "title": "Invest Czech: Vše, co potřebujete pro investiční nemovitosti na jednom místě",
+      "excerpt": "Uvažujete o investici do nemovitostí, ale nevíte, kde začít? Invest Czech je komplexní platforma, která vás provede celým procesem – od výběru vhodné nemovitosti až po její správu a sledování tržní hodnoty. Vše pod jednou střechou.",
+      "seoTitle": "Invest Czech: Investice do nemovitostí bez starostí",
+      "seoDescription": "Invest Czech je all-in-one platforma pro investiční nemovitosti v ČR. Nákup, hypotéka, správa, garance nájmu, analytika. Investujte chytře a bez starostí.",
+      "date": "2026-03-08",
+      "dateFormatted": "8. března 2026",
+      "readTime": 7,
+      "image": "/images/blog/invest-czech-vse-pro-investicni-nemovitosti.png",
+      "imageAlt": "Moderní byt s výhledem na město, symbol investiční nemovitosti",
+      "category": "guide",
+      "categoryName": "Průvodce",
+      "keywords": "investiční nemovitosti, správa nemovitostí, nákup nemovitostí, hypotéka, garance nájmu, investice, realitní trh",
+      "featured": false
     }
   ]
 }
