@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="cs" id="html-document">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP4KNZWHT8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QP4KNZWHT8');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family office services | Nemovitostní kotva portfolia | InvestCzech</title>
+    <meta name="description" content="Pro správce rodinného majetku, kteří hledají nemovitostní kotvu portfolia. Dedikovaný vztahový manažer, kvartální reporting, daňová struktura, mezigenerační kontinuita. Typická alokace 10–100 mil. Kč.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.investczech.cz/family-office.html">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.investczech.cz/family-office.html">
+    <meta property="og:title" content="Family office services | InvestCzech">
+    <meta property="og:description" content="Nemovitostní kotva portfolia pro správce majetku. Dedikovaný partner, kvartální reporting, strategická správa.">
+    <meta property="og:image" content="https://www.investczech.cz/images/hero.jpg">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="InvestCzech">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'invest-blue': '#0A2540',
+                        'invest-blue-light': '#1A3A5C',
+                        'invest-red': '#D7141A',
+                        'invest-red-dark': '#B01016',
+                        'invest-gray': '#1A1A1A',
+                        'invest-gray-light': '#6B7280',
+                        'invest-bg': '#FAFBFC',
+                    },
+                    fontFamily: { 'sans': ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50" aria-label="Hlavní navigace">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold tracking-tight"><span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span></span>
+                    </a>
+                    <div class="hidden lg:flex lg:ml-10 lg:space-x-1">
+                        <a href="index.html#proces" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="index.html#off-market" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Off-market trh</a>
+                        <a href="index.html#sprava" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Správa a garance</a>
+                        <a href="index.html#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Akademie</a>
+                        <a href="blog/" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Blog</a>
+                        <a href="dashboard.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Nástěnka</a>
+                        <a href="calculator.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Kalkulačka</a>
+                        <a href="about.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">O nás</a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex lg:items-center lg:space-x-4">
+                    <a href="#kontakt-form" class="bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors duration-200">Sjednat schůzku</a>
+                    <div class="flex items-center space-x-2 text-xs">
+                        <button class="language-btn text-invest-blue font-semibold" data-lang="cs" onclick="setLanguage('cs')">CZ</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="de" onclick="setLanguage('de')">DE</button>
+                    </div>
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded text-invest-gray hover:text-invest-blue hover:bg-gray-50 focus:outline-none">
+                        <span class="sr-only">Menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-4 space-y-1">
+                <a href="index.html#proces" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Vaše cesta</a>
+                <a href="index.html#off-market" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Off-market trh</a>
+                <a href="index.html#sprava" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Správa a garance</a>
+                <a href="index.html#akademie" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Akademie</a>
+                <a href="blog/" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Blog</a>
+                <a href="dashboard.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Nástěnka</a>
+                <a href="calculator.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Kalkulačka</a>
+                <a href="about.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">O nás</a>
+                <div class="pt-3 border-t border-gray-100">
+                    <a href="#kontakt-form" class="block w-full text-center bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors">Sjednat schůzku</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-28 pb-24 bg-invest-blue overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/hero.jpg" alt="Nemovitostní portfolio jako kotva rodinného majetku" class="w-full h-full object-cover opacity-25">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-br from-invest-blue/95 via-invest-blue/90 to-invest-blue/75"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-4">Family office services</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] tracking-tight">Nemovitostní kotva<br>rodinného majetku.</h1>
+                <p class="text-lg md:text-xl text-white/85 leading-relaxed mt-6 max-w-2xl">Pro správce rodinného majetku, kteří hledají stabilizační složku portfolia. Striktní reporting, daňová optimalizace, mezigenerační kontinuita.</p>
+                <p class="text-base text-white/65 leading-relaxed mt-4 max-w-2xl italic">Typická alokace 10–100 mil. Kč. Jeden partner = jedna rodinná struktura.</p>
+                <div class="flex flex-col sm:flex-row gap-4 mt-10">
+                    <a href="#kontakt-form" class="inline-flex items-center justify-center px-8 py-4 bg-invest-red hover:bg-invest-red-dark text-white text-lg font-semibold rounded transition-colors">Sjednat úvodní setkání<svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+                    <a href="case-studies.html" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/15 text-lg font-semibold rounded transition-colors">Případové studie</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pro koho -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1">
+                    <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Pro koho</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue leading-tight">Profesionální správa rodinného kapitálu</h2>
+                </div>
+                <div class="lg:col-span-2 space-y-5 text-lg text-invest-gray-light leading-relaxed">
+                    <p>Pracujeme s&nbsp;klienty, kteří svůj majetek řídí strategicky — typicky podnikatelé po&nbsp;úspěšném exitu, generační rodiny s&nbsp;převedeným kapitálem, nebo profesionální správci rodinného majetku (single-family office).</p>
+                    <p>Pro tyto klienty není nemovitost cílem, ale složkou diverzifikace. Typicky 10–30&nbsp;% celkového alokovaného portfolia. Cílem je kombinace stabilního výnosu (6–10&nbsp;%&nbsp;p.a.), nízké volatility vůči akciovým pozicím a&nbsp;mezigenerační kontinuity.</p>
+                    <p>Naše pozice: <strong class="text-invest-blue">exekuční partner pro nemovitostní složku</strong>. Nehraje roli „investičního poradce" v&nbsp;širším smyslu — to už máte vyřešené.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Co dostáváte -->
+    <section class="py-24 bg-invest-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Co dostáváte</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Pět konkrétních prvků nad standardem</h2>
+                <p class="text-lg text-invest-gray-light">Family office tier je strukturovaný odlišně od standardní spolupráce. Méně klientů, větší zapojení, dlouhodobé vztahy.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-invest-red text-white rounded flex items-center justify-center mr-5 flex-shrink-0 font-bold">1</div>
+                        <div>
+                            <h3 class="text-lg font-bold text-invest-blue mb-2">Dedikovaný partner</h3>
+                            <p class="text-sm text-invest-gray-light leading-relaxed">Jeden partner InvestCzech vede vaši strukturu od&nbsp;první akvizice po&nbsp;mezigenerační převod. Žádné předávání mezi sales, account managerem a&nbsp;analytikem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-invest-red text-white rounded flex items-center justify-center mr-5 flex-shrink-0 font-bold">2</div>
+                        <div>
+                            <h3 class="text-lg font-bold text-invest-blue mb-2">Kvartální strategický reporting</h3>
+                            <p class="text-sm text-invest-gray-light leading-relaxed">Strukturovaný formát s&nbsp;tržními cenami, výnosem, srovnáním s&nbsp;benchmarky (PXI realit, dluhopisy, akcie), aktualizace makro výhledu pro CZ trh.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-invest-red text-white rounded flex items-center justify-center mr-5 flex-shrink-0 font-bold">3</div>
+                        <div>
+                            <h3 class="text-lg font-bold text-invest-blue mb-2">Roční audit + akční plán</h3>
+                            <p class="text-sm text-invest-gray-light leading-relaxed">Hloubková rebalance — co prodat, co refinancovat, kam alokovat dodatečný kapitál. Konkrétní plán na 12 měsíců dopředu s&nbsp;očekávanými výsledky.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-invest-red text-white rounded flex items-center justify-center mr-5 flex-shrink-0 font-bold">4</div>
+                        <div>
+                            <h3 class="text-lg font-bold text-invest-blue mb-2">Právní a daňová struktura</h3>
+                            <p class="text-sm text-invest-gray-light leading-relaxed">Připravujeme společně s&nbsp;vašimi poradci. SVZ, holding, nadace, svěřenský fond — podle účelu (provoz, daňová optimalizace, mezigenerační převod).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8 md:col-span-2">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-invest-red text-white rounded flex items-center justify-center mr-5 flex-shrink-0 font-bold">5</div>
+                        <div>
+                            <h3 class="text-lg font-bold text-invest-blue mb-2">Diverzifikační doporučení</h3>
+                            <p class="text-sm text-invest-gray-light leading-relaxed">Mix typů (bytové domy / komerce / pozemky / mezzanine), lokalit (Praha / Plzeň / Severní Čechy / případně další regiony), financování (vlastní kapitál vs. úvěr) a&nbsp;tržních cyklů. Cílem je portfolio, které prochází krizovými lety bez ztráty likvidity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typický scénář -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div>
+                    <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Typický scénář spolupráce</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6 leading-tight">Family office alokuje 20&nbsp;mil. Kč do&nbsp;nemovitostí</h2>
+                    <p class="text-lg text-invest-gray-light leading-relaxed mb-4">Jako součást širší alokační strategie (typicky 15–25&nbsp;% z&nbsp;celkového rodinného portfolia). Cílem je výnos 6–10&nbsp;%&nbsp;p.a. bez aktivního zapojení rodiny a&nbsp;stabilizace portfolia (snížení volatility vůči akciovým a&nbsp;dluhopisovým pozicím).</p>
+                    <p class="text-invest-gray-light leading-relaxed">Společně připravíme strukturu (typicky s.r.o. s&nbsp;dceřinými projektovými s.r.o. pro daňové oddělení), akviziční zadání (typ, lokalita, profil nájemníka), realizujeme nákupy během 6–12 měsíců a&nbsp;převedeme do&nbsp;dlouhodobé správy. Reportujeme kvartálně, akční plán aktualizujeme ročně.</p>
+                </div>
+                <div class="bg-invest-bg border border-gray-100 rounded p-8 lg:p-10">
+                    <h3 class="text-lg font-bold text-invest-blue mb-6">Modelová alokace 20 mil. Kč</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-invest-red pl-4">
+                            <p class="font-semibold text-invest-blue mb-1">5–6 bytů Praha + Plzeň</p>
+                            <p class="text-sm text-invest-gray-light">Stabilní lokality, dlouhodobí nájemníci, ROE cílově 14–18&nbsp;%. Klidnější složka portfolia.</p>
+                        </div>
+                        <div class="border-l-2 border-invest-red pl-4">
+                            <p class="font-semibold text-invest-blue mb-1">2–3 byty Severní Čechy</p>
+                            <p class="text-sm text-invest-gray-light">Cash-flow složka s&nbsp;vyšším ROE (20+&nbsp;%), profesionální screening nájemníků, Vzorný nájemce na všech.</p>
+                        </div>
+                        <div class="border-l-2 border-invest-red pl-4">
+                            <p class="font-semibold text-invest-blue mb-1">Mezzanine 1–2 projekty</p>
+                            <p class="text-sm text-invest-gray-light">Diversifikace mimo přímé vlastnictví. Cílový výnos 9–12&nbsp;%&nbsp;p.a., horizont 18–36 měsíců.</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-gray-100">
+                        <p class="text-sm font-semibold text-invest-blue mb-2">Cílový blended výnos</p>
+                        <p class="text-3xl font-extrabold text-invest-blue">~&nbsp;14–18&nbsp;% ROE</p>
+                        <p class="text-xs text-invest-gray-light mt-2">Konkrétní modelace pro vaši situaci je výstupem úvodního setkání.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mezigenerační kontinuita -->
+    <section class="py-24 bg-invest-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Dlouhý horizont</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Mezigenerační kontinuita</h2>
+                <p class="text-lg text-white/75">Vaše portfolio žije déle než spolupráce s konkrétním poradcem. Stavíme strukturu, která to umožní.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white/5 border border-white/10 rounded p-6">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3">Struktura</p>
+                    <h3 class="text-lg font-bold text-white mb-3">Holding + projektová s.r.o.</h3>
+                    <p class="text-sm text-white/70 leading-relaxed">Oddělení rizika mezi jednotlivými nemovitostmi. Snadný převod akcií holdingu (na děti, do nadace, do fondu) bez prodeje jednotlivých nemovitostí.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded p-6">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3">Dokumentace</p>
+                    <h3 class="text-lg font-bold text-white mb-3">Předávatelná know-how</h3>
+                    <p class="text-sm text-white/70 leading-relaxed">Vše v&nbsp;HouseMaster: smlouvy, technický stav, nájemníci, plán revizí. Vaše dědicové se nepotácí v&nbsp;papírech.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded p-6">
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3">Kontinuita</p>
+                    <h3 class="text-lg font-bold text-white mb-3">Vztah, ne závislost</h3>
+                    <p class="text-sm text-white/70 leading-relaxed">Spolupracujeme s&nbsp;vašimi advokáty, daňovými poradci, příp. wealth managery — neopovládáme vaši strukturu. Vy ji můžete kdykoliv převzít plně do vlastních rukou.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ family office -->
+    <section class="py-24 bg-invest-bg">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Family office · FAQ</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Co dostáváme od správců majetku</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Jaká je minimální alokace, abyste se mnou pracovali ve family office formátu?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Family office tier začíná typicky od&nbsp;10&nbsp;mil. Kč alokace do&nbsp;nemovitostí. Pod tuto hodnotu pracujeme v&nbsp;rámci <a href="pro-investory.html" class="text-invest-red underline">standardního formátu pro pokročilé investory</a>. Diskuze o tier není formalisticky, je o&nbsp;hloubce vztahu a&nbsp;reportingu, který klient požaduje.</div>
+                </details>
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Pracujete s mezinárodními rodinami?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Ano. Část našich klientů žije v&nbsp;zahraničí (UK, Německo, Švýcarsko, US) a&nbsp;investuje do&nbsp;českých nemovitostí. Reporting umíme v&nbsp;češtině a&nbsp;angličtině, koordinujeme s&nbsp;vašimi lokálními daňovými poradci. Vícejazyčnost webu (CZ&nbsp;/&nbsp;EN&nbsp;/&nbsp;DE) je součástí naší přípravy na tuto klientskou kategorii.</div>
+                </details>
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Jak rychle umíte alokovat 20–50 mil. Kč?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Typicky 6–12 měsíců na rozumnou alokaci. Jdeme po jednotlivých nemovitostech (ne plošně), abychom udrželi kvalitu výběru. Pokud chcete alokovat rychleji, máme alternativy (mezzanine investice s&nbsp;rychlejším vstupem, případně účast v&nbsp;developerských projektech).</div>
+                </details>
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Můžeme začít diskuzí bez závazku?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Ano. První setkání je nezávazné, typicky 60–90 minut, osobně v&nbsp;Praze nebo Plzni (případně u&nbsp;vás). Cílem je vzájemné poznání — vy si ověříte, jak pracujeme, my pochopíme strukturu vašeho portfolia a&nbsp;rodinné cíle. Z&nbsp;tohoto setkání následně vychází nezávazný strategický návrh do&nbsp;7 dní.</div>
+                </details>
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Co když už mám svého wealth managera / advokáta / daňového poradce?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Pak je to ideální výchozí bod. Nehrajeme roli „celkového finančního poradce" — koordinujeme se s&nbsp;vašimi poradci v&nbsp;jejich oborech. My řešíme nemovitostní složku, oni řeší zbytek. Strukturu vlastnictví, daně a&nbsp;právní agendu finalizujeme společně s&nbsp;nimi.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontaktní formulář -->
+    <section id="kontakt-form" class="py-24 bg-white scroll-mt-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Začínáme</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Sjednat úvodní setkání</h2>
+                <p class="text-lg text-invest-gray-light">Pošlete nám stručné informace. Do 24 hodin se ozveme s návrhem termínu osobního setkání.</p>
+            </div>
+            <form action="https://formspree.io/f/maybnvyq" method="POST" class="bg-invest-bg border border-gray-100 rounded p-8 space-y-5">
+                <input type="hidden" name="_subject" value="Family office — úvodní setkání">
+                <input type="hidden" name="_next" value="https://www.investczech.cz/family-office.html#dekujeme">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <label for="jmeno" class="block text-sm font-medium text-invest-gray mb-2">Jméno a příjmení *</label>
+                        <input type="text" id="jmeno" name="jmeno" required class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="rola" class="block text-sm font-medium text-invest-gray mb-2">Pozice / role</label>
+                        <input type="text" id="rola" name="rola" placeholder="Např. principal, advisor, family member" class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-invest-gray mb-2">E-mail *</label>
+                        <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="telefon" class="block text-sm font-medium text-invest-gray mb-2">Telefon</label>
+                        <input type="tel" id="telefon" name="telefon" class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent">
+                    </div>
+                </div>
+                <div>
+                    <label for="alokace" class="block text-sm font-medium text-invest-gray mb-2">Plánovaná alokace do nemovitostí</label>
+                    <select id="alokace" name="alokace" class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent">
+                        <option value="">— vyberte rozsah —</option>
+                        <option value="10-20-mil">10–20 mil. Kč</option>
+                        <option value="20-50-mil">20–50 mil. Kč</option>
+                        <option value="50-100-mil">50–100 mil. Kč</option>
+                        <option value="100-plus">100+ mil. Kč</option>
+                        <option value="upresnime-osobne">upřesníme osobně</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="kontext" class="block text-sm font-medium text-invest-gray mb-2">Stručný kontext (volitelně)</label>
+                    <textarea id="kontext" name="kontext" rows="4" placeholder="Např. nedávno exitovaný podnikatel, řešíme alokaci 30 mil. Kč. Současně máme alokované akcie a dluhopisy přes XYZ. Hledáme stabilizační nemovitostní složku 15–20 % portfolia..." class="w-full p-3 border border-gray-200 rounded text-sm focus:ring-2 focus:ring-invest-blue focus:border-transparent"></textarea>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-invest-gray mb-2">Preferovaný formát úvodního setkání</label>
+                    <div class="space-y-2">
+                        <label class="flex items-start"><input type="radio" name="format" value="osobne-praha" class="mt-1 mr-3"><span class="text-sm text-invest-gray-light">Osobně v Praze</span></label>
+                        <label class="flex items-start"><input type="radio" name="format" value="osobne-plzen" class="mt-1 mr-3"><span class="text-sm text-invest-gray-light">Osobně v Plzni</span></label>
+                        <label class="flex items-start"><input type="radio" name="format" value="osobne-u-klienta" class="mt-1 mr-3"><span class="text-sm text-invest-gray-light">Osobně u&nbsp;klienta / na jiném místě</span></label>
+                        <label class="flex items-start"><input type="radio" name="format" value="online" class="mt-1 mr-3"><span class="text-sm text-invest-gray-light">Online (video call)</span></label>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <button type="submit" class="w-full md:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-invest-red hover:bg-invest-red-dark text-white text-sm font-semibold rounded transition-colors">
+                        Odeslat — ozve se vám partner
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </button>
+                </div>
+                <p class="text-xs text-invest-gray-light pt-2">Odesláním souhlasíte se <a href="ochrana-osobnich-udaju.html" class="underline hover:text-invest-blue">zpracováním osobních údajů</a>. Veškerá korespondence je důvěrná a&nbsp;nesdílíme ji s&nbsp;třetími stranami.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-invest-blue py-16 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <span class="text-xl font-bold tracking-tight"><span class="text-white">INVEST</span><span class="text-invest-red">CZECH</span></span>
+                    <p class="text-white/50 text-sm mt-4">Provozovatel portálu: PTF reality, s.r.o.</p>
+                    <p class="text-white/50 text-sm mt-1">IČO: 06684394 | DIČ: CZ06684394</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Plzeň</h3>
+                    <address class="text-white/50 text-sm not-italic leading-relaxed">Dřevěná 99/3<br>301 00 Plzeň</address>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Praha</h3>
+                    <address class="text-white/50 text-sm not-italic leading-relaxed">Pod turnovskou tratí 182/18<br>198 00 Praha – Hloubětín</address>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Ekosystém</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="https://estateprivate.com" target="_blank" class="text-white/50 hover:text-white transition-colors">EstatePrivate.com</a></li>
+                        <li><a href="https://ceskosobe.cz" target="_blank" class="text-white/50 hover:text-white transition-colors">ceskosobe.cz</a></li>
+                        <li><a href="https://chcibytmilionarem.cz" target="_blank" class="text-white/50 hover:text-white transition-colors">chcibytmilionarem.cz</a></li>
+                        <li><a href="about.html" class="text-white/50 hover:text-white transition-colors">O nás</a></li>
+                        <li><a href="calculator.html" class="text-white/50 hover:text-white transition-colors">Kalkulačka</a></li>
+                        <li><a href="case-studies.html" class="text-white/50 hover:text-white transition-colors">Případové studie</a></li>
+                        <li><a href="pro-investory.html" class="text-white/50 hover:text-white transition-colors">Pro investory</a></li>
+                        <li><a href="family-office.html" class="text-white/50 hover:text-white transition-colors" aria-current="page">Family office</a></li>
+                        <li><a href="cena.html" class="text-white/50 hover:text-white transition-colors">Cena</a></li>
+                        <li><a href="faq.html" class="text-white/50 hover:text-white transition-colors">Časté otázky</a></li>
+                        <li><a href="ochrana-osobnich-udaju.html" class="text-white/50 hover:text-white transition-colors">Ochrana osobních údajů</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
+                    <p>&copy; 2026 InvestCzech. Všechna práva vyhrazena.</p>
+                    <div class="flex items-center space-x-4 mt-2 md:mt-0">
+                        <a href="ochrana-osobnich-udaju.html" class="hover:text-white/70 transition-colors">Ochrana osobních údajů</a>
+                        <span>|</span>
+                        <p>Investice do nemovitostí na klíč s digitální kontrolou.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('mobile-menu-btn');
+            var menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', function() { menu.classList.toggle('hidden'); });
+            }
+        });
+    </script>
+    <script
+      src="https://orchestrator-phi.vercel.app/widget/hugo-chat.js"
+      data-project-id="a1b2c3d4-0002-4000-8000-000000000002"
+      data-position="right"
+      data-color="#0A2540"
+      data-accent="#D7141A"
+    ></script>
+</body>
+</html>
