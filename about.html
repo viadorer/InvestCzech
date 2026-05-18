@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O nás | InvestCzech</title>
-    <meta name="description" content="InvestCzech je kompletní servis pro investory do nemovitostí v České republice. Akvizice, financování, správa a garance nájmu. Provozovatel: PTF reality, s.r.o.">
+    <meta name="description" content="Tvář projektu, příběh a pohled na trh. InvestCzech vznikl v roce 2017 z vlastní investorské zkušenosti. Dnes obsluhujeme klienty napříč celým Českem — od první nemovitosti po portfolia v desítkách milionů.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.investczech.cz/about.html">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -112,55 +112,218 @@
         </div>
     </nav>
 
-    <!-- Article Header -->
-    <section class="pt-28 pb-12 bg-invest-blue">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl">
-                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-4">O společnosti</p>
-                <h1 class="text-3xl md:text-4xl font-extrabold text-white leading-tight tracking-tight" data-i18n="about_title">InvestCzech</h1>
-                <div class="flex items-center space-x-4 mt-6">
-                    <img src="images/team/david-choc.jpg" alt="David Choc" class="w-10 h-10 rounded-full object-cover" data-i18n-alt="about_author_alt">
-                    <div>
-                        <p class="text-white font-medium text-sm" data-i18n="about_author">David Choc</p>
-                        <p class="text-white/50 text-xs" data-i18n="about_date">16. 6. 2024</p>
+    <!-- Hero -->
+    <section class="relative pt-28 pb-20 bg-invest-blue overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-invest-blue via-invest-blue-light to-invest-blue opacity-90"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                <div class="lg:col-span-3">
+                    <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-4" data-i18n="about_eyebrow">Tvář projektu</p>
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-[1.1] tracking-tight" data-i18n="about_title">
+                        Stavíme nemovitostní portfolia,<br>která jsou postavená napevno.
+                    </h1>
+                    <p class="text-lg text-white/80 leading-relaxed mt-6 max-w-2xl" data-i18n="about_subtitle">
+                        InvestCzech vznikl v roce 2017 z vlastní investorské zkušenosti. Než jsme postavili platformu pro klienty, řešili jsme stejné věci pro své portfolio. Dnes obsluhujeme klienty napříč celým Českem — od první nemovitosti po portfolia v desítkách milionů.
+                    </p>
+                    <div class="flex items-center space-x-4 mt-8">
+                        <img src="images/team/david-choc.jpg" alt="David Choc" class="w-14 h-14 rounded-full object-cover border-2 border-white/20" data-i18n-alt="about_author_alt">
+                        <div>
+                            <p class="text-white font-semibold" data-i18n="about_author">David Choc</p>
+                            <p class="text-white/60 text-sm" data-i18n="about_author_role">Zakladatel · PTF reality, s.r.o.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 hidden lg:block">
+                    <div class="aspect-square bg-white/5 border border-white/10 rounded overflow-hidden">
+                        <img src="images/team/david-choc.jpg" alt="David Choc — portrét" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Article Content -->
-    <section class="py-16">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <article class="prose lg:prose-lg mx-auto">
-                <p class="text-lg text-invest-gray mb-8" data-i18n="about_intro">
-                    InvestCzech je investiční platforma specializující se na investice do nemovitostí, která nabízí jedinečný prostor pro setkání investorů a atraktivních nemovitostních příležitostí. Hlavním cílem platformy je efektivní spojování kapitálu s perspektivními projekty v oblasti nemovitostí.
-                </p>
+    <!-- Náš příběh -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1">
+                    <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3" data-i18n="story_eyebrow">Náš příběh</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue leading-tight" data-i18n="story_title">Vznikli jsme z vlastní zkušenosti</h2>
+                </div>
+                <div class="lg:col-span-2 space-y-6 text-lg text-invest-gray-light leading-relaxed">
+                    <p data-i18n="story_p1">InvestCzech vznikl v roce 2017 ze zkušenosti, kterou jsme udělali sami. Než jsme vybudovali platformu pro klienty, řešili jsme stejné věci pro vlastní portfolio: jak najít nemovitost mimo Sreality, jak skládat hypotéky tak, aby portfolio mohlo růst, jak nepřijít o spánek kvůli nájemníkovi v 2 ráno.</p>
+                    <p data-i18n="story_p2">Z té zkušenosti vznikly tři produkty, na kterých dnes klienti staví:</p>
+                    <ul class="space-y-3 pl-0">
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-3 mr-4 flex-shrink-0"></span><span><strong class="text-invest-blue">EstatePrivate</strong> — off-market akviziční kanál pro nemovitosti, které nejsou veřejně inzerované.</span></li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-3 mr-4 flex-shrink-0"></span><span><strong class="text-invest-blue">HouseMaster</strong> — centrální nervový systém vašeho portfolia. Tržní cena, úvěry, výnos, predikce na jedné obrazovce.</span></li>
+                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-3 mr-4 flex-shrink-0"></span><span><strong class="text-invest-blue">Vzorný nájemce</strong> — garance nájmu na účet do 15. dne každého měsíce, i kdyby byt stál prázdný.</span></li>
+                    </ul>
+                    <p data-i18n="story_p3">Dnes obsluhujeme klienty napříč celým Českem — od první investice po multi-property portfolia. Centrály máme v Plzni a v Praze, klienty po celé republice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <h2 class="text-2xl font-bold text-invest-blue mt-12 mb-6" data-i18n="about_services_title">Hlavní služby InvestCzech</h2>
+    <!-- Náš pohled na trh -->
+    <section class="py-24 bg-invest-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1">
+                    <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3" data-i18n="philosophy_eyebrow">Náš pohled na trh</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue leading-tight" data-i18n="philosophy_title">Nepatříme mezi školitele. Stavíme dlouhé vztahy.</h2>
+                </div>
+                <div class="lg:col-span-2 space-y-6 text-lg text-invest-gray-light leading-relaxed">
+                    <p data-i18n="philosophy_p1">Nepatříme mezi školitele, kteří slibují „double za tři roky". Nemovitost je dlouhodobé rozhodnutí, ne sportovní disciplína. Ne každá nemovitost je dobrá investice a ne každý okamžik je dobrý k nákupu.</p>
+                    <p data-i18n="philosophy_p2">Než vám něco doporučíme, podíváme se na vaši finanční situaci, vaše cíle a vaši toleranci rizika. Pak teprve hledáme nemovitost. Měsíčně procházíme stovky nabídek z veřejné i neveřejné nabídky — většina neprojde naším procesem due diligence. Co nedoporučíme my, klient nekoupí.</p>
+                    <blockquote class="border-l-4 border-invest-red pl-6 italic text-invest-blue text-xl leading-relaxed" data-i18n="philosophy_quote">„Stavíme dlouhé vztahy. Většina klientů, kteří s námi začali u prvního bytu, dnes vlastní 3 a více nemovitostí. Měříme se úspěchem za 5 a 10 let, ne týdnem po podpisu kupní smlouvy."</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <ol class="list-decimal pl-6 space-y-6">
-                    <li data-i18n="about_service_1">
-                        <strong>Spojování investorů a projektů:</strong> InvestCzech aktivně propojuje investory s nemovitostními projekty. Díky široké síti kontaktů a databázi projektů může platforma nabídnout různé investiční možnosti, které jsou pečlivě vybírány a hodnoceny, aby splňovaly vysoké standardy kvality a výnosnosti.
+    <!-- Časová osa -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3" data-i18n="timeline_eyebrow">Časová osa</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4" data-i18n="timeline_title">Devět let stavění nástrojů, ne marketingu</h2>
+                <p class="text-lg text-invest-gray-light" data-i18n="timeline_subtitle">Co jsme za tu dobu postavili. Bez marketingových přibarvení.</p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <ol class="relative border-l-2 border-invest-blue/15 ml-4 space-y-10">
+                    <li class="ml-8 relative">
+                        <span class="absolute -left-[42px] flex items-center justify-center w-8 h-8 bg-invest-red rounded-full text-white text-xs font-bold">17</span>
+                        <h3 class="text-lg font-bold text-invest-blue mb-2" data-i18n="timeline_2017">2017 · Vznik PTF reality</h3>
+                        <p class="text-invest-gray-light leading-relaxed" data-i18n="timeline_2017_desc">Založili jsme PTF reality, s.r.o. v Plzni. Začínali jsme s vlastním portfoliem a nezávazným poradenstvím prvním klientům, kteří chtěli stejnou cestu projít.</p>
                     </li>
-                    <li data-i18n="about_service_2">
-                        <strong>Podpora pro podnikatele:</strong> Platforma poskytuje komplexní podporu developerům a majitelům nemovitostí, včetně konzultací, mentorování a pomoc s přípravou prezentací pro investory. Součástí služeb je i právní a finanční poradenství, které pomáhá firmám optimalizovat jejich investiční nabídky a zvyšovat šance na úspěšné získání kapitálu.
+                    <li class="ml-8 relative">
+                        <span class="absolute -left-[42px] flex items-center justify-center w-8 h-8 bg-invest-red rounded-full text-white text-xs font-bold">20</span>
+                        <h3 class="text-lg font-bold text-invest-blue mb-2" data-i18n="timeline_2020">2020 · Rozšíření do Prahy + Vzorný nájemce</h3>
+                        <p class="text-invest-gray-light leading-relaxed" data-i18n="timeline_2020_desc">Otevřeli jsme pražskou pobočku v Hloubětíně a uvedli službu Vzorný nájemce — garanci nájmu na účet do 15. dne v měsíci. Cílem bylo eliminovat strach z neplatičů, který bránil většině klientů investovat.</p>
                     </li>
-                    <li data-i18n="about_service_3">
-                        <strong>Investiční analýzy a due diligence:</strong> Investoři mohou využít detailní analýzy a hodnocení nemovitostních projektů, které zahrnují technickou, finanční a tržní due diligence. Tento proces zajišťuje, že investoři získávají důvěryhodné a ověřené informace o investičních příležitostech, což minimalizuje rizika spojená s investováním.
+                    <li class="ml-8 relative">
+                        <span class="absolute -left-[42px] flex items-center justify-center w-8 h-8 bg-invest-red rounded-full text-white text-xs font-bold">22</span>
+                        <h3 class="text-lg font-bold text-invest-blue mb-2" data-i18n="timeline_2022">2022 · Spuštění EstatePrivate.com</h3>
+                        <p class="text-invest-gray-light leading-relaxed" data-i18n="timeline_2022_desc">Uzavřená off-market platforma, na které agregujeme nabídky z naší sítě i od partnerů. Eliminace inzerčních bitev na veřejných portálech a přístup k nemovitostem, které se na Sreality nikdy nedostanou.</p>
                     </li>
-                    <li data-i18n="about_service_4">
-                        <strong>Networking a eventy:</strong> InvestCzech pořádá pravidelné networkingové akce, workshopy a konference, kde se investoři mohou osobně setkat s developery a dalšími klíčovými hráči na trhu nemovitostí. Tyto události podporují výměnu zkušeností, nápadů a vytváření nových obchodních kontaktů.
+                    <li class="ml-8 relative">
+                        <span class="absolute -left-[42px] flex items-center justify-center w-8 h-8 bg-invest-red rounded-full text-white text-xs font-bold">24</span>
+                        <h3 class="text-lg font-bold text-invest-blue mb-2" data-i18n="timeline_2024">2024 · ChciBytMilionarem + ČeskoSobě</h3>
+                        <p class="text-invest-gray-light leading-relaxed" data-i18n="timeline_2024_desc">Vzdělávací 5-modulový kurz pro začínající investory (ChciBytMilionarem.cz) a komunitní platforma kolem konceptu soukromého důchodu (ČeskoSobě.cz). Smyslem je oddělit edukaci od poradenství a dát klientům prostor učit se vlastním tempem.</p>
                     </li>
-                    <li data-i18n="about_service_5">
-                        <strong>Online platforma:</strong> Uživatelé mohou využívat moderní online platformu, která umožňuje snadné procházení nemovitostních investičních příležitostí, sledování aktuálních projektů a přímou komunikaci s developery a majiteli nemovitostí. Tato platforma je navržena tak, aby byla uživatelsky přívětivá a poskytovala všechny potřebné informace na jednom místě.
+                    <li class="ml-8 relative">
+                        <span class="absolute -left-[42px] flex items-center justify-center w-8 h-8 bg-invest-red rounded-full text-white text-xs font-bold">25</span>
+                        <h3 class="text-lg font-bold text-invest-blue mb-2" data-i18n="timeline_2025">2025 · Dashboard HouseMaster</h3>
+                        <p class="text-invest-gray-light leading-relaxed" data-i18n="timeline_2025_desc">Spuštění vlastního proprietárního dashboardu — tržní cena, úvěry, výnos, predikce, plánované revize a celá dokumentace portfolia na jedné obrazovce. Strategický nástroj pro řízení bohatství, ne jen administrativa.</p>
+                    </li>
+                    <li class="ml-8 relative">
+                        <span class="absolute -left-[42px] flex items-center justify-center w-8 h-8 bg-invest-red rounded-full text-white text-xs font-bold">26</span>
+                        <h3 class="text-lg font-bold text-invest-blue mb-2" data-i18n="timeline_2026">2026 · Adaptace na nová pravidla ČNB</h3>
+                        <p class="text-invest-gray-light leading-relaxed" data-i18n="timeline_2026_desc">Po zpřísnění LTV na 70 % a DTI na 7 od dubna 2026 jsme přepracovali akviziční a financovací procesy. Klientům s předschválenými hypotékami pomáháme stihnout nemovitost dřív, než platnost schválení vyprší.</p>
                     </li>
                 </ol>
+            </div>
+        </div>
+    </section>
 
-                <p class="text-lg text-invest-gray mt-8" data-i18n="about_conclusion">
-                    InvestCzech tak představuje klíčový nástroj pro každého, kdo hledá kvalitní investiční příležitosti v oblasti nemovitostí nebo potřebuje získat kapitál pro svůj developerský projekt. S profesionálním přístupem a širokou nabídkou služeb se InvestCzech stal důvěryhodným partnerem na českém nemovitostním trhu.
-                </p>
-            </article>
+    <!-- Čísla v reálu -->
+    <section class="py-24 bg-invest-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3" data-i18n="numbers_eyebrow">Čísla v reálu</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4" data-i18n="numbers_title">Co stojí za našimi tvrzeními</h2>
+                <p class="text-lg text-white/70" data-i18n="numbers_subtitle">Stav portfolia, klientů a regionů, ve kterých dnes operujeme.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white/5 border border-white/10 rounded p-8 text-center">
+                    <p class="text-4xl md:text-5xl font-extrabold text-white mb-2">150+</p>
+                    <p class="text-sm text-white/60" data-i18n="number_acquisitions">akvizic pro klienty</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded p-8 text-center">
+                    <p class="text-4xl md:text-5xl font-extrabold text-white mb-2">400&nbsp;mil.</p>
+                    <p class="text-sm text-white/60" data-i18n="number_volume">objem zprostředkovaných transakcí (Kč)</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded p-8 text-center">
+                    <p class="text-4xl md:text-5xl font-extrabold text-white mb-2">98&nbsp;%</p>
+                    <p class="text-sm text-white/60" data-i18n="number_occupancy">průměrná obsazenost spravovaných bytů</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded p-8 text-center">
+                    <p class="text-4xl md:text-5xl font-extrabold text-white mb-2">3</p>
+                    <p class="text-sm text-white/60" data-i18n="number_regions">regionální strategie (Praha + Plzeň + Severní Čechy)</p>
+                </div>
+            </div>
+            <p class="text-center text-xs text-white/40 mt-10 max-w-2xl mx-auto" data-i18n="numbers_disclaimer">Údaje k 5/2026. Jednotlivá portfolia se liší — konkrétní čísla u vaší investice spočítáme v rámci úvodní konzultace.</p>
+        </div>
+    </section>
+
+    <!-- Tým a partneři -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3" data-i18n="team_eyebrow">Tým a partneři</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4" data-i18n="team_title">S kým spolupracujete</h2>
+                <p class="text-lg text-invest-gray-light" data-i18n="team_subtitle">Klíčové role v týmu plus externí partneři, kteří k vaší investici přispívají.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-20 h-20 rounded-full overflow-hidden mb-6 bg-invest-bg">
+                        <img src="images/team/david-choc.jpg" alt="David Choc" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-1" data-i18n="team_david_name">David Choc</h3>
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3" data-i18n="team_david_role">Zakladatel · Strategie</p>
+                    <p class="text-sm text-invest-gray-light leading-relaxed" data-i18n="team_david_bio">Vede strategii, akvizice a klíčové klientské vztahy. Třináct let zkušeností v realitním investování — vlastní portfolio plus 150+ akvizic pro klienty.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-20 h-20 rounded-full overflow-hidden mb-6 bg-invest-bg flex items-center justify-center">
+                        <span class="text-2xl font-bold text-invest-blue/30">+</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-1" data-i18n="team_acquisitions_name">Tým akvizic</h3>
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3" data-i18n="team_acquisitions_role">Off-market &amp; due diligence</p>
+                    <p class="text-sm text-invest-gray-light leading-relaxed" data-i18n="team_acquisitions_bio">Vyhledávají nabídky mimo veřejné portály, provádějí technickou i právní due diligence, vyjednávají podmínky a zařizují převod. Pokrytí: Praha, Plzeň, Beroun, Severní Čechy.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-20 h-20 rounded-full overflow-hidden mb-6 bg-invest-bg flex items-center justify-center">
+                        <span class="text-2xl font-bold text-invest-blue/30">+</span>
+                    </div>
+                    <h3 class="text-lg font-bold text-invest-blue mb-1" data-i18n="team_property_name">Tým správy</h3>
+                    <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3" data-i18n="team_property_role">Vzorný nájemce &amp; HouseMaster</p>
+                    <p class="text-sm text-invest-gray-light leading-relaxed" data-i18n="team_property_bio">Prověřování nájemníků, smluvní ochrana, výběr nájmu, technická správa a provoz dashboardu HouseMaster. Zázemí pro klidný spánek majitele.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-invest-bg border border-gray-100 rounded p-10">
+                <h3 class="text-xl font-bold text-invest-blue mb-6 text-center" data-i18n="partners_title">Externí partneři, se kterými stavíme</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <p class="text-sm font-semibold text-invest-blue mb-1" data-i18n="partner_banks">Hypoteční banky</p>
+                        <p class="text-xs text-invest-gray-light" data-i18n="partner_banks_desc">Skládání úvěrů podle nových pravidel ČNB</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-invest-blue mb-1" data-i18n="partner_lawyers">Advokátní kanceláře</p>
+                        <p class="text-xs text-invest-gray-light" data-i18n="partner_lawyers_desc">Kontrola titulů, smluv a převodů</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-invest-blue mb-1" data-i18n="partner_tax">Daňoví poradci</p>
+                        <p class="text-xs text-invest-gray-light" data-i18n="partner_tax_desc">Strukturování investic (s.r.o., fond, nadace)</p>
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-invest-blue mb-1" data-i18n="partner_technicians">Technici a inspektoři</p>
+                        <p class="text-xs text-invest-gray-light" data-i18n="partner_technicians_desc">Stavebně-technické prohlídky a revize</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-invest-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4" data-i18n="cta_title">Chcete vidět, jak by to vypadalo u vás?</h2>
+            <p class="text-lg text-invest-gray-light mb-10 max-w-2xl mx-auto" data-i18n="cta_subtitle">Domluvte si nezávaznou konzultaci. Spočítáme dostupnost, naskicujeme strategii a ukážeme reálné nabídky, které se do vašich parametrů vejdou.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#kontakt" class="inline-flex items-center justify-center px-8 py-4 bg-invest-red hover:bg-invest-red-dark text-white text-lg font-semibold rounded transition-colors" data-i18n="cta_button">Chci nezávazný investiční plán<svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+                <a href="blog/" class="inline-flex items-center justify-center px-8 py-4 bg-white border border-gray-200 text-invest-blue hover:border-invest-blue text-lg font-semibold rounded transition-colors" data-i18n="cta_button_secondary">Prohlédnout si blog</a>
+            </div>
         </div>
     </section>
 
