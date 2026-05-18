@@ -2,20 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.investczech.cz/</loc>
-        <lastmod>2026-02-09</lastmod>
+        <lastmod>2026-05-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://www.investczech.cz/calculator.html</loc>
-        <lastmod>2026-02-09</lastmod>
+        <lastmod>2026-05-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.investczech.cz/about.html</loc>
-        <lastmod>2026-02-09</lastmod>
+        <lastmod>2026-05-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.investczech.cz/dashboard.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.investczech.cz/blog/</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.investczech.cz/blog/detail.html?id=predschvalena-hypoteka-2026</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.investczech.cz/blog/detail.html?id=prvni-investicni-byt-checklist</loc>
+        <lastmod>2026-05-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.investczech.cz/blog/detail.html?id=roe-vs-roi</loc>
+        <lastmod>2026-05-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.investczech.cz/blog/detail.html?id=vzorny-najemce-garance</loc>
+        <lastmod>2026-04-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.investczech.cz/blog/detail.html?id=off-market-trh</loc>
+        <lastmod>2026-04-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.investczech.cz/ochrana-osobnich-udaju.html</loc>
+        <lastmod>2026-05-16</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
 </urlset>

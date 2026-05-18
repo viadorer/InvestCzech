@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" id="html-document">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP4KNZWHT8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QP4KNZWHT8');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Načítání článku... | Blog | InvestCzech</title>
@@ -62,7 +70,7 @@
 </head>
 <body class="bg-white font-sans">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50" aria-label="Hlavní navigace">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
@@ -72,18 +80,30 @@
                         </span>
                     </a>
                     <div class="hidden lg:flex lg:ml-10 lg:space-x-1">
-                        <a href="../index.html#proces" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Vaše cesta</a>
-                        <a href="../index.html#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Akademie</a>
-                        <a href="./" class="px-3 py-2 text-sm font-medium text-invest-blue transition-colors">Blog</a>
-                        <a href="../index.html#kontakt" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Kontakt</a>
+                        <a href="../index.html#proces" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="../index.html#off-market" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Off-market trh</a>
+                        <a href="../index.html#sprava" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Správa a garance</a>
+                        <a href="../index.html#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Akademie</a>
+                        <a href="./" class="px-3 py-2 text-sm font-semibold text-invest-blue border-b-2 border-invest-blue transition-colors" aria-current="page">Blog</a>
+                        <a href="../dashboard.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Nástěnka</a>
+                        <a href="../calculator.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Kalkulačka</a>
+                        <a href="../about.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">O nás</a>
                     </div>
                 </div>
-                <div class="hidden lg:flex lg:items-center">
+                <div class="hidden lg:flex lg:items-center lg:space-x-4">
                     <a href="../index.html#kontakt" class="bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors duration-200">Chci investiční plán</a>
+                    <div class="flex items-center space-x-2 text-xs">
+                        <button class="language-btn text-invest-blue font-semibold" data-lang="cs" onclick="setLanguage('cs')">CZ</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="de" onclick="setLanguage('de')">DE</button>
+                    </div>
                 </div>
                 <div class="flex items-center lg:hidden">
-                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="p-2 rounded text-invest-gray hover:text-invest-blue">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded text-invest-gray hover:text-invest-blue hover:bg-gray-50 focus:outline-none">
+                        <span class="sr-only">Menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
                     </button>
                 </div>
             </div>
@@ -91,9 +111,13 @@
         <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white">
             <div class="px-4 py-4 space-y-1">
                 <a href="../index.html#proces" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Vaše cesta</a>
+                <a href="../index.html#off-market" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Off-market trh</a>
+                <a href="../index.html#sprava" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Správa a garance</a>
                 <a href="../index.html#akademie" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Akademie</a>
-                <a href="./" class="block px-3 py-2 text-sm font-medium text-invest-blue">Blog</a>
-                <a href="../index.html#kontakt" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Kontakt</a>
+                <a href="./" class="block px-3 py-2 text-sm font-semibold text-invest-blue" aria-current="page">Blog</a>
+                <a href="../dashboard.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Nástěnka</a>
+                <a href="../calculator.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Kalkulačka</a>
+                <a href="../about.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">O nás</a>
                 <div class="pt-3 border-t border-gray-100">
                     <a href="../index.html#kontakt" class="block w-full text-center bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
                 </div>
@@ -163,18 +187,50 @@
     </article>
 
     <!-- Footer -->
-    <footer class="bg-invest-blue">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <footer class="bg-invest-blue py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
                 <div>
-                    <span class="text-lg font-bold tracking-tight">
+                    <span class="text-xl font-bold tracking-tight">
                         <span class="text-white">INVEST</span><span class="text-invest-red">CZECH</span>
                     </span>
-                    <p class="text-xs text-white/40 mt-1">PTF reality, s.r.o.</p>
+                    <p class="text-white/50 text-sm mt-4">Provozovatel portálu: PTF reality, s.r.o.</p>
+                    <p class="text-white/50 text-sm mt-1">IČO: 06684394 | DIČ: CZ06684394</p>
                 </div>
-                <div class="flex items-center space-x-8">
-                    <a href="https://www.ceskosobe.cz" class="text-xs text-white/40 hover:text-white/70 transition-colors">CeskoSobe.cz</a>
-                    <a href="https://www.chcibytmilionarem.cz" class="text-xs text-white/40 hover:text-white/70 transition-colors">ChciBytMilionarem.cz</a>
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Plzeň</h3>
+                    <address class="text-white/50 text-sm not-italic leading-relaxed">
+                        Dřevěná 99/3<br>
+                        301 00 Plzeň
+                    </address>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Praha</h3>
+                    <address class="text-white/50 text-sm not-italic leading-relaxed">
+                        Pod turnovskou tratí 182/18<br>
+                        198 00 Praha – Hloubětín
+                    </address>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Ekosystém</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="https://estateprivate.com" target="_blank" class="text-white/50 hover:text-white transition-colors">EstatePrivate.com</a></li>
+                        <li><a href="https://ceskosobe.cz" target="_blank" class="text-white/50 hover:text-white transition-colors">ceskosobe.cz</a></li>
+                        <li><a href="https://chcibytmilionarem.cz" target="_blank" class="text-white/50 hover:text-white transition-colors">chcibytmilionarem.cz</a></li>
+                        <li><a href="../about.html" class="text-white/50 hover:text-white transition-colors">O nás</a></li>
+                        <li><a href="../calculator.html" class="text-white/50 hover:text-white transition-colors">Kalkulačka</a></li>
+                        <li><a href="../ochrana-osobnich-udaju.html" class="text-white/50 hover:text-white transition-colors">Ochrana osobních údajů</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
+                    <p>&copy; 2026 InvestCzech. Všechna práva vyhrazena.</p>
+                    <div class="flex items-center space-x-4 mt-2 md:mt-0">
+                        <a href="../ochrana-osobnich-udaju.html" class="hover:text-white/70 transition-colors">Ochrana osobních údajů</a>
+                        <span>|</span>
+                        <p>Investice do nemovitostí na klíč s digitální kontrolou.</p>
+                    </div>
                 </div>
             </div>
         </div>

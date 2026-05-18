@@ -1,3 +1,74 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "id": "predschvalena-hypoteka-2026",
+      "title": "Předschválená hypotéka podle starých pravidel? Máte cca 6 měsíců.",
+      "excerpt": "Od 1. dubna 2026 platí přísnější LTV 70 % a DTI 7. Pokud jste si hypotéku stihli předschválit dřív, máte teď omezený čas na to využít původní podmínky. Co s tím udělat dnes.",
+      "seoTitle": "Předschválená hypotéka před 4/2026: co s ní teď udělat",
+      "seoDescription": "Schválení obvykle platí 6 měsíců. Pokud jste si hypotéku vyřídili podle pravidel před zpřísněním ČNB, máte ještě čas pořídit nemovitost za starých podmínek. Praktický návod.",
+      "date": "2026-05-16",
+      "dateFormatted": "16. května 2026",
+      "readTime": 6,
+      "image": "../images/blog/predschvalena-hypoteka.jpg",
+      "imageAlt": "Smlouva o hypotečním úvěru a klíče od bytu na stole",
+      "category": "market",
+      "categoryName": "Trh a finance"
+    },
+    {
+      "id": "prvni-investicni-byt-checklist",
+      "title": "Jak vybrat první investiční byt: checklist 12 kroků",
+      "excerpt": "První investiční byt rozhoduje o tom, jestli portfolio vůbec vznikne. Sepsali jsme 12 konkrétních kontrolních bodů, kterými projít, než podepíšete rezervační smlouvu.",
+      "seoTitle": "První investiční byt: 12-bodový checklist, jak ho vybrat",
+      "seoDescription": "Praktický checklist pro výběr prvního investičního bytu. Lokalita, technický stav, ekonomika, nájemník, exit. 12 bodů, které ušetří desítky tisíc i nervů.",
+      "date": "2026-05-12",
+      "dateFormatted": "12. května 2026",
+      "readTime": 9,
+      "image": "../images/blog/prvni-investicni-byt.jpg",
+      "imageAlt": "Mladý pár s realitním makléřem prohlíží byt",
+      "category": "tips",
+      "categoryName": "Tipy"
+    },
+    {
+      "id": "roe-vs-roi",
+      "title": "ROE vs. ROI: co je důležitější a proč",
+      "excerpt": "Většina kalkulaček ukazuje ROI. Pro investora s hypotékou je ale klíčový ukazatel ROE — výnos z vlastního kapitálu. Vysvětlujeme rozdíl na konkrétním příkladu.",
+      "seoTitle": "ROE vs. ROI u nemovitostí: rozdíl, výpočet, příklady",
+      "seoDescription": "ROI a ROE nejsou totéž. Pro investora s hypotékou je ROE důležitější — ukazuje, kolik vydělá vlastní vložený kapitál. Praktické příklady a vzorce.",
+      "date": "2026-05-05",
+      "dateFormatted": "5. května 2026",
+      "readTime": 8,
+      "image": "../images/blog/roe-vs-roi.jpg",
+      "imageAlt": "Kalkulačka, propisky a graf s finančními ukazateli",
+      "category": "investment",
+      "categoryName": "Investice"
+    },
+    {
+      "id": "vzorny-najemce-garance",
+      "title": "Vzorný nájemce: jak funguje garance nájmu v praxi",
+      "excerpt": "Strach z neplatičů blokuje většinu Čechů u nájemních investic. Vzorný nájemce řeší tři rizika najednou — výpadek, neplatič, prázdný byt. Vysvětlujeme mechaniku služby.",
+      "seoTitle": "Vzorný nájemce: garance nájmu do 15. dne — jak funguje",
+      "seoDescription": "Garantovaný nájem na účet do 15. dne v měsíci, i když byt stojí prázdný. Jak Vzorný nájemce eliminuje rizika neplatičů a výpadku. Konkrétní mechanika a podmínky.",
+      "date": "2026-04-28",
+      "dateFormatted": "28. dubna 2026",
+      "readTime": 7,
+      "image": "../images/blog/vzorny-najemce.jpg",
+      "imageAlt": "Spokojený majitel bytu s nájemníkem podepisují smlouvu",
+      "category": "investment",
+      "categoryName": "Investice"
+    },
+    {
+      "id": "off-market-trh",
+      "title": "Off-market trh: proč Sreality nestačí",
+      "excerpt": "Nejlepší investiční nemovitosti se na veřejné portály vůbec nedostanou. Vysvětlujeme, co je off-market trh, kdo na něj má přístup a proč běžnému kupci uniká.",
+      "seoTitle": "Off-market nemovitosti: co to je a kdo k nim má přístup",
+      "seoDescription": "Off-market znamená nemovitosti, které nejsou veřejně inzerované. Kdo k nim má přístup, proč jsou pro investora zajímavější a jak se k nim dostat. Praktické vysvětlení.",
+      "date": "2026-04-22",
+      "dateFormatted": "22. dubna 2026",
+      "readTime": 7,
+      "image": "../images/blog/off-market.jpg",
+      "imageAlt": "Pohled na bytový dům v Praze ze střechy sousední budovy",
+      "category": "investment",
+      "categoryName": "Investice"
+    }
+  ]
 }

@@ -12,7 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InvestCzech | Váš soukromý důchod postavený z cihel</title>
-    <meta name="description" content="Pomáháme najít, financovat a spravovat investiční byt s garancí nájmu. Máte předschválenou hypotéku ještě podle původních pravidel? Najdeme vám nemovitost, která se vejde. InvestCzech.cz">
+    <meta name="description" content="Vybudujte si portfolio nájemních bytů, které se splácejí samy. Kompletní servis: akvizice, financování, správa a garance nájmu. InvestCzech.cz">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.investczech.cz/">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -74,7 +74,7 @@
                 "name": "Kolik potřebuji vlastního kapitálu na začátek?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Od 1. 4. 2026 platí akontace minimálně 30 % ceny nemovitosti (LTV 70 %, DTI 7). U bytu za 3 mil. Kč to znamená cca 900 000 Kč vlastních prostředků plus rezerva na daň z nabytí a právní služby. Pokud máte hypotéku předschválenou ještě podle původních pravidel (do 4/2026), schválení obvykle platí 6 měsíců a najdeme vám nemovitost, která se do podmínek vejde."
+                    "text": "Od dubna 2026 je nutná akontace minimálně 30 % ceny nemovitosti (LTV 70 %). U bytu za 3 mil. Kč to znamená cca 900 000 Kč vlastních prostředků plus rezerva na daň z nabytí a právní služby."
                 }
             },
             {
@@ -117,6 +117,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+        .countdown-unit { min-width: 64px; }
         .step-connector { position: relative; }
         .step-connector::after {
             content: '';
@@ -174,14 +175,13 @@
                         </span>
                     </a>
                     <div class="hidden lg:flex lg:ml-10 lg:space-x-1">
-                        <a href="#proces" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Vaše cesta</a>
-                        <a href="#off-market" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Off-market trh</a>
-                        <a href="#sprava" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Správa a garance</a>
-                        <a href="#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Akademie</a>
-                        <a href="blog/" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Blog</a>
-                        <a href="dashboard.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Nástěnka</a>
-                        <a href="calculator.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Kalkulačka</a>
-                        <a href="about.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">O nás</a>
+                        <a href="#proces" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="#off-market" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Off-market trh</a>
+                        <a href="#sprava" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Správa a garance</a>
+                        <a href="#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Akademie</a>
+                        <a href="blog/" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Blog</a>
+                        <a href="dashboard.html" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Nástěnka</a>
+                        <a href="#kontakt" class="px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue transition-colors">Kontakt</a>
                     </div>
                 </div>
                 
@@ -215,8 +215,7 @@
                 <a href="#akademie" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Akademie</a>
                 <a href="blog/" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Blog</a>
                 <a href="dashboard.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Nástěnka</a>
-                <a href="calculator.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Kalkulačka</a>
-                <a href="about.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">O nás</a>
+                <a href="#kontakt" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Kontakt</a>
                 <div class="pt-3 border-t border-gray-100">
                     <a href="#kontakt" class="block w-full text-center bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
                 </div>
@@ -225,69 +224,51 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative bg-invest-blue flex items-center">
+    <section class="relative bg-invest-blue min-h-[92vh] flex items-center">
         <div class="absolute inset-0">
             <img src="images/hero.jpg" alt="Panorama českého města s bytovými domy vhodnými k investici" class="w-full h-full object-cover">
         </div>
-        <div class="absolute inset-0 bg-gradient-to-r from-invest-blue/95 via-invest-blue/90 to-invest-blue/70"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 lg:pt-40 lg:pb-24 w-full">
-            <div class="max-w-4xl">
+        <div class="absolute inset-0 bg-gradient-to-r from-invest-blue/95 via-invest-blue/85 to-invest-blue/60"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
+            <div class="max-w-3xl">
                 <p class="text-white/60 text-sm font-semibold tracking-widest uppercase mb-6 animate-fade-in">InvestCzech. Investuje celé Česko.</p>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.1] tracking-tight animate-fade-in">
                     Váš soukromý důchod postavený z&nbsp;cihel.<br>S&nbsp;kompletním zajištěním.
                 </h1>
                 <p class="text-lg md:text-xl text-white/80 leading-relaxed mt-8 max-w-2xl animate-fade-in-delay">
-                    Pomáháme najít, financovat a&nbsp;spravovat nájemní byt s&nbsp;garancí nájmu. Vyberte si svůj scénář — vede vás přímo k&nbsp;dalšímu kroku.
+                    Vybudujte si portfolio nájemních bytů, které se splácejí samy. Máte čas jen do&nbsp;1.&nbsp;4.&nbsp;2026, než banky zpřísní pravidla na&nbsp;LTV&nbsp;70&nbsp;%. My vše najdeme, zafinancujeme a&nbsp;pohlídáme za&nbsp;vás.
                 </p>
-            </div>
 
-            <!-- Persona switch -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12 animate-fade-in-delay-2">
-                <!-- Karta 1: Předschválená hypotéka (highlighted) -->
-                <a href="#kontakt" class="group relative bg-white rounded p-7 border-2 border-invest-red hover:shadow-2xl transition-all duration-200 flex flex-col">
-                    <span class="absolute -top-3 left-6 bg-invest-red text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded">Časově citlivé</span>
-                    <p class="text-xs font-semibold text-invest-red uppercase tracking-wider mb-3 mt-1">Mám předschválenou hypotéku</p>
-                    <h3 class="text-lg font-bold text-invest-blue leading-snug mb-4">Schválení ještě podle původních pravidel?</h3>
-                    <ul class="space-y-2 text-sm text-invest-gray-light leading-relaxed mb-6 flex-grow">
-                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>LTV&nbsp;80&nbsp;% / DTI před 4/2026</li>
-                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Schválení obvykle platí 6&nbsp;měsíců</li>
-                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Najdeme nemovitost, která se vejde</li>
-                    </ul>
-                    <span class="inline-flex items-center text-invest-red font-semibold text-sm group-hover:gap-2 transition-all">
-                        Hledat vhodnou nemovitost
-                        <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </span>
-                </a>
+                <!-- Urgence countdown -->
+                <div class="mt-10 animate-fade-in-delay-2">
+                    <p class="text-invest-red font-bold text-sm uppercase tracking-wider mb-4">Pozor: Zbývá <span id="countdown-days">--</span> dní do konce 80% hypoték pro investory.</p>
+                    <div class="flex space-x-3" id="countdown-timer" role="timer" aria-live="off" aria-label="Odpočet do konce 80% hypoték pro investory">
+                        <div class="countdown-unit bg-white/10 border border-white/20 rounded px-4 py-3 text-center">
+                            <span id="cd-days" class="block text-2xl font-bold text-white">--</span>
+                            <span class="block text-xs text-white/50 mt-1">dní</span>
+                        </div>
+                        <div class="countdown-unit bg-white/10 border border-white/20 rounded px-4 py-3 text-center">
+                            <span id="cd-hours" class="block text-2xl font-bold text-white">--</span>
+                            <span class="block text-xs text-white/50 mt-1">hodin</span>
+                        </div>
+                        <div class="countdown-unit bg-white/10 border border-white/20 rounded px-4 py-3 text-center">
+                            <span id="cd-minutes" class="block text-2xl font-bold text-white">--</span>
+                            <span class="block text-xs text-white/50 mt-1">minut</span>
+                        </div>
+                        <div class="countdown-unit bg-white/10 border border-white/20 rounded px-4 py-3 text-center">
+                            <span id="cd-seconds" class="block text-2xl font-bold text-white">--</span>
+                            <span class="block text-xs text-white/50 mt-1">sekund</span>
+                        </div>
+                    </div>
+                </div>
 
-                <!-- Karta 2: Bez hypotéky -->
-                <a href="calculator.html" class="group bg-white/10 backdrop-blur-sm rounded p-7 border border-white/20 hover:bg-white/15 hover:border-white/40 transition-all duration-200 flex flex-col">
-                    <p class="text-xs font-semibold text-white/70 uppercase tracking-wider mb-3">Hypotéku ještě nemám</p>
-                    <h3 class="text-lg font-bold text-white leading-snug mb-4">Chci spočítat dostupnost podle nových pravidel</h3>
-                    <ul class="space-y-2 text-sm text-white/70 leading-relaxed mb-6 flex-grow">
-                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-white/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>LTV&nbsp;70&nbsp;% / DTI&nbsp;7 (od 4/2026)</li>
-                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-white/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>Spočítáme váš investiční plán</li>
-                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-white/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>Akvizice, financování i&nbsp;správa</li>
-                    </ul>
-                    <span class="inline-flex items-center text-white font-semibold text-sm group-hover:gap-2 transition-all">
-                        Spočítat dostupnost
-                        <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </span>
-                </a>
-
-                <!-- Karta 3: Mám portfolio -->
-                <a href="#kontakt" class="group bg-white/10 backdrop-blur-sm rounded p-7 border border-white/20 hover:bg-white/15 hover:border-white/40 transition-all duration-200 flex flex-col">
-                    <p class="text-xs font-semibold text-white/70 uppercase tracking-wider mb-3">Mám portfolio</p>
-                    <h3 class="text-lg font-bold text-white leading-snug mb-4">Chci optimalizovat to, co už mám</h3>
-                    <ul class="space-y-2 text-sm text-white/70 leading-relaxed mb-6 flex-grow">
-                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-white/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>Audit, refinancování, remodelace</span></li>
-                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-white/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>Nové akvizice mimo Sreality</li>
-                        <li class="flex items-start"><span class="w-1.5 h-1.5 bg-white/50 rounded-full mt-2 mr-3 flex-shrink-0"></span>Reporting v&nbsp;HouseMaster</li>
-                    </ul>
-                    <span class="inline-flex items-center text-white font-semibold text-sm group-hover:gap-2 transition-all">
-                        Audit portfolia zdarma
-                        <svg class="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-                    </span>
-                </a>
+                <!-- CTA -->
+                <div class="mt-10 animate-fade-in-delay-2">
+                    <a href="#kontakt" class="inline-flex items-center px-8 py-4 bg-invest-red hover:bg-invest-red-dark text-white text-lg font-semibold rounded transition-colors duration-200">
+                        Chci nezávazný investiční plán
+                        <svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -315,8 +296,8 @@
                 <!-- Bariéra 3 -->
                 <div class="border border-gray-100 rounded p-8 hover:border-invest-blue/20 transition-colors">
                     <p class="text-sm font-semibold text-invest-red uppercase tracking-wider mb-3">Dostupnost financování</p>
-                    <h3 class="text-lg font-bold text-invest-blue mb-3">Pracujeme s pravidly ČNB platnými od 4/2026</h3>
-                    <p class="text-invest-gray-light leading-relaxed">Skládáme úvěry tak, aby portfolio rostlo i při&nbsp;LTV&nbsp;70&nbsp;% a&nbsp;DTI&nbsp;7. Máte-li předschválení ještě podle původních pravidel, využijeme jeho zbývající platnost a najdeme nemovitost, která se vejde.</p>
+                    <h3 class="text-lg font-bold text-invest-blue mb-3">Řešíme i po zpřísnění ČNB</h3>
+                    <p class="text-invest-gray-light leading-relaxed">Skládáme úvěry tak, aby portfolio mohlo růst i při LTV 70 % a DTI 7. Hypoteční specialisté zaměření výhradně na nájemní nemovitosti.</p>
                 </div>
                 <!-- Bariéra 4 -->
                 <div class="border border-gray-100 rounded p-8 hover:border-invest-blue/20 transition-colors">
@@ -490,7 +471,7 @@
                     <div class="space-y-6">
                         <div class="flex items-center justify-between pb-4 border-b border-gray-100">
                             <h4 class="font-bold text-invest-blue">Portfolio</h4>
-                            <span class="text-xs text-invest-gray-light">Aktualizováno: květen 2026</span>
+                            <span class="text-xs text-invest-gray-light">Aktualizováno: únor 2026</span>
                         </div>
                         <div class="grid grid-cols-2 gap-4">
                             <div class="bg-white rounded p-4 border border-gray-100">
@@ -663,7 +644,7 @@
                         <svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     </summary>
                     <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">
-                        Od 1.&nbsp;4.&nbsp;2026 platí akontace minimálně 30&nbsp;% ceny nemovitosti (LTV&nbsp;70&nbsp;%, DTI&nbsp;7). U&nbsp;bytu za&nbsp;3&nbsp;mil.&nbsp;Kč to znamená cca 900&nbsp;000&nbsp;Kč vlastních prostředků plus rezerva na daň z nabytí a&nbsp;právní služby. <strong class="text-invest-blue">Máte předschválenou hypotéku ještě podle původních pravidel?</strong> Schválení obvykle platí 6&nbsp;měsíců — najdeme vám nemovitost, která se do podmínek vejde.
+                        Od dubna 2026 je nutná akontace minimálně 30 % ceny nemovitosti (LTV 70 %). U bytu za 3 mil. Kč to znamená cca 900 000 Kč vlastních prostředků plus rezerva na daň z nabytí a právní služby.
                     </div>
                 </details>
                 <details class="bg-white border border-gray-100 rounded group">
@@ -790,6 +771,46 @@
             }
         });
 
+        // Countdown do 1. 4. 2026 + alternativní narativ po deadline
+        (function() {
+            var deadline = new Date('2026-04-01T00:00:00+02:00').getTime();
+            var heroSubtitle = document.querySelector('.hero-subtitle');
+            var countdownSection = document.querySelector('.countdown-section');
+
+            function activatePostDeadline() {
+                // Skrýt countdown
+                var timer = document.getElementById('countdown-timer');
+                if (timer) timer.style.display = 'none';
+                var urgenceText = timer ? timer.previousElementSibling : null;
+                // Změnit urgence text
+                var cdDaysInline = document.getElementById('countdown-days');
+                if (cdDaysInline && cdDaysInline.parentElement) {
+                    cdDaysInline.parentElement.innerHTML = 'Od 1. 4. 2026 platí LTV 70 %. Stále máme řešení pro růst vašeho portfolia.';
+                    cdDaysInline.parentElement.classList.remove('text-invest-red');
+                    cdDaysInline.parentElement.classList.add('text-white/70');
+                }
+            }
+
+            function update() {
+                var now = new Date().getTime();
+                var diff = deadline - now;
+                if (diff <= 0) {
+                    activatePostDeadline();
+                    return;
+                }
+                var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                document.getElementById('countdown-days').textContent = days;
+                document.getElementById('cd-days').textContent = days;
+                document.getElementById('cd-hours').textContent = hours;
+                document.getElementById('cd-minutes').textContent = minutes;
+                document.getElementById('cd-seconds').textContent = seconds;
+            }
+            update();
+            setInterval(update, 1000);
+        })();
     </script>
     <!-- Hugo Chatbot Widget -->
     <script
