@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="cs" id="html-document">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP4KNZWHT8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QP4KNZWHT8');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model spolupráce a cena | InvestCzech</title>
+    <meta name="description" content="Transparentní rámec odměny: akviziční fee, měsíční správa, premium tier. Bez skrytých provizí od prodávajícího. Konkrétní čísla po úvodní konzultaci podle náročnosti zadání.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.investczech.cz/cena.html">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.investczech.cz/cena.html">
+    <meta property="og:title" content="Model spolupráce a cena | InvestCzech">
+    <meta property="og:description" content="Transparentní rámec spolupráce. Akviziční fee, měsíční správa, premium tier. Bez skrytých provizí od prodávajícího.">
+    <meta property="og:image" content="https://www.investczech.cz/images/hero.jpg">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="InvestCzech">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'invest-blue': '#0A2540',
+                        'invest-blue-light': '#1A3A5C',
+                        'invest-red': '#D7141A',
+                        'invest-red-dark': '#B01016',
+                        'invest-gray': '#1A1A1A',
+                        'invest-gray-light': '#6B7280',
+                        'invest-bg': '#FAFBFC',
+                    },
+                    fontFamily: { 'sans': ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50" aria-label="Hlavní navigace">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center">
+                        <span class="text-xl font-bold tracking-tight"><span class="text-invest-blue">INVEST</span><span class="text-invest-red">CZECH</span></span>
+                    </a>
+                    <div class="hidden lg:flex lg:ml-10 lg:space-x-1">
+                        <a href="index.html#proces" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Vaše cesta</a>
+                        <a href="index.html#off-market" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Off-market trh</a>
+                        <a href="index.html#sprava" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Správa a garance</a>
+                        <a href="index.html#akademie" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Akademie</a>
+                        <a href="blog/" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Blog</a>
+                        <a href="dashboard.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Nástěnka</a>
+                        <a href="calculator.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">Kalkulačka</a>
+                        <a href="about.html" class="px-3 py-2 text-sm font-medium text-invest-gray-light hover:text-invest-blue transition-colors">O nás</a>
+                    </div>
+                </div>
+                <div class="hidden lg:flex lg:items-center lg:space-x-4">
+                    <a href="index.html#kontakt" class="bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors duration-200">Chci investiční plán</a>
+                    <div class="flex items-center space-x-2 text-xs">
+                        <button class="language-btn text-invest-blue font-semibold" data-lang="cs" onclick="setLanguage('cs')">CZ</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="en" onclick="setLanguage('en')">EN</button>
+                        <span class="text-gray-300">|</span>
+                        <button class="language-btn text-gray-400 hover:text-invest-blue" data-lang="de" onclick="setLanguage('de')">DE</button>
+                    </div>
+                </div>
+                <div class="flex items-center lg:hidden">
+                    <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded text-invest-gray hover:text-invest-blue hover:bg-gray-50 focus:outline-none">
+                        <span class="sr-only">Menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white">
+            <div class="px-4 py-4 space-y-1">
+                <a href="index.html#proces" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Vaše cesta</a>
+                <a href="index.html#off-market" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Off-market trh</a>
+                <a href="index.html#sprava" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Správa a garance</a>
+                <a href="index.html#akademie" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Akademie</a>
+                <a href="blog/" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Blog</a>
+                <a href="dashboard.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Nástěnka</a>
+                <a href="calculator.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">Kalkulačka</a>
+                <a href="about.html" class="block px-3 py-2 text-sm font-medium text-invest-gray hover:text-invest-blue">O nás</a>
+                <div class="pt-3 border-t border-gray-100">
+                    <a href="index.html#kontakt" class="block w-full text-center bg-invest-red text-white hover:bg-invest-red-dark px-5 py-2.5 rounded text-sm font-semibold transition-colors">Chci investiční plán</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="pt-28 pb-16 bg-invest-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-4">Model spolupráce</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-[1.1] tracking-tight">Transparentní rámec.<br>Konkrétní čísla po konzultaci.</h1>
+                <p class="text-lg text-white/80 leading-relaxed mt-6 max-w-2xl">Cena u nás závisí na náročnosti zadání a typu služby. Tato stránka popisuje rámec — strukturu odměny, co je v ní zahrnuto a co konkrétně neúčtujeme. Konkrétní číslo dostanete po úvodní konzultaci.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proč nezveřejňujeme přesné ceny -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-1">
+                    <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Proč rámec a ne ceník</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue leading-tight">Cena má odpovídat hodnotě, ne tabulce</h2>
+                </div>
+                <div class="lg:col-span-2 space-y-5 text-lg text-invest-gray-light leading-relaxed">
+                    <p>Vidíme to v praxi: nákup investičního bytu v Berouně za 2,8 mil. Kč a akvizice multimilionového portfolia v Praze nemůžou stát stejně. Liší se rozsah práce, due diligence, vyjednávání i sales cyklus.</p>
+                    <p>Místo paušálního ceníku pracujeme s transparentním rámcem — kategorie služeb, jak se cena strukturuje, co je v ní zahrnuto a kde se může pohybovat. Konkrétní číslo dostanete během prvního týdne spolupráce, ne až na faktuře.</p>
+                    <p>Co je férové vám prozradit už teď: <strong class="text-invest-blue">nikdy nepřijímáme provizi od prodávajícího nemovitosti</strong>. Naše příjmy jsou vždy transparentní vůči vám, abychom byli na vaší straně, ne uprostřed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 hlavní služby -->
+    <section class="py-24 bg-invest-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Čtyři hlavní služby</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Z čeho se cena skládá</h2>
+                <p class="text-lg text-invest-gray-light">Pro každou službu rámcová struktura, typický rozsah a co je / není zahrnuto.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Akviziční servis -->
+                <div class="bg-white border border-gray-100 rounded p-8 lg:p-10">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-invest-blue rounded flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-invest-red uppercase tracking-wider">01</p>
+                            <h3 class="text-xl font-bold text-invest-blue">Akviziční servis</h3>
+                        </div>
+                    </div>
+                    <p class="text-invest-gray-light leading-relaxed mb-6">Procento z transakční ceny nebo fix podle velikosti a typu nemovitosti. Jednorázová platba splatná při dokončení akvizice.</p>
+                    <div class="space-y-3 mb-6">
+                        <p class="text-sm font-semibold text-invest-blue">Zahrnuto:</p>
+                        <ul class="space-y-2 text-sm text-invest-gray-light">
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Přístup do EstatePrivate (off-market nabídky)</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Technická i&nbsp;právní due diligence</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Vyjednání ceny + převodní dokumenty</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Zařízení hypotéky (koordinace s&nbsp;hypotečním specialistou)</li>
+                        </ul>
+                    </div>
+                    <p class="text-xs text-invest-gray-light italic">Typicky strukturováno jako % z&nbsp;kupní ceny v&nbsp;rozsahu, který odpovídá tržním standardům pro buyer-side zastoupení v&nbsp;Česku.</p>
+                </div>
+
+                <!-- Měsíční správa -->
+                <div class="bg-white border border-gray-100 rounded p-8 lg:p-10">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-invest-blue rounded flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-invest-red uppercase tracking-wider">02</p>
+                            <h3 class="text-xl font-bold text-invest-blue">Měsíční správa</h3>
+                        </div>
+                    </div>
+                    <p class="text-invest-gray-light leading-relaxed mb-6">Měsíční paušál nebo procento z&nbsp;vybraného nájmu. Platba každý měsíc, výpovědní lhůta 3 měsíce.</p>
+                    <div class="space-y-3 mb-6">
+                        <p class="text-sm font-semibold text-invest-blue">Zahrnuto:</p>
+                        <ul class="space-y-2 text-sm text-invest-gray-light">
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Výběr a&nbsp;prověření nájemníka</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Komunikace s&nbsp;nájemníkem, výběr nájmu</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Technická správa (revize, údržba, pojištění)</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Dashboard HouseMaster</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Roční reporting</li>
+                        </ul>
+                    </div>
+                    <p class="text-xs text-invest-gray-light italic">Konkrétní procento závisí na typu nemovitosti a&nbsp;lokalitě — vyšší u&nbsp;cash-flow lokalit (vyšší obsluhová náročnost), nižší u&nbsp;stabilních lokalit s&nbsp;dlouhodobými nájemníky.</p>
+                </div>
+
+                <!-- Vzorný nájemce -->
+                <div class="bg-white border border-gray-100 rounded p-8 lg:p-10">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-invest-blue rounded flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-invest-red uppercase tracking-wider">03</p>
+                            <h3 class="text-xl font-bold text-invest-blue">Vzorný nájemce (garance)</h3>
+                        </div>
+                    </div>
+                    <p class="text-invest-gray-light leading-relaxed mb-6">Volitelný doplněk ke správě. Jednotky procent z&nbsp;měsíčního nájmu navíc — výměnou za garanci platby do 15.&nbsp;dne i&nbsp;při vakanci nebo neplatičovi.</p>
+                    <div class="space-y-3 mb-6">
+                        <p class="text-sm font-semibold text-invest-blue">Kdy se vyplatí:</p>
+                        <ul class="space-y-2 text-sm text-invest-gray-light">
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Hypotéka splácí na hraně cash-flow</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Cash-flow lokality s&nbsp;vyšší fluktuací nájemníků</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Vlastníte 3+ nemovitostí (operativní eliminace)</li>
+                        </ul>
+                    </div>
+                    <a href="blog/detail.html?id=vzorny-najemce-garance" class="text-invest-red font-semibold text-xs hover:underline">Detail mechaniky →</a>
+                </div>
+
+                <!-- Premium -->
+                <div class="bg-invest-blue border border-invest-blue rounded p-8 lg:p-10 text-white">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-invest-red rounded flex items-center justify-center mr-4">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-invest-red uppercase tracking-wider">04</p>
+                            <h3 class="text-xl font-bold text-white">Premium tier (family office)</h3>
+                        </div>
+                    </div>
+                    <p class="text-white/80 leading-relaxed mb-6">Dedikovaný formát pro klienty s&nbsp;kapitálem 10+ mil. Kč. Individuální struktura odměny — typicky retainer + success fee na akvizicích a&nbsp;remodelaci.</p>
+                    <div class="space-y-3 mb-6">
+                        <p class="text-sm font-semibold text-white">Co je navíc:</p>
+                        <ul class="space-y-2 text-sm text-white/80">
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Dedikovaný vztahový manažer (1 partner = 1 family office)</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Kvartální strategický reporting</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>On-demand strategická konzultace</li>
+                            <li class="flex items-start"><span class="w-1.5 h-1.5 bg-invest-red rounded-full mt-2 mr-3 flex-shrink-0"></span>Integrace s&nbsp;vašimi právními a&nbsp;daňovými poradci</li>
+                        </ul>
+                    </div>
+                    <p class="text-xs text-white/60 italic">Konkrétní struktura individuální. Diskuze začíná osobní schůzkou s&nbsp;partnerem InvestCzech.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mezzanine financování (samostatná struktura) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Mimo standardní rámec</p>
+                    <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-6 leading-tight">Mezzanine financování</h2>
+                    <p class="text-lg text-invest-gray-light leading-relaxed mb-4">U&nbsp;mezzanine je struktura odměny jiná — nepracujeme s&nbsp;akvizičním fee, ale se standardní mezzanine strukturou (poplatek za zprostředkování + případná marže ve výnosu).</p>
+                    <p class="text-invest-gray-light leading-relaxed mb-6">Parametry konkrétního projektu, výnos, zajištění a&nbsp;naše odměna jsou součástí dokumentace, kterou předáváme klientovi před vstupem. Klient se rozhoduje s&nbsp;plnými informacemi.</p>
+                    <a href="pro-investory.html#sluzba-mezzanine" class="inline-flex items-center text-invest-red font-semibold text-sm hover:underline">
+                        Detail mezzanine — parametry, výnos, zajištění
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </div>
+                <div class="bg-invest-bg border border-gray-100 rounded p-8">
+                    <h3 class="text-lg font-bold text-invest-blue mb-4">Typický mezzanine vstup</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-baseline border-b border-gray-100 pb-3">
+                            <span class="text-sm text-invest-gray-light">Minimální vstup</span>
+                            <span class="text-base font-bold text-invest-blue">500&nbsp;000 Kč</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-gray-100 pb-3">
+                            <span class="text-sm text-invest-gray-light">Cílový výnos</span>
+                            <span class="text-base font-bold text-invest-blue">9–12&nbsp;% p.a.</span>
+                        </div>
+                        <div class="flex justify-between items-baseline border-b border-gray-100 pb-3">
+                            <span class="text-sm text-invest-gray-light">Horizont</span>
+                            <span class="text-base font-bold text-invest-blue">18–36 měsíců</span>
+                        </div>
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-sm text-invest-gray-light">Zajištění</span>
+                            <span class="text-base font-bold text-invest-blue text-right">zástava + ručení</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Co NIKDY -->
+    <section class="py-24 bg-invest-bg">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Co nikdy</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Tři věci, které u nás nikdy nebudete platit</h2>
+                <p class="text-lg text-invest-gray-light max-w-2xl mx-auto">Transparence není marketing — je to provozní pravidlo, které drží naše práci na vaší straně.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-12 h-12 bg-invest-red/10 rounded flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-invest-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </div>
+                    <h3 class="font-bold text-invest-blue mb-2">Skryté provize od prodávajícího</h3>
+                    <p class="text-sm text-invest-gray-light leading-relaxed">Naše odměna pochází vždy od&nbsp;vás, ne od&nbsp;druhé strany. Garance, že vyjednáváme na vaší straně.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-12 h-12 bg-invest-red/10 rounded flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-invest-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </div>
+                    <h3 class="font-bold text-invest-blue mb-2">Sankce za ukončení spolupráce</h3>
+                    <p class="text-sm text-invest-gray-light leading-relaxed">Standardní výpovědní lhůta 3 měsíce. Po ní bez jakýchkoliv sankcí. Předáme vám veškerou dokumentaci.</p>
+                </div>
+                <div class="bg-white border border-gray-100 rounded p-8">
+                    <div class="w-12 h-12 bg-invest-red/10 rounded flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-invest-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </div>
+                    <h3 class="font-bold text-invest-blue mb-2">Poplatky za první konzultaci</h3>
+                    <p class="text-sm text-invest-gray-light leading-relaxed">Úvodní konzultace je nezávazná a zdarma. Auditem portfolia začínáme až po vzájemné dohodě, že má spolupráce smysl.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jak se cena nastavuje -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Jak to probíhá</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Od úvodního dotazu k číslu — 5 kroků</h2>
+                <p class="text-lg text-invest-gray-light">Konkrétní číslo dostanete typicky během 3–7 dní od první komunikace.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="bg-invest-bg border border-gray-100 rounded p-6 text-center">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded-full mx-auto flex items-center justify-center text-sm font-bold mb-4">1</div>
+                    <h3 class="font-bold text-invest-blue mb-2 text-sm">Úvodní dotaz</h3>
+                    <p class="text-xs text-invest-gray-light leading-relaxed">Pošlete e-mail nebo formulář se základní situací (kapitál, příjem, cíl).</p>
+                </div>
+                <div class="bg-invest-bg border border-gray-100 rounded p-6 text-center">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded-full mx-auto flex items-center justify-center text-sm font-bold mb-4">2</div>
+                    <h3 class="font-bold text-invest-blue mb-2 text-sm">Telefonát (15 min)</h3>
+                    <p class="text-xs text-invest-gray-light leading-relaxed">Krátké zjištění, zda spolupráce dává smysl. Domluvíme se na úvodní konzultaci.</p>
+                </div>
+                <div class="bg-invest-bg border border-gray-100 rounded p-6 text-center">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded-full mx-auto flex items-center justify-center text-sm font-bold mb-4">3</div>
+                    <h3 class="font-bold text-invest-blue mb-2 text-sm">Konzultace (30–60 min)</h3>
+                    <p class="text-xs text-invest-gray-light leading-relaxed">Online nebo osobně. Detail vaší situace, naše doporučení, varianty spolupráce.</p>
+                </div>
+                <div class="bg-invest-bg border border-gray-100 rounded p-6 text-center">
+                    <div class="w-10 h-10 bg-invest-blue text-white rounded-full mx-auto flex items-center justify-center text-sm font-bold mb-4">4</div>
+                    <h3 class="font-bold text-invest-blue mb-2 text-sm">Návrh + cena</h3>
+                    <p class="text-xs text-invest-gray-light leading-relaxed">Do 3 dnů písemný návrh spolupráce s konkrétní strukturou odměny.</p>
+                </div>
+                <div class="bg-invest-bg border border-gray-100 rounded p-6 text-center">
+                    <div class="w-10 h-10 bg-invest-red text-white rounded-full mx-auto flex items-center justify-center text-sm font-bold mb-4">5</div>
+                    <h3 class="font-bold text-invest-blue mb-2 text-sm">Smlouva + start</h3>
+                    <p class="text-xs text-invest-gray-light leading-relaxed">Po podpisu smlouvy začínáme. Závazek je oboustranný a transparentní.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 bg-invest-bg">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <p class="text-invest-red font-semibold text-sm uppercase tracking-wider mb-3">Cena · časté dotazy</p>
+                <h2 class="text-3xl lg:text-4xl font-bold text-invest-blue mb-4">Co dostáváme od klientů</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Proč mi nedáte konkrétní číslo hned na webu?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Protože by to bylo paušální číslo, které neodpovídá vaší konkrétní situaci. Akvizice 3-milionového bytu v Berouně a remodelace 30-milionového portfolia v Praze nemůžou stát stejně. Po krátké konzultaci umíme dát přesné číslo — nehrajeme schovávanou.</div>
+                </details>
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Můžu cenu předem porovnat s konkurencí?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Ano. Po obdržení našeho návrhu (krok 4 z procesu) máte k němu plný přístup a můžete srovnávat. Konkurenci respektujeme — pokud někdo nabízí stejnou kvalitu za méně, je férové se rozhodnout pro něj.</div>
+                </details>
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Mohu kombinovat služby (např. akvizici + správu + Vzorného nájemce)?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Ano, typicky to děláme — kombinace akvizice + měsíční správa + Vzorný nájemce je nejčastější setup u našich klientů. U kombinací nabízíme strukturovanější model než jen součet jednotlivých služeb.</div>
+                </details>
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Co když po konzultaci zjistím, že to není pro mě?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Žádný problém. Úvodní konzultace je nezávazná a&nbsp;zdarma. Pokud po ní nepokračujete, neplatíte nic. Stává se to a&nbsp;je to v&nbsp;pořádku — lepší než vyhozené peníze za špatně namatchovanou spolupráci.</div>
+                </details>
+                <details class="bg-white border border-gray-100 rounded group">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-invest-blue font-semibold text-sm hover:text-invest-red transition-colors">Můžu zaplatit pouze za akviziční servis a správu si zařídit sám?<svg class="w-5 h-5 flex-shrink-0 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+                    <div class="px-6 pb-6 text-sm text-invest-gray-light leading-relaxed">Ano. Akviziční servis je samostatná služba, kterou nabízíme bez následné správy. Většina klientů ji spojuje, ale není to podmínka. Při samostatné akvizici počítejte s tím, že po předání pomocí 1–2 měsíční onboardingové asistence vám předáváme zodpovědnost za nájemníka a&nbsp;technický stav.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-invest-blue">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Pojďme se sejít a&nbsp;najít konkrétní číslo</h2>
+            <p class="text-lg text-white/70 mb-10 max-w-2xl mx-auto">Úvodní konzultace je nezávazná a zdarma. Domluvíme se v Plzni, Praze, nebo online.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#kontakt" class="inline-flex items-center justify-center px-8 py-4 bg-invest-red hover:bg-invest-red-dark text-white text-lg font-semibold rounded transition-colors">Domluvit konzultaci<svg class="ml-3 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
+                <a href="case-studies.html" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/15 text-lg font-semibold rounded transition-colors">Podívat se na case studies</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-invest-blue py-16 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <span class="text-xl font-bold tracking-tight"><span class="text-white">INVEST</span><span class="text-invest-red">CZECH</span></span>
+                    <p class="text-white/50 text-sm mt-4">Provozovatel portálu: PTF reality, s.r.o.</p>
+                    <p class="text-white/50 text-sm mt-1">IČO: 06684394 | DIČ: CZ06684394</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Plzeň</h3>
+                    <address class="text-white/50 text-sm not-italic leading-relaxed">Dřevěná 99/3<br>301 00 Plzeň</address>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Praha</h3>
+                    <address class="text-white/50 text-sm not-italic leading-relaxed">Pod turnovskou tratí 182/18<br>198 00 Praha – Hloubětín</address>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-4 text-sm uppercase tracking-wider">Ekosystém</h3>
+                    <ul class="text-sm space-y-2">
+                        <li><a href="https://estateprivate.com" target="_blank" class="text-white/50 hover:text-white transition-colors">EstatePrivate.com</a></li>
+                        <li><a href="https://ceskosobe.cz" target="_blank" class="text-white/50 hover:text-white transition-colors">ceskosobe.cz</a></li>
+                        <li><a href="https://chcibytmilionarem.cz" target="_blank" class="text-white/50 hover:text-white transition-colors">chcibytmilionarem.cz</a></li>
+                        <li><a href="about.html" class="text-white/50 hover:text-white transition-colors">O nás</a></li>
+                        <li><a href="calculator.html" class="text-white/50 hover:text-white transition-colors">Kalkulačka</a></li>
+                        <li><a href="case-studies.html" class="text-white/50 hover:text-white transition-colors">Případové studie</a></li>
+                        <li><a href="pro-investory.html" class="text-white/50 hover:text-white transition-colors">Pro investory</a></li>
+                        <li><a href="cena.html" class="text-white/50 hover:text-white transition-colors" aria-current="page">Cena</a></li>
+                        <li><a href="faq.html" class="text-white/50 hover:text-white transition-colors">Časté otázky</a></li>
+                        <li><a href="ochrana-osobnich-udaju.html" class="text-white/50 hover:text-white transition-colors">Ochrana osobních údajů</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center text-sm text-white/40">
+                    <p>&copy; 2026 InvestCzech. Všechna práva vyhrazena.</p>
+                    <div class="flex items-center space-x-4 mt-2 md:mt-0">
+                        <a href="ochrana-osobnich-udaju.html" class="hover:text-white/70 transition-colors">Ochrana osobních údajů</a>
+                        <span>|</span>
+                        <p>Investice do nemovitostí na klíč s digitální kontrolou.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var btn = document.getElementById('mobile-menu-btn');
+            var menu = document.getElementById('mobile-menu');
+            if (btn && menu) {
+                btn.addEventListener('click', function() { menu.classList.toggle('hidden'); });
+            }
+        });
+    </script>
+    <script
+      src="https://orchestrator-phi.vercel.app/widget/hugo-chat.js"
+      data-project-id="a1b2c3d4-0002-4000-8000-000000000002"
+      data-position="right"
+      data-color="#0A2540"
+      data-accent="#D7141A"
+    ></script>
+</body>
+</html>
